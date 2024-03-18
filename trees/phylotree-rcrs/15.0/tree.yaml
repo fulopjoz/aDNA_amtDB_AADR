@@ -1,0 +1,69 @@
+id: phylotree-rcrs
+version: 15.0
+name: PhyloTree
+category: rCRS (Human mtDNA)
+description: mtDNA tree Build 15 including 3,925 haplogroups
+url: https://github.com/genepi/phylotree-rcrs-15
+deprecated: true
+lastUpdate: 2012/09/30
+tree: tree.xml
+weights: weights.txt
+fasta: rcrs.fasta
+gff: rcrs.gff
+aacTable: rcrs.aac.txt
+alignmentRules: rules.csv
+hotspots:
+  - "315.1C"
+  - "309.1C"
+  - "309.1CC"
+  - "523d"
+  - "524d"
+  - "524.1AC"
+  - "524.1ACAC"
+  - "3107d"
+  - "16182C"
+  - "16183C"
+  - "16193.1C"
+  - "16193.1CC"
+  - "16519C"
+genes:
+ - "TRNF"
+ - "RNR1"
+ - "TRNV"
+ - "RNR2"
+ - "TRNL1"
+ - "ND1"
+ - "TRNI"
+ - "TRNQ"
+ - "TRNM"
+ - "ND2"
+ - "TRNW"
+ - "TRNA"
+ - "TRNN"
+ - "TRNC"
+ - "TRNY"
+ - "COX1"
+ - "TRNS1"
+ - "TRND"
+ - "COX2"
+ - "TRNK"
+ - "ATP8"
+ - "ATP6"
+ - "COX3"
+ - "TRNG"
+ - "ND3"
+ - "TRNR"
+ - "ND4L"
+ - "ND4"
+ - "TRNH"
+ - "TRNS2"
+ - "TRNL2"
+ - "ND5"
+ - "ND6"
+ - "TRNE"
+ - "CYTB"
+ - "TRNT"
+ - "TRNP"
+source:
+  - "Weissensteiner H, Pacher D, Kloss-Brandstätter A, Forer L, Specht G, Bandelt HJ, Kronenberg F, Salas A, Schönherr S. HaploGrep 2: mitochondrial haplogroup classification in the era of high-throughput sequencing. Nucleic Acids Res. 2016 Jul 8;44(W1):W58-63. doi: 10.1093/nar/gkw233. Epub 2016 Apr 15. PMID: 27084951; PMCID: PMC4987869."
+  - "van Oven M, Kayser M. Updated comprehensive phylogenetic tree of global human mitochondrial DNA variation. Hum Mutat. 2009 Feb;30(2):E386-94. doi: 10.1002/humu.20921. PMID: 18853457."

@@ -455,16 +455,7 @@ ids_of_sequences_not_present_in_AmtDB_counts.popitem()
 # %% [markdown]
 # software/EIG/bin/smartpca.perl -i data/mitogenomes_reich/v54.1.p1_HO_public/v54.1.p1_HO_public.geno -a data/mitogenomes_reich/v54.1.p1_HO_public/v54.1.p1_HO_public.snp -b data/mitogenomes_reich/v54.1.p1_HO_public/v54.1.p1_HO_public.ind -k 10 -o output/v54.1.p1_HO_public.pca -p output/v54.1.p1_HO_public.plot -e output/v54.1.p1_HO_public.eval -l output/v54.1.p1_HO_public.log
 
-
-
-
-
-
-
-
-
-
-so we can continue with step number two, revise, optimze and improove the code , provide suggestion how to adapt and change the code to the project outline and where should I put corrected code and how to call it from the ipynb where the analysis will be done. Here is the code.
+# so we can continue with step number two, revise, optimze and improove the code , provide suggestion how to adapt and change the code to the project outline and where should I put corrected code and how to call it from the ipynb where the analysis will be done. Here is the code.
 
 from Bio import SeqIO
 from collections import defaultdict
@@ -479,8 +470,7 @@ def create_directories():
         print("Creating 'output' directory...\n")
         os.makedirs('output')
     elif not os.path.isdir('data/mitogenomes_reich'):
-        print
-        # comment: 
+        print("Comment: Add comment here")
     else:
         print("'output' directory already exists.\n")
 
