@@ -2,23 +2,28 @@
 # aDNA Comparative Analysis
 
 ## Description
-The "aDNA Comparative Analysis" project is designed for the comparative analysis of ancient DNA (aDNA) sequences. It integrates various datasets, performs haplogroup classification, and utilizes the MitoPathoTool for mitochondrial DNA analysis. The project structure includes directories for data, source code, notebooks, output results, and more, providing a comprehensive toolkit for researchers in the field of genetic history and evolution.
+
+The "aDNA Comparative Analysis" project is designed for the comparative analysis of ancient DNA (aDNA) sequences. It integrates various datasets, performs haplogroup classification, and utilizes the MitoPathoTool for mitochondrial DNA analysis. The project structure includes directories for data, source code, notebooks, output results, and more, providing a comprehensive toolkit.
 
 ## Installation
 
 To set up the project, ensure you have Python installed on your system. Then, clone the project and install the required Python packages:
 
 ```bash
-git clone <repository-url>
+git clone [<repository-url>](https://github.com/fulopjoz/aDNA_amtDB_AADR.git)
 cd aDNA_Comparative_Analysis
-pip install -r requirements.txt
+./setup_project.sh
+or 
+mamba env create -f aDNA_env.yml
+
 ```
 
 Activate the virtual environment if you are using one:
 
 ```bash
-source <env-name>/bin/activate  # for Unix/Linux
-<env-name>\Scripts\activate     # for Windows
+conda activate aDNA_env       # for Conda
+source aDNA_env/bin/activate  # for Unix/Linux
+aDNA_env\Scripts\activate     # for Windows
 ```
 
 ## Project Structure
@@ -63,13 +68,3 @@ python3 mitopatho/mitopatho.py -i output/processed_haplogroups.hsd -o output/mit
 ### Further Analysis
 
 Refer to the Jupyter notebooks within the `notebooks/` directory for interactive analysis examples and additional instructions on using the project for aDNA analysis.
-
-## Contributing
-
-Contributions to the "aDNA Comparative Analysis" project are welcome. Please fork the repository, make your changes, and submit a pull request for review.
-
-For major changes, please open an issue first to discuss what you would like to change.
-
-## License
-
-[MIT License](LICENSE.md) or specify another license here.
