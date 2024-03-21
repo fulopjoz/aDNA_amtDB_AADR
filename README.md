@@ -3,7 +3,27 @@
 
 ## Description
 
-The "aDNA Comparative Analysis" project is designed for the comparative analysis of ancient DNA (aDNA) sequences. It integrates various datasets, performs haplogroup classification, and utilizes the MitoPathoTool for mitochondrial DNA analysis. The project structure includes directories for data, source code, notebooks, output results, and more, providing a comprehensive toolkit.
+The "aDNA Comparative Analysis" project is aimed at comparing the ancient
+DNA (aDNA) sequences between the AmtDB and the AADR. The primary objective is
+to identify sequences present in the AADR Reich fasta file but missing in the
+AmtDB, and subsequently retrieve these sequences. In the initial stage, we
+managed to retrieve 404 sequences, among which 8 sequences had duplicates.
+The duplicates differed only in the ending of the sequences, where additional
+'N's were appended.
+
+The second stage of the project involves creating a parsing function to take
+metadata from AADR, MitoPatho, and parse the metadata into a format suitable for AmtDB.
+From 920 missing sequences I was able to retrieve metadata for 561 sequences and 
+325 sequence IDs had match with mitopatho data.
+
+Subsequent stages of the project will focus on the usage of a pipeline that
+includes a manual for mapping fastq files to a reference genome, utilizing
+tools such as BWA and Samtools.
+
+Additionally, the project will explore the use of EIGENSOFT for further analyses.
+
+This comprehensive toolkit includes directories for data, source code, 
+notebooks, and output results, designed to facilitate the comparative analysis of aDNA sequences across different datasets.
 
 ## Installation
 

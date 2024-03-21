@@ -47,7 +47,7 @@ def match_reich_metadata(reich_meta_file, missing_ids, mitopatho_csv):
 
         # Extract data from MitoPatho if available
         mito_filtered = mitopatho[mitopatho['ID'] == master_id]
-        mito_agg = {col: ";".join(mito_filtered[col].fillna('NaN').astype(str).unique()) for col in ['Polymorphism', 'Position', 'Locus', 'Diseases', 'Status', 'Homoplasmy', 'Heteroplasmy']}
+        mito_agg = {col: ";".join(mito_filtered[col].fillna('<NA>').astype(str).unique()) for col in ['Polymorphism', 'Position', 'Locus', 'Diseases', 'Status', 'Homoplasmy', 'Heteroplasmy']}
         
         matched_data.append({
             'identifier':               row['Master ID'], 
