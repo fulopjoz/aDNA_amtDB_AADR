@@ -12,8 +12,9 @@ The duplicates differed only in the ending of the sequences, where additional
 'N's were appended.
 
 The second stage of the project involves creating a parsing function to take
-metadata from AADR, MitoPatho, and parse the metadata into a format suitable for AmtDB.
-From 920 missing sequences I was able to retrieve metadata for 561 sequences and 
+metadata from AADR, MitoPatho, and parse the metadata into a format suitable
+for AmtDB.
+From 920 missing sequences I was able to retrieve metadata for 561 sequences and
 325 sequence IDs had match with mitopatho data.
 
 Subsequent stages of the project will focus on the usage of a pipeline that
@@ -22,7 +23,7 @@ tools such as BWA and Samtools.
 
 Additionally, the project will explore the use of EIGENSOFT for further analyses.
 
-This comprehensive toolkit includes directories for data, source code, 
+This comprehensive toolkit includes directories for data, source code,
 notebooks, and output results, designed to facilitate the comparative analysis of aDNA sequences across different datasets.
 
 ## Installation
@@ -30,7 +31,7 @@ notebooks, and output results, designed to facilitate the comparative analysis o
 To set up the project, ensure you have Python installed on your system. Then, clone the project and install the required Python packages:
 
 ```bash
-git clone [<repository-url>](https://github.com/fulopjoz/aDNA_amtDB_AADR.git)
+git clone https://github.com/fulopjoz/aDNA_amtDB_AADR.git
 cd aDNA_Comparative_Analysis
 ./setup_project.sh
 or 
