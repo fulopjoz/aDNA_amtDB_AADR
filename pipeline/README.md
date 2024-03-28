@@ -1,8 +1,4 @@
-# Creating the corrected markdown file content
-
-md_content = """
-
-## Mapping FASTQ Files to Reference Fasta with BWA and Samtool
+# Mapping FASTQ Files to Reference Fasta with BWA and Samtool
 
 This manual describes the process of mapping FASTQ files (`.fastq.gz`) to a reference fasta file (`rcrs.fa`) using BWA and Samtools. It assumes the FASTQ files are either single-end sequenced or paired reads already merged with sequencing adapters removed. This is a common format for published sequencing data, but variations exist.
 
@@ -82,12 +78,4 @@ sed -i "s/>/>$(basename output_consensus_file_name.fa .fa)/" output_consensus_fi
 ## Conclusion
 
 This manual outlines the steps for mapping sequencing reads to a reference genome and generating a consensus sequence. The process involves using widely-used bioinformatics tools and can be adapted based on specific requirements or data formats.
-"""
 
-## Saving the corrected content to a markdown file
-
-file_path = '/mnt/data/manual.md'
-with open(file_path, 'w') as file:
-    file.write(md_content.strip())
-
-file_path
