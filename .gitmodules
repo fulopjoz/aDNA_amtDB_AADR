@@ -1,0 +1,3 @@
+[submodule "EIG"]
+	path = EIG
+	url = https://github.com/DReichLab/EIG.git
