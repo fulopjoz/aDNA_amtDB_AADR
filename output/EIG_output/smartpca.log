@@ -1,0 +1,75 @@
+parameter file: /home/dodo/projects/aDNA_Comparative_Analysis/notebooks/par.smartpca
+### THE INPUT PARAMETERS
+##PARAMETER NAME: VALUE
+genotypename: /home/dodo/projects/aDNA_Comparative_Analysis/output/EIG_output/example.eigenstratgeno
+snpname: /home/dodo/projects/aDNA_Comparative_Analysis/output/EIG_output/example.snp
+indivname: /home/dodo/projects/aDNA_Comparative_Analysis/output/EIG_output/example.ind
+evecoutname: /home/dodo/projects/aDNA_Comparative_Analysis/output/EIG_output/example.pca.evec
+evaloutname: /home/dodo/projects/aDNA_Comparative_Analysis/output/EIG_output/example.pca.eval
+numoutevec: 10
+## smartpca version: 18140
+norm used
+
+lsqproject used
+snps deleted (nodata): 0.  deletesnpoutname: for detailsnumber of samples used: 5 number of snps used: 7
+number of pops for axes: 2
+Using 2 threads, and partial sum lookup algorithm.
+total number of snps killed in pass: 0  used: 7
+
+## Tracy-Widom statistics: rows: 5  cols: 7
+  #N    eigenvalue  difference    twstat      p-value effect. n
+   1      3.144925          NA        NA           NA        NA
+   2      0.479073   -2.665852        NA           NA        NA
+   3      0.278742   -0.200331        NA           NA        NA
+   4      0.097261   -0.181481        NA           NA        NA
+    kurtosis           snps    indivs
+ eigenvector    1     1.311     1.503
+ eigenvector    2     1.989     2.133
+ eigenvector    3     1.672     1.434
+ eigenvector    4     1.753     1.341
+ eigenvector    5     2.509     2.145
+lsqproj called!
+population:   0                 Case    2
+population:   1              Control    3
+number of blocks for block jackknife: 1
+number of blocks 1: no standard error
+## end of Fst statistics between populations
+
+fst *1000:
+          C     C 
+   C      0   415
+   C    415     0
+
+std. err.  * 1000000:
+          C     C 
+   C      0     0
+   C      0     0
+
+eigenvector 1:means
+                Case     -0.505
+             Control      0.336
+## Anova statistics for population differences along each eigenvector:
+                                              p-value
+             eigenvector_1_Case_Control_     0.0261881 
+eigenvector 2:means
+                Case     -0.085
+             Control      0.057
+             eigenvector_2_Case_Control_      0.803635 
+eigenvector 3:means
+             Control     -0.003
+                Case      0.004
+             eigenvector_3_Case_Control_      0.990691 
+eigenvector 4:means
+             Control     -0.130
+                Case      0.195
+             eigenvector_4_Case_Control_      0.555757 
+eigenvector 5:means
+                Case     -0.000
+             Control      0.000
+             eigenvector_5_Case_Control_      0.386544 
+
+## Statistical significance of differences beween populations:
+                                pop1                  pop2      chisq          p-value   |pop1|   |pop2|
+popdifference:                  Case               Control        11.713     0.0389417       2       3
+
+##end of smartpca:        0.056 seconds cpu        0.000 Mbytes in use

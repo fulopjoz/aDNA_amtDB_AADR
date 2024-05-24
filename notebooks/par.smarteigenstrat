@@ -1,0 +1,7 @@
+genotypename:    ../output/EIG_output/example.eigenstratgeno
+snpname:         ../output/EIG_output/example.snp
+indivname:       ../output/EIG_output/example.ind
+pcaname:         ../output/EIG_output/example.pca.evec
+outputname:      ../output/EIG_output/example.chisq
+numeigs:         2
+qtmode:          NO

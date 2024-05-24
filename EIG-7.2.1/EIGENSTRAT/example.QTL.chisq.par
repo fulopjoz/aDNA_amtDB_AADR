@@ -1,7 +1,0 @@
-genotypename:  example.geno
-snpname:       example.snp
-indivname:     example.QTL.ind
-pcaname:       example.pca
-outputname:    example.QTL.chisq
-numpc:         1
-qtmode:        YES

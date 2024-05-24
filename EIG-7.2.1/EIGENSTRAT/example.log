@@ -1,8 +1,0 @@
-parameter file: ../EIGENSTRAT/example.chisq.par
-genotypename: ../EIGENSTRAT/example.geno
-snpname: ../EIGENSTRAT/example.snp
-indivname: ../EIGENSTRAT/example.ind
-pcaname: ../EIGENSTRAT/example.pca
-outputname: ../EIGENSTRAT/example.chisq
-numpc: 1
-qtmode: NO

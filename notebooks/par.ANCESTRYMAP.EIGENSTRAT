@@ -1,0 +1,7 @@
+genotypename:    /home/dodo/projects/aDNA_Comparative_Analysis/EIG/CONVERTF/example.ancestrymapgeno
+snpname:         /home/dodo/projects/aDNA_Comparative_Analysis/EIG/CONVERTF/example.snp
+indivname:       /home/dodo/projects/aDNA_Comparative_Analysis/EIG/CONVERTF/example.ind
+outputformat:    EIGENSTRAT
+genooutfilename: /home/dodo/projects/aDNA_Comparative_Analysis/output/EIG_output/example.eigenstratgeno
+snpoutfilename:  /home/dodo/projects/aDNA_Comparative_Analysis/output/EIG_output/example.snp
+indoutfilename:  /home/dodo/projects/aDNA_Comparative_Analysis/output/EIG_output/example.ind
