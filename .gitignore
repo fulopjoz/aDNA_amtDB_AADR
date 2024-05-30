@@ -2,4 +2,9 @@ data/mitogenomes_reich/mtdna_reich.fasta
 progress.md
 data/genotype_data_Soqotra/genotype_data_Soqotra/Soqotra_genotypes.snp
 data/genotype_data_Soqotra/genotype_data_Soqotra/Soqotra_genotypes.geno
-add_large_files_to_gitignore.sh
+add_large_files_to_gitignore.shdata/aadr/dataverse_files.zip
+data/aadr/dataverse_files/aadr_v54.1.p1_HO_public.geno
+data/aadr/dataverse_files/aadr_v54.1.p1_1240K_public.snp
+data/aadr/dataverse_files/aadr_v54.1.p1_HO_public.snp
+data/aadr/dataverse_files/aadr_v54.1.p1_1240K_public.geno
+data/aadr/dataverse_files.zip
