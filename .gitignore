@@ -2,8 +2,8 @@ data/mitogenomes_reich/mtdna_reich.fasta
 progress.md
 
 
-./data/mitogenomes_reich/mtdna_reich.fasta
+data/mitogenomes_reich/mtdna_reich.fasta
 
-./data/genotype_data_Soqotra/genotype_data_Soqotra/Soqotra_genotypes.snp
+data/genotype_data_Soqotra/genotype_data_Soqotra/Soqotra_genotypes.snp
 
-./data/genotype_data_Soqotra/genotype_data_Soqotra/Soqotra_genotypes.geno
+data/genotype_data_Soqotra/genotype_data_Soqotra/Soqotra_genotypes.geno
