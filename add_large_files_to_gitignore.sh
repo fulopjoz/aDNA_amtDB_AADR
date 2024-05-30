@@ -8,9 +8,11 @@ touch .gitignore
 
 # Find files larger than SIZE_LIMIT and add them to .gitignore
 find . -type f -size +"${SIZE_LIMIT}"k | while read -r file; do
+    # Normalize the file path to ensure consistency
+    file=$(realpath --relative-to=. "$file")
+    
     # Check if the file is already in .gitignore
     if ! grep -qxF "$file" .gitignore; then
-        echo >> .gitignore # Ensure new entry starts on a new line
         echo "$file" >> .gitignore
         echo "Added $file to .gitignore"
     else
