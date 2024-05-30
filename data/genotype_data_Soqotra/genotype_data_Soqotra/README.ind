@@ -1,0 +1,13 @@
+This dataset includes ancient genotype data as described in Sirak et al. (2024) in PACKEDANCESTRYMAP format.
+
+You may convert the data to other formats using the "convertf" utility of EIGENSOFT (https://data.broadinstitute.org/alkesgroup/EIGENSOFT/).
+
+The dataset includes three files: Soqotra_genotypes.geno (genotype data), Soqotra_genotypes (individual data), and Soqotra_genotypes.snp (SNP data). Together they contain genotype information for the 39 ancient individuals analyzed in Sirak et al. (2024). 
+
+BAM files:
+You may find sequence read data for the individuals reported here in the European Nucleotide Archive (https://www.ebi.ac.uk/ena/) under accession number PRJEB66485
+
+For questions and issues regarding this dataset, please contact Kendra Sirak (kendra_sirak@fas.harvard.edu).
+
+Paper reference:
+Sirak, K., Jansen Van Rensburg, J., Brielle, E. et al. Medieval DNA from Soqotra points to Eurasian origins of an isolated population at the crossroads of Africa and Arabia. Nat Ecol Evol (2024). https://doi.org/10.1038/s41559-024-02322-x. 
