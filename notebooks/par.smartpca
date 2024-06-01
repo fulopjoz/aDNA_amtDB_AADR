@@ -3,4 +3,4 @@ snpname:         /home/dodo/projects/aDNA_Comparative_Analysis/output/EIG_output
 indivname:       /home/dodo/projects/aDNA_Comparative_Analysis/output/EIG_output/example.ind
 evecoutname:     /home/dodo/projects/aDNA_Comparative_Analysis/output/EIG_output/example.pca.evec
 evaloutname:     /home/dodo/projects/aDNA_Comparative_Analysis/output/EIG_output/example.pca.eval
-numoutevec:      10
+numoutevec:      5

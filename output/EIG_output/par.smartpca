@@ -1,0 +1,6 @@
+genotypename:    /home/dodo/projects/aDNA_Comparative_Analysis/output/EIG_output/aadr.eigenstratgeno
+snpname:         /home/dodo/projects/aDNA_Comparative_Analysis/output/EIG_output/aadr.snp
+indivname:       /home/dodo/projects/aDNA_Comparative_Analysis/output/EIG_output/aadr.ind
+evecoutname:     /home/dodo/projects/aDNA_Comparative_Analysis/output/EIG_output/aadr.pca.evec
+evaloutname:     /home/dodo/projects/aDNA_Comparative_Analysis/output/EIG_output/aadr.pca.eval
+numoutevec:      10

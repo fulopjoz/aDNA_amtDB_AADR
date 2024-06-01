@@ -1,0 +1,7 @@
+genotypename:    /home/dodo/projects/aDNA_Comparative_Analysis/output/EIG_output/aadr.eigenstratgeno
+snpname:         /home/dodo/projects/aDNA_Comparative_Analysis/output/EIG_output/aadr.snp
+indivname:       /home/dodo/projects/aDNA_Comparative_Analysis/output/EIG_output/aadr.ind
+pcaname:         /home/dodo/projects/aDNA_Comparative_Analysis/output/EIG_output/aadr.pca.evec
+outputname:      /home/dodo/projects/aDNA_Comparative_Analysis/output/EIG_output/aadr.chisq
+numeigs:         10
+qtmode:          NO
