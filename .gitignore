@@ -11,3 +11,5 @@ data/aadr/dataverse_files.zip
 output/EIG_output/aadr.snp
 output/EIG_output/aadr.eigenstratgeno
 output/sequences_metadata/sequences_not_present_in_AmtDB_geneticID.fasta
+output/EIG_output/aadr_v54.1.p1_1240K_public.eigenstrat.snp
+output/EIG_output/aadr_v54.1.p1_1240K_public.eigenstratgeno

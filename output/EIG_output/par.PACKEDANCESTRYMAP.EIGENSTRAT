@@ -1,0 +1,7 @@
+genotypename: /home/dodo/projects/aDNA_Comparative_Analysis/data/aadr/dataverse_files/aadr_v54.1.p1_1240K_public.geno
+snpname: /home/dodo/projects/aDNA_Comparative_Analysis/data/aadr/dataverse_files/aadr_v54.1.p1_1240K_public.snp
+indivname: /home/dodo/projects/aDNA_Comparative_Analysis/data/aadr/dataverse_files/aadr_v54.1.p1_1240K_public.ind
+outputformat: EIGENSTRAT
+genooutfilename: /home/dodo/projects/aDNA_Comparative_Analysis/output/EIG_output/aadr_v54.1.p1_1240K_public.eigenstratgeno
+snpoutfilename: /home/dodo/projects/aDNA_Comparative_Analysis/output/EIG_output/aadr_v54.1.p1_1240K_public.eigenstrat.snp
+indoutfilename: /home/dodo/projects/aDNA_Comparative_Analysis/output/EIG_output/aadr_v54.1.p1_1240K_public.eigenstrat.ind

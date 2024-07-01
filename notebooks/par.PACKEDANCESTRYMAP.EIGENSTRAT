@@ -1,0 +1,7 @@
+genotypename:    ../data/aadr/dataverse_files/aadr_v54.1.p1_1240K_public.geno
+snpname:         ../data/aadr/dataverse_files/aadr_v54.1.p1_1240K_public.snp
+indivname:       ../data/aadr/dataverse_files/aadr_v54.1.p1_1240K_public.ind
+outputformat:    EIGENSTRAT
+genooutfilename: ../output/EIG_output/aadr_v54.1.p1_1240K_public.eigenstratgeno
+snpoutfilename:  ../output/EIG_output/aadr_v54.1.p1_1240K_public.snp
+indoutfilename:  ../output/EIG_output/aadr_v54.1.p1_1240K_public.ind

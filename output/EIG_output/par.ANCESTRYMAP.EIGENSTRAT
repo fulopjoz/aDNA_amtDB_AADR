@@ -1,7 +1,7 @@
-genotypename:    /home/dodo/projects/aDNA_Comparative_Analysis/data/aadr/dataverse_files/aadr_v54.1.p1_1240K_public.geno
-snpname:         /home/dodo/projects/aDNA_Comparative_Analysis/data/aadr/dataverse_files/aadr_v54.1.p1_1240K_public.snp
-indivname:       /home/dodo/projects/aDNA_Comparative_Analysis/data/aadr/dataverse_files/aadr_v54.1.p1_1240K_public.ind
-outputformat:    EIGENSTRAT
-genooutfilename: /home/dodo/projects/aDNA_Comparative_Analysis/output/EIG_output/aadr.eigenstratgeno
-snpoutfilename:  /home/dodo/projects/aDNA_Comparative_Analysis/output/EIG_output/aadr.snp
-indoutfilename:  /home/dodo/projects/aDNA_Comparative_Analysis/output/EIG_output/aadr.ind
+genotypename: /home/dodo/projects/aDNA_Comparative_Analysis/output/EIG_output/aadr_v54.1.p1_1240K_public_short_50.geno
+snpname: /home/dodo/projects/aDNA_Comparative_Analysis/output/EIG_output/aadr_v54.1.p1_1240K_public_short_50.snp
+indivname: /home/dodo/projects/aDNA_Comparative_Analysis/output/EIG_output/aadr_v54.1.p1_1240K_public_short_50.ind
+outputformat: EIGENSTRAT
+genooutfilename: /home/dodo/projects/aDNA_Comparative_Analysis/output/EIG_output/aadr_short_50.eigenstratgeno
+snpoutfilename: /home/dodo/projects/aDNA_Comparative_Analysis/output/EIG_output/aadr_short_50.snp
+indoutfilename: /home/dodo/projects/aDNA_Comparative_Analysis/output/EIG_output/aadr_short_50.ind

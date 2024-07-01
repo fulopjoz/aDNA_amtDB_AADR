@@ -1,75 +1,2189 @@
 parameter file: /home/dodo/projects/aDNA_Comparative_Analysis/notebooks/par.smartpca
 ### THE INPUT PARAMETERS
 ##PARAMETER NAME: VALUE
-genotypename: /home/dodo/projects/aDNA_Comparative_Analysis/output/EIG_output/example.eigenstratgeno
-snpname: /home/dodo/projects/aDNA_Comparative_Analysis/output/EIG_output/example.snp
-indivname: /home/dodo/projects/aDNA_Comparative_Analysis/output/EIG_output/example.ind
-evecoutname: /home/dodo/projects/aDNA_Comparative_Analysis/output/EIG_output/example.pca.evec
-evaloutname: /home/dodo/projects/aDNA_Comparative_Analysis/output/EIG_output/example.pca.eval
-numoutevec: 5
+genotypename: /home/dodo/projects/aDNA_Comparative_Analysis/output/EIG_output/aadr_v54.1.p1_1240K_public_short_50.geno
+snpname: /home/dodo/projects/aDNA_Comparative_Analysis/output/EIG_output/aadr_v54.1.p1_1240K_public_short_50.snp
+indivname: /home/dodo/projects/aDNA_Comparative_Analysis/output/EIG_output/aadr_v54.1.p1_1240K_public_short_50.ind
+evecoutname: /home/dodo/projects/aDNA_Comparative_Analysis/output/EIG_output/aadr_v54.1.p1_1240K_public_short_50.pca.evec
+evaloutname: /home/dodo/projects/aDNA_Comparative_Analysis/output/EIG_output/aadr_v54.1.p1_1240K_public_short_50.pca.eval
+numoutevec: 10
 ## smartpca version: 18140
 norm used
 
 lsqproject used
-snps deleted (nodata): 0.  deletesnpoutname: for detailsnumber of samples used: 5 number of snps used: 7
-number of pops for axes: 2
-Using 2 threads, and partial sum lookup algorithm.
-total number of snps killed in pass: 0  used: 7
+snps deleted (nodata): 0.  deletesnpoutname: for detailsnumber of samples used: 50 number of snps used: 50
+number of pops for axes: 37
+Using 31 threads, and partial sum lookup algorithm.
+ snp           rs59986066 ignored . allelecnt:     0  missing:    48
+ snp           rs11260588 ignored . allelecnt:     0  missing:    37
+ snp            rs7540009 ignored . allelecnt:     0  missing:    33
+ snp           rs11807848 ignored . allelecnt:     0  missing:    44
+ snp            rs9442380 ignored . allelecnt:     0  missing:    41
+ snp            rs6670693 ignored . allelecnt:     0  missing:    38
+ snp            rs9659213 ignored . allelecnt:     0  missing:    44
+ snp            rs3813199 ignored . allelecnt:     0  missing:    33
+ snp          rs113791678 ignored . allelecnt:     0  missing:    32
+ snp            rs3766186 ignored . allelecnt:     0  missing:    44
+total number of snps killed in pass: 10  used: 40
+REMOVED outlier I24542_d iter 1 evec 4 sigmage 6.349 pop: Belize_4600BP
+number of samples after outlier removal: 49
+total number of snps killed in pass: 12  used: 38
+mpstats:     0.054    0.582    1.664    2.768760
 
-## Tracy-Widom statistics: rows: 5  cols: 7
+## Tracy-Widom statistics: rows: 49  cols: 40
   #N    eigenvalue  difference    twstat      p-value effect. n
-   1      3.144925          NA        NA           NA        NA
-   2      0.479073   -2.665852        NA           NA        NA
-   3      0.278742   -0.200331        NA           NA        NA
-   4      0.097261   -0.181481        NA           NA        NA
+   1      7.264190          NA     0.929    0.0535703    21.053
+   2      5.848048   -1.416142     0.474    0.0971147    22.363
+   3      4.773682   -1.074366    -0.070     0.181064    23.337
+   4      4.580391   -0.193291     1.580    0.0205602    23.869
+   5      3.486352   -1.094039     0.604    0.0825144    26.634
+   6      2.559019   -0.927334    -1.539     0.586066    28.312
+   7      2.186687   -0.372332    -2.278     0.798747    27.787
+   8      2.061576   -0.125110    -1.920     0.702669    26.660
+   9      1.921382   -0.140194    -1.579     0.598834    25.761
+  10      1.742510   -0.178872    -1.445     0.556327    25.113
+  11      1.429560   -0.312950    -2.436     0.835079    24.564
+  12      1.332811   -0.096749    -2.197     0.778609    23.161
+  13      1.206236   -0.126575    -2.191     0.776979    21.881
+  14      1.036546   -0.169691    -2.674     0.881964    20.554
+  15      0.976855   -0.059690    -2.340     0.813605    18.842
+  16      0.918133   -0.058723    -1.915      0.70133    17.295
+  17      0.842040   -0.076093    -1.541     0.586723    16.003
+  18      0.777438   -0.064601    -0.891      0.38361    14.970
+  19      0.644733   -0.132705    -0.824     0.363907    14.601
+  20      0.518529   -0.126204    -0.933     0.396105    14.314
+  21      0.412837   -0.105693    -1.140     0.459518    13.863
+  22      0.326762   -0.086075    -1.448     0.557367    13.095
+  23      0.290295   -0.036467    -0.959      0.40394    11.881
+  24      0.257462   -0.032833    -0.014      0.17069    11.227
+  25      0.157998   -0.099464    -0.785     0.352845    12.936
+  26      0.113996   -0.044002    -1.272      0.50104    12.676
+  27      0.105523   -0.008473    -0.278     0.223849    11.402
+  28      0.066490   -0.039032    -0.816     0.361621    12.779
+  29      0.049670   -0.016820    -0.836     0.367545    12.460
+  30      0.037171   -0.012499        NA           NA        NA
+  31      0.025611   -0.011560        NA           NA        NA
+  32      0.019201   -0.006410        NA           NA        NA
+  33      0.013465   -0.005736        NA           NA        NA
+  34      0.007962   -0.005503        NA           NA        NA
+  35      0.004220   -0.003742        NA           NA        NA
+  36      0.002965   -0.001256        NA           NA        NA
+  37      0.001422   -0.001542        NA           NA        NA
+  38      0.000231   -0.001191        NA           NA        NA
     kurtosis           snps    indivs
- eigenvector    1     1.311     1.503
- eigenvector    2     1.989     2.133
- eigenvector    3     1.672     1.434
- eigenvector    4     1.753     1.341
- eigenvector    5     2.509     2.145
+ eigenvector    1     2.442    15.971
+ eigenvector    2     2.388     7.708
+ eigenvector    3     2.949    10.715
+ eigenvector    4     3.924    10.878
+ eigenvector    5     5.405     5.316
+ eigenvector    6     2.812    11.177
+ eigenvector    7     4.313     4.701
+ eigenvector    8     4.775     7.718
+ eigenvector    9     3.058     5.726
+ eigenvector   10    14.597     9.236
 lsqproj called!
-population:   0                 Case    2
-population:   1              Control    3
+I17622 ignored (insufficient data
+I13559 ignored (insufficient data
+I19493_in.preparation ignored (insufficient data
+I19479_in.preparation ignored (insufficient data
+I8122 ignored (insufficient data
+I14200 ignored (insufficient data
+I19043_old ignored (insufficient data
+I30333 ignored (insufficient data
+I3587 ignored (insufficient data
+I13433 ignored (insufficient data
+I13531 ignored (insufficient data
+I13580 ignored (insufficient data
+I7527 ignored (insufficient data
+I6441_d ignored (insufficient data
+I6445 ignored (insufficient data
+I2189 ignored (insufficient data
+I1072_enhanced_d ignored (insufficient data
+I1072_d ignored (insufficient data
+I1415_enhanced ignored (insufficient data
+I1701_enhanced ignored (insufficient data
+I1707 ignored (insufficient data
+I1709_enhanced ignored (insufficient data
+I1710 ignored (insufficient data
+I1704 ignored (insufficient data
+I1727 ignored (insufficient data
+I1415 ignored (insufficient data
+I1701 ignored (insufficient data
+I1709 ignored (insufficient data
+I1679_enhanced ignored (insufficient data
+I1708 ignored (insufficient data
+I1679 ignored (insufficient data
+I4427 ignored (insufficient data
+I0726 ignored (insufficient data
+population:   0 China_AmurRiver_EarlyN    2
+population:   1   China_AmurRiver_BA    1
+population:   2     Albania_BA_IA_lc    1
+population:   3 Albania_EarlyModern_oCaucasus    1
+population:   4   Armenia_Aknashen_N    1
+population:   5  Armenia_MasisBlur_N    1
+population:   6 Bahamas_SouthAndros_Ceramic    1
+population:   7        Belize_4600BP    0 ***
+population:   8         Bulgaria_EIA    1
+population:   9      Bulgaria_LIA_lc    1
+population:  10 Cuba_CanimarAbajo_Archaic    1
+population:  11   Czech_IA_Hallstatt    1
+population:  12 Dominican_ElSoco_Ceramic    1
+population:  13 England_BellBeaker_highEEF    1
+population:  14 England_BellBeaker_highWHG    1
+population:  15 England_MIA_LIA_o1_lc    1
+population:  16 England_N_Megalithic    1
+population:  17 Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc    1
+population:  18 Greece_Delphi_BA_Mycenaean    3
+population:  19     Iran_GanjDareh_N    1
+population:  20            Iraq_PPNA    2
+population:  21     Iraq_PPNA_contam    1
+population:  22 Israel_MLBA_o_brother.I2200    1
+population:  23    Israel_Natufian_d    1
+population:  24      Israel_Natufian    1
+population:  25 Israel_Natufian_contam    1
+population:  26          Jordan_PPNB    7
+population:  27   Jordan_PPNB_contam    2
+population:  28       Jordan_PPNB_lc    1
+population:  29          Jordan_PPNC    3
+population:  30 Jordan_PPNC_1d.rel.I1699    1
+population:  31 Malawi_Fingira_LSA_6000BP    1
+population:  32 Malawi_Fingira_LSA_6000BP_noUDG    1
+population:  33      Montenegro_MLBA    1
+population:  34 Russia_Samara_EBA_Yamnaya    1
+population:  35 Russia_Uelen_OldBeringSea    1
+population:  36             Turkey_N    1
 number of blocks for block jackknife: 1
 number of blocks 1: no standard error
+## Fst statistics between populations:         fst       std error      Z
+ China_AmurRiver_EarlyN   China_AmurRiver_BA    -0.233     0.0000  -2333333333.240            11
+ China_AmurRiver_EarlyN     Albania_BA_IA_lc     0.000     0.0000      0.000             0
+ China_AmurRiver_EarlyN Albania_EarlyModern_oCaucasus     0.711     0.0000  7111111110.921            11
+ China_AmurRiver_EarlyN   Armenia_Aknashen_N     0.741     0.0000  7407407407.078             3
+ China_AmurRiver_EarlyN  Armenia_MasisBlur_N     0.909     0.0000  9090909090.579             5
+ China_AmurRiver_EarlyN Bahamas_SouthAndros_Ceramic     0.000     0.0000      0.000             3
+ China_AmurRiver_EarlyN        Belize_4600BP     0.000     0.0000      0.000             0
+ China_AmurRiver_EarlyN         Bulgaria_EIA     0.000     0.0000      0.000             0
+ China_AmurRiver_EarlyN      Bulgaria_LIA_lc     0.000     0.0000      0.000             0
+ China_AmurRiver_EarlyN Cuba_CanimarAbajo_Archaic     0.800     0.0000  7999999999.680             9
+ China_AmurRiver_EarlyN   Czech_IA_Hallstatt     0.722     0.0000  7222222221.981             9
+ China_AmurRiver_EarlyN Dominican_ElSoco_Ceramic     0.000     0.0000      0.000             3
+ China_AmurRiver_EarlyN England_BellBeaker_highEEF     0.750     0.0000  7499999999.625             4
+ China_AmurRiver_EarlyN England_BellBeaker_highWHG     0.667     0.0000  6666666666.400             7
+ China_AmurRiver_EarlyN England_MIA_LIA_o1_lc     0.000     0.0000      0.000             0
+ China_AmurRiver_EarlyN England_N_Megalithic     0.000     0.0000      0.000             0
+ China_AmurRiver_EarlyN Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc     0.000     0.0000      0.000             0
+ China_AmurRiver_EarlyN Greece_Delphi_BA_Mycenaean     0.800     0.0000  7999999999.360             2
+ China_AmurRiver_EarlyN     Iran_GanjDareh_N     0.000     0.0000      0.000             1
+ China_AmurRiver_EarlyN            Iraq_PPNA     0.500     0.0000  4999999999.500             4
+ China_AmurRiver_EarlyN     Iraq_PPNA_contam     0.833     0.0000  8333333333.056             9
+ China_AmurRiver_EarlyN Israel_MLBA_o_brother.I2200     0.800     0.0000  7999999999.360             3
+ China_AmurRiver_EarlyN    Israel_Natufian_d     0.000     0.0000      0.000             2
+ China_AmurRiver_EarlyN      Israel_Natufian     0.000     0.0000      0.000             1
+ China_AmurRiver_EarlyN Israel_Natufian_contam     0.875     0.0000  8749999999.781             8
+ China_AmurRiver_EarlyN          Jordan_PPNB     0.643     0.0000  6434782608.528             8
+ China_AmurRiver_EarlyN   Jordan_PPNB_contam     0.857     0.0000  8571428570.939             2
+ China_AmurRiver_EarlyN       Jordan_PPNB_lc     1.000     0.0000  9999999999.000             1
+ China_AmurRiver_EarlyN          Jordan_PPNC     0.750     0.0000  7499999999.625             4
+ China_AmurRiver_EarlyN Jordan_PPNC_1d.rel.I1699     0.000     0.0000      0.000             2
+ China_AmurRiver_EarlyN Malawi_Fingira_LSA_6000BP     0.000     0.0000      0.000             2
+ China_AmurRiver_EarlyN Malawi_Fingira_LSA_6000BP_noUDG     0.667     0.0000  6666666666.286             3
+ China_AmurRiver_EarlyN      Montenegro_MLBA     0.815     0.0000  8148148147.967             9
+ China_AmurRiver_EarlyN Russia_Samara_EBA_Yamnaya     0.667     0.0000  6666666666.462            11
+ China_AmurRiver_EarlyN Russia_Uelen_OldBeringSea     0.711     0.0000  7111111110.921            11
+ China_AmurRiver_EarlyN             Turkey_N     1.000     0.0000  9999999999.000             2
+   China_AmurRiver_BA     Albania_BA_IA_lc     0.000     0.0000      0.000             0
+   China_AmurRiver_BA Albania_EarlyModern_oCaucasus     0.333     0.0000  3333333333.222            11
+   China_AmurRiver_BA   Armenia_Aknashen_N     0.000     0.0000      0.000             3
+   China_AmurRiver_BA  Armenia_MasisBlur_N     0.800     0.0000  7999999999.680             5
+   China_AmurRiver_BA Bahamas_SouthAndros_Ceramic     0.000     0.0000      0.000             3
+   China_AmurRiver_BA        Belize_4600BP     0.000     0.0000      0.000             0
+   China_AmurRiver_BA         Bulgaria_EIA     0.000     0.0000      0.000             0
+   China_AmurRiver_BA      Bulgaria_LIA_lc     0.000     0.0000      0.000             0
+   China_AmurRiver_BA Cuba_CanimarAbajo_Archaic     0.571     0.0000  5714285714.122             9
+   China_AmurRiver_BA   Czech_IA_Hallstatt     0.333     0.0000  3333333333.222             9
+   China_AmurRiver_BA Dominican_ElSoco_Ceramic     0.000     0.0000      0.000             3
+   China_AmurRiver_BA England_BellBeaker_highEEF     0.000     0.0000      0.000             4
+   China_AmurRiver_BA England_BellBeaker_highWHG     0.000     0.0000      0.000             7
+   China_AmurRiver_BA England_MIA_LIA_o1_lc     0.000     0.0000      0.000             0
+   China_AmurRiver_BA England_N_Megalithic     0.000     0.0000      0.000             0
+   China_AmurRiver_BA Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc     0.000     0.0000      0.000             0
+   China_AmurRiver_BA Greece_Delphi_BA_Mycenaean     1.000     0.0000  9999999999.000             2
+   China_AmurRiver_BA     Iran_GanjDareh_N     0.000     0.0000      0.000             1
+   China_AmurRiver_BA            Iraq_PPNA     0.000     0.0000      0.000             4
+   China_AmurRiver_BA     Iraq_PPNA_contam     0.400     0.0000  3999999999.840             9
+   China_AmurRiver_BA Israel_MLBA_o_brother.I2200     1.000     0.0000  9999999999.000             3
+   China_AmurRiver_BA    Israel_Natufian_d     0.000     0.0000      0.000             2
+   China_AmurRiver_BA      Israel_Natufian     0.000     0.0000      0.000             1
+   China_AmurRiver_BA Israel_Natufian_contam     0.571     0.0000  5714285714.122             8
+   China_AmurRiver_BA          Jordan_PPNB     0.358     0.0000  3578947368.308             8
+   China_AmurRiver_BA   Jordan_PPNB_contam     0.000     0.0000      0.000             2
+   China_AmurRiver_BA       Jordan_PPNB_lc     0.000     0.0000      0.000             1
+   China_AmurRiver_BA          Jordan_PPNC     0.500     0.0000  4999999999.750             4
+   China_AmurRiver_BA Jordan_PPNC_1d.rel.I1699     0.000     0.0000      0.000             2
+   China_AmurRiver_BA Malawi_Fingira_LSA_6000BP     0.000     0.0000      0.000             2
+   China_AmurRiver_BA Malawi_Fingira_LSA_6000BP_noUDG     0.500     0.0000  4999999999.750             3
+   China_AmurRiver_BA      Montenegro_MLBA     0.500     0.0000  4999999999.875             9
+   China_AmurRiver_BA Russia_Samara_EBA_Yamnaya     0.500     0.0000  4999999999.875            11
+   China_AmurRiver_BA Russia_Uelen_OldBeringSea     0.333     0.0000  3333333333.222            11
+   China_AmurRiver_BA             Turkey_N     1.000     0.0000  9999999999.000             2
+     Albania_BA_IA_lc Albania_EarlyModern_oCaucasus     0.000     0.0000      0.000             0
+     Albania_BA_IA_lc   Armenia_Aknashen_N     0.000     0.0000      0.000             0
+     Albania_BA_IA_lc  Armenia_MasisBlur_N     0.000     0.0000      0.000             0
+     Albania_BA_IA_lc Bahamas_SouthAndros_Ceramic     0.000     0.0000      0.000             0
+     Albania_BA_IA_lc        Belize_4600BP     0.000     0.0000      0.000             0
+     Albania_BA_IA_lc         Bulgaria_EIA     0.000     0.0000      0.000             0
+     Albania_BA_IA_lc      Bulgaria_LIA_lc     0.000     0.0000      0.000             0
+     Albania_BA_IA_lc Cuba_CanimarAbajo_Archaic     0.000     0.0000      0.000             0
+     Albania_BA_IA_lc   Czech_IA_Hallstatt     0.000     0.0000      0.000             0
+     Albania_BA_IA_lc Dominican_ElSoco_Ceramic     0.000     0.0000      0.000             0
+     Albania_BA_IA_lc England_BellBeaker_highEEF     0.000     0.0000      0.000             0
+     Albania_BA_IA_lc England_BellBeaker_highWHG     0.000     0.0000      0.000             0
+     Albania_BA_IA_lc England_MIA_LIA_o1_lc     0.000     0.0000      0.000             0
+     Albania_BA_IA_lc England_N_Megalithic     0.000     0.0000      0.000             0
+     Albania_BA_IA_lc Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc     0.000     0.0000      0.000             0
+     Albania_BA_IA_lc Greece_Delphi_BA_Mycenaean     0.000     0.0000      0.000             0
+     Albania_BA_IA_lc     Iran_GanjDareh_N     0.000     0.0000      0.000             0
+     Albania_BA_IA_lc            Iraq_PPNA     0.000     0.0000      0.000             0
+     Albania_BA_IA_lc     Iraq_PPNA_contam     0.000     0.0000      0.000             0
+     Albania_BA_IA_lc Israel_MLBA_o_brother.I2200     0.000     0.0000      0.000             0
+     Albania_BA_IA_lc    Israel_Natufian_d     0.000     0.0000      0.000             0
+     Albania_BA_IA_lc      Israel_Natufian     0.000     0.0000      0.000             0
+     Albania_BA_IA_lc Israel_Natufian_contam     0.000     0.0000      0.000             0
+     Albania_BA_IA_lc          Jordan_PPNB     0.000     0.0000      0.000             0
+     Albania_BA_IA_lc   Jordan_PPNB_contam     0.000     0.0000      0.000             0
+     Albania_BA_IA_lc       Jordan_PPNB_lc     0.000     0.0000      0.000             0
+     Albania_BA_IA_lc          Jordan_PPNC     0.000     0.0000      0.000             0
+     Albania_BA_IA_lc Jordan_PPNC_1d.rel.I1699     0.000     0.0000      0.000             0
+     Albania_BA_IA_lc Malawi_Fingira_LSA_6000BP     0.000     0.0000      0.000             0
+     Albania_BA_IA_lc Malawi_Fingira_LSA_6000BP_noUDG     0.000     0.0000      0.000             0
+     Albania_BA_IA_lc      Montenegro_MLBA     0.000     0.0000      0.000             0
+     Albania_BA_IA_lc Russia_Samara_EBA_Yamnaya     0.000     0.0000      0.000             0
+     Albania_BA_IA_lc Russia_Uelen_OldBeringSea     0.000     0.0000      0.000             0
+     Albania_BA_IA_lc             Turkey_N     0.000     0.0000      0.000             0
+ Albania_EarlyModern_oCaucasus   Armenia_Aknashen_N     1.000     0.0000  9999999999.667            11
+ Albania_EarlyModern_oCaucasus  Armenia_MasisBlur_N     1.000     0.0000  9999999999.667            12
+ Albania_EarlyModern_oCaucasus Bahamas_SouthAndros_Ceramic     1.000     0.0000  9999999999.000             4
+ Albania_EarlyModern_oCaucasus        Belize_4600BP     0.000     0.0000      0.000             0
+ Albania_EarlyModern_oCaucasus         Bulgaria_EIA     1.000     0.0000  9999999999.500             4
+ Albania_EarlyModern_oCaucasus      Bulgaria_LIA_lc     0.000     0.0000      0.000             0
+ Albania_EarlyModern_oCaucasus Cuba_CanimarAbajo_Archaic     1.000     0.0000  9999999999.923            33
+ Albania_EarlyModern_oCaucasus   Czech_IA_Hallstatt     1.000     0.0000  9999999999.875            27
+ Albania_EarlyModern_oCaucasus Dominican_ElSoco_Ceramic     0.000     0.0000      0.000             8
+ Albania_EarlyModern_oCaucasus England_BellBeaker_highEEF     0.000     0.0000      0.000             6
+ Albania_EarlyModern_oCaucasus England_BellBeaker_highWHG     1.000     0.0000  9999999999.800            16
+ Albania_EarlyModern_oCaucasus England_MIA_LIA_o1_lc     0.000     0.0000      0.000             1
+ Albania_EarlyModern_oCaucasus England_N_Megalithic     1.000     0.0000  9999999999.500             3
+ Albania_EarlyModern_oCaucasus Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc     0.000     0.0000      0.000             1
+ Albania_EarlyModern_oCaucasus Greece_Delphi_BA_Mycenaean     1.000     0.0000  9999999999.667             9
+ Albania_EarlyModern_oCaucasus     Iran_GanjDareh_N     1.000     0.0000  9999999999.667             8
+ Albania_EarlyModern_oCaucasus            Iraq_PPNA     1.000     0.0000  9999999999.833            14
+ Albania_EarlyModern_oCaucasus     Iraq_PPNA_contam     1.000     0.0000  9999999999.889            29
+ Albania_EarlyModern_oCaucasus Israel_MLBA_o_brother.I2200     1.000     0.0000  9999999999.667             8
+ Albania_EarlyModern_oCaucasus    Israel_Natufian_d     1.000     0.0000  9999999999.000             4
+ Albania_EarlyModern_oCaucasus      Israel_Natufian     0.000     0.0000      0.000             3
+ Albania_EarlyModern_oCaucasus Israel_Natufian_contam     1.000     0.0000  9999999999.500            19
+ Albania_EarlyModern_oCaucasus          Jordan_PPNB     0.886     0.0000  8857142857.016            20
+ Albania_EarlyModern_oCaucasus   Jordan_PPNB_contam     0.000     0.0000      0.000             9
+ Albania_EarlyModern_oCaucasus       Jordan_PPNB_lc     0.000     0.0000      0.000             1
+ Albania_EarlyModern_oCaucasus          Jordan_PPNC     1.000     0.0000  9999999999.800            14
+ Albania_EarlyModern_oCaucasus Jordan_PPNC_1d.rel.I1699     1.000     0.0000  9999999999.500             9
+ Albania_EarlyModern_oCaucasus Malawi_Fingira_LSA_6000BP     1.000     0.0000  9999999999.800             9
+ Albania_EarlyModern_oCaucasus Malawi_Fingira_LSA_6000BP_noUDG     1.000     0.0000  9999999999.800            13
+ Albania_EarlyModern_oCaucasus      Montenegro_MLBA     1.000     0.0000  9999999999.917            28
+ Albania_EarlyModern_oCaucasus Russia_Samara_EBA_Yamnaya     1.000     0.0000  9999999999.929            36
+ Albania_EarlyModern_oCaucasus Russia_Uelen_OldBeringSea     1.000     0.0000  9999999999.923            32
+ Albania_EarlyModern_oCaucasus             Turkey_N     1.000     0.0000  9999999999.000             8
+   Armenia_Aknashen_N  Armenia_MasisBlur_N     0.000     0.0000      0.000             2
+   Armenia_Aknashen_N Bahamas_SouthAndros_Ceramic     1.000     0.0000  9999999999.000             2
+   Armenia_Aknashen_N        Belize_4600BP     0.000     0.0000      0.000             0
+   Armenia_Aknashen_N         Bulgaria_EIA     0.000     0.0000      0.000             0
+   Armenia_Aknashen_N      Bulgaria_LIA_lc     0.000     0.0000      0.000             0
+   Armenia_Aknashen_N Cuba_CanimarAbajo_Archaic     1.000     0.0000  9999999999.750             9
+   Armenia_Aknashen_N   Czech_IA_Hallstatt     1.000     0.0000  9999999999.800            10
+   Armenia_Aknashen_N Dominican_ElSoco_Ceramic     1.000     0.0000  9999999999.500             3
+   Armenia_Aknashen_N England_BellBeaker_highEEF     0.000     0.0000      0.000             3
+   Armenia_Aknashen_N England_BellBeaker_highWHG     0.000     0.0000      0.000             8
+   Armenia_Aknashen_N England_MIA_LIA_o1_lc     0.000     0.0000      0.000             1
+   Armenia_Aknashen_N England_N_Megalithic     0.000     0.0000      0.000             1
+   Armenia_Aknashen_N Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc     1.000     0.0000  9999999999.000             1
+   Armenia_Aknashen_N Greece_Delphi_BA_Mycenaean     0.000     0.0000      0.000             1
+   Armenia_Aknashen_N     Iran_GanjDareh_N     1.000     0.0000  9999999999.000             4
+   Armenia_Aknashen_N            Iraq_PPNA     0.000     0.0000      0.000             3
+   Armenia_Aknashen_N     Iraq_PPNA_contam     1.000     0.0000  9999999999.500             8
+   Armenia_Aknashen_N Israel_MLBA_o_brother.I2200     0.000     0.0000      0.000             2
+   Armenia_Aknashen_N    Israel_Natufian_d     1.000     0.0000  9999999999.000             1
+   Armenia_Aknashen_N      Israel_Natufian     1.000     0.0000  9999999999.000             1
+   Armenia_Aknashen_N Israel_Natufian_contam     1.000     0.0000  9999999999.500             4
+   Armenia_Aknashen_N          Jordan_PPNB     0.771     0.0000  7714285713.955             6
+   Armenia_Aknashen_N   Jordan_PPNB_contam     1.000     0.0000  9999999999.000             5
+   Armenia_Aknashen_N       Jordan_PPNB_lc     0.000     0.0000      0.000             1
+   Armenia_Aknashen_N          Jordan_PPNC     1.000     0.0000  9999999999.667             5
+   Armenia_Aknashen_N Jordan_PPNC_1d.rel.I1699     1.000     0.0000  9999999999.000             3
+   Armenia_Aknashen_N Malawi_Fingira_LSA_6000BP     1.000     0.0000  9999999999.000             2
+   Armenia_Aknashen_N Malawi_Fingira_LSA_6000BP_noUDG     1.000     0.0000  9999999999.500             4
+   Armenia_Aknashen_N      Montenegro_MLBA     1.000     0.0000  9999999999.750            11
+   Armenia_Aknashen_N Russia_Samara_EBA_Yamnaya     1.000     0.0000  9999999999.667            11
+   Armenia_Aknashen_N Russia_Uelen_OldBeringSea     1.000     0.0000  9999999999.750            11
+   Armenia_Aknashen_N             Turkey_N     0.000     0.0000      0.000             2
+  Armenia_MasisBlur_N Bahamas_SouthAndros_Ceramic     1.000     0.0000  9999999999.500             2
+  Armenia_MasisBlur_N        Belize_4600BP     0.000     0.0000      0.000             0
+  Armenia_MasisBlur_N         Bulgaria_EIA     0.000     0.0000      0.000             0
+  Armenia_MasisBlur_N      Bulgaria_LIA_lc     0.000     0.0000      0.000             0
+  Armenia_MasisBlur_N Cuba_CanimarAbajo_Archaic     1.000     0.0000  9999999999.750            10
+  Armenia_MasisBlur_N   Czech_IA_Hallstatt     1.000     0.0000  9999999999.750            11
+  Armenia_MasisBlur_N Dominican_ElSoco_Ceramic     0.000     0.0000      0.000             2
+  Armenia_MasisBlur_N England_BellBeaker_highEEF     0.000     0.0000      0.000             2
+  Armenia_MasisBlur_N England_BellBeaker_highWHG     1.000     0.0000  9999999999.500             4
+  Armenia_MasisBlur_N England_MIA_LIA_o1_lc     0.000     0.0000      0.000             0
+  Armenia_MasisBlur_N England_N_Megalithic     1.000     0.0000  9999999999.000             1
+  Armenia_MasisBlur_N Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc     0.000     0.0000      0.000             0
+  Armenia_MasisBlur_N Greece_Delphi_BA_Mycenaean     1.000     0.0000  9999999999.000             2
+  Armenia_MasisBlur_N     Iran_GanjDareh_N     1.000     0.0000  9999999999.000             3
+  Armenia_MasisBlur_N            Iraq_PPNA     1.000     0.0000  9999999999.500             5
+  Armenia_MasisBlur_N     Iraq_PPNA_contam     1.000     0.0000  9999999999.750            10
+  Armenia_MasisBlur_N Israel_MLBA_o_brother.I2200     1.000     0.0000  9999999999.000             3
+  Armenia_MasisBlur_N    Israel_Natufian_d     0.000     0.0000      0.000             1
+  Armenia_MasisBlur_N      Israel_Natufian     0.000     0.0000      0.000             0
+  Armenia_MasisBlur_N Israel_Natufian_contam     1.000     0.0000  9999999999.667             8
+  Armenia_MasisBlur_N          Jordan_PPNB     0.900     0.0000  8999999999.831            11
+  Armenia_MasisBlur_N   Jordan_PPNB_contam     0.000     0.0000      0.000             3
+  Armenia_MasisBlur_N       Jordan_PPNB_lc     0.000     0.0000      0.000             0
+  Armenia_MasisBlur_N          Jordan_PPNC     0.000     0.0000      0.000             3
+  Armenia_MasisBlur_N Jordan_PPNC_1d.rel.I1699     0.000     0.0000      0.000             2
+  Armenia_MasisBlur_N Malawi_Fingira_LSA_6000BP     1.000     0.0000  9999999999.750             5
+  Armenia_MasisBlur_N Malawi_Fingira_LSA_6000BP_noUDG     1.000     0.0000  9999999999.667             6
+  Armenia_MasisBlur_N      Montenegro_MLBA     1.000     0.0000  9999999999.500            10
+  Armenia_MasisBlur_N Russia_Samara_EBA_Yamnaya     1.000     0.0000  9999999999.750            12
+  Armenia_MasisBlur_N Russia_Uelen_OldBeringSea     1.000     0.0000  9999999999.750             9
+  Armenia_MasisBlur_N             Turkey_N     0.000     0.0000      0.000             3
+ Bahamas_SouthAndros_Ceramic        Belize_4600BP     0.000     0.0000      0.000             0
+ Bahamas_SouthAndros_Ceramic         Bulgaria_EIA     0.000     0.0000      0.000             0
+ Bahamas_SouthAndros_Ceramic      Bulgaria_LIA_lc     0.000     0.0000      0.000             0
+ Bahamas_SouthAndros_Ceramic Cuba_CanimarAbajo_Archaic     1.000     0.0000  9999999999.000             4
+ Bahamas_SouthAndros_Ceramic   Czech_IA_Hallstatt     0.000     0.0000      0.000             4
+ Bahamas_SouthAndros_Ceramic Dominican_ElSoco_Ceramic     0.000     0.0000      0.000             0
+ Bahamas_SouthAndros_Ceramic England_BellBeaker_highEEF     1.000     0.0000  9999999999.000             2
+ Bahamas_SouthAndros_Ceramic England_BellBeaker_highWHG     1.000     0.0000  9999999999.000             3
+ Bahamas_SouthAndros_Ceramic England_MIA_LIA_o1_lc     0.000     0.0000      0.000             0
+ Bahamas_SouthAndros_Ceramic England_N_Megalithic     0.000     0.0000      0.000             0
+ Bahamas_SouthAndros_Ceramic Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc     0.000     0.0000      0.000             0
+ Bahamas_SouthAndros_Ceramic Greece_Delphi_BA_Mycenaean     0.000     0.0000      0.000             0
+ Bahamas_SouthAndros_Ceramic     Iran_GanjDareh_N     0.000     0.0000      0.000             0
+ Bahamas_SouthAndros_Ceramic            Iraq_PPNA     1.000     0.0000  9999999999.000             3
+ Bahamas_SouthAndros_Ceramic     Iraq_PPNA_contam     1.000     0.0000  9999999999.500             4
+ Bahamas_SouthAndros_Ceramic Israel_MLBA_o_brother.I2200     0.000     0.0000      0.000             0
+ Bahamas_SouthAndros_Ceramic    Israel_Natufian_d     0.000     0.0000      0.000             1
+ Bahamas_SouthAndros_Ceramic      Israel_Natufian     0.000     0.0000      0.000             1
+ Bahamas_SouthAndros_Ceramic Israel_Natufian_contam     1.000     0.0000  9999999999.000             3
+ Bahamas_SouthAndros_Ceramic          Jordan_PPNB     0.200     0.0000  1999999999.400             2
+ Bahamas_SouthAndros_Ceramic   Jordan_PPNB_contam     1.000     0.0000  9999999999.000             2
+ Bahamas_SouthAndros_Ceramic       Jordan_PPNB_lc     0.000     0.0000      0.000             0
+ Bahamas_SouthAndros_Ceramic          Jordan_PPNC     1.000     0.0000  9999999999.000             1
+ Bahamas_SouthAndros_Ceramic Jordan_PPNC_1d.rel.I1699     0.000     0.0000      0.000             2
+ Bahamas_SouthAndros_Ceramic Malawi_Fingira_LSA_6000BP     0.000     0.0000      0.000             1
+ Bahamas_SouthAndros_Ceramic Malawi_Fingira_LSA_6000BP_noUDG     0.000     0.0000      0.000             1
+ Bahamas_SouthAndros_Ceramic      Montenegro_MLBA     1.000     0.0000  9999999999.500             4
+ Bahamas_SouthAndros_Ceramic Russia_Samara_EBA_Yamnaya     1.000     0.0000  9999999999.000             4
+ Bahamas_SouthAndros_Ceramic Russia_Uelen_OldBeringSea     1.000     0.0000  9999999999.500             4
+ Bahamas_SouthAndros_Ceramic             Turkey_N     0.000     0.0000      0.000             1
+        Belize_4600BP         Bulgaria_EIA     0.000     0.0000      0.000             0
+        Belize_4600BP      Bulgaria_LIA_lc     0.000     0.0000      0.000             0
+        Belize_4600BP Cuba_CanimarAbajo_Archaic     0.000     0.0000      0.000             0
+        Belize_4600BP   Czech_IA_Hallstatt     0.000     0.0000      0.000             0
+        Belize_4600BP Dominican_ElSoco_Ceramic     0.000     0.0000      0.000             0
+        Belize_4600BP England_BellBeaker_highEEF     0.000     0.0000      0.000             0
+        Belize_4600BP England_BellBeaker_highWHG     0.000     0.0000      0.000             0
+        Belize_4600BP England_MIA_LIA_o1_lc     0.000     0.0000      0.000             0
+        Belize_4600BP England_N_Megalithic     0.000     0.0000      0.000             0
+        Belize_4600BP Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc     0.000     0.0000      0.000             0
+        Belize_4600BP Greece_Delphi_BA_Mycenaean     0.000     0.0000      0.000             0
+        Belize_4600BP     Iran_GanjDareh_N     0.000     0.0000      0.000             0
+        Belize_4600BP            Iraq_PPNA     0.000     0.0000      0.000             0
+        Belize_4600BP     Iraq_PPNA_contam     0.000     0.0000      0.000             0
+        Belize_4600BP Israel_MLBA_o_brother.I2200     0.000     0.0000      0.000             0
+        Belize_4600BP    Israel_Natufian_d     0.000     0.0000      0.000             0
+        Belize_4600BP      Israel_Natufian     0.000     0.0000      0.000             0
+        Belize_4600BP Israel_Natufian_contam     0.000     0.0000      0.000             0
+        Belize_4600BP          Jordan_PPNB     0.000     0.0000      0.000             0
+        Belize_4600BP   Jordan_PPNB_contam     0.000     0.0000      0.000             0
+        Belize_4600BP       Jordan_PPNB_lc     0.000     0.0000      0.000             0
+        Belize_4600BP          Jordan_PPNC     0.000     0.0000      0.000             0
+        Belize_4600BP Jordan_PPNC_1d.rel.I1699     0.000     0.0000      0.000             0
+        Belize_4600BP Malawi_Fingira_LSA_6000BP     0.000     0.0000      0.000             0
+        Belize_4600BP Malawi_Fingira_LSA_6000BP_noUDG     0.000     0.0000      0.000             0
+        Belize_4600BP      Montenegro_MLBA     0.000     0.0000      0.000             0
+        Belize_4600BP Russia_Samara_EBA_Yamnaya     0.000     0.0000      0.000             0
+        Belize_4600BP Russia_Uelen_OldBeringSea     0.000     0.0000      0.000             0
+        Belize_4600BP             Turkey_N     0.000     0.0000      0.000             0
+         Bulgaria_EIA      Bulgaria_LIA_lc     0.000     0.0000      0.000             0
+         Bulgaria_EIA Cuba_CanimarAbajo_Archaic     1.000     0.0000  9999999999.500             4
+         Bulgaria_EIA   Czech_IA_Hallstatt     1.000     0.0000  9999999999.500             4
+         Bulgaria_EIA Dominican_ElSoco_Ceramic     0.000     0.0000      0.000             0
+         Bulgaria_EIA England_BellBeaker_highEEF     0.000     0.0000      0.000             0
+         Bulgaria_EIA England_BellBeaker_highWHG     0.000     0.0000      0.000             1
+         Bulgaria_EIA England_MIA_LIA_o1_lc     0.000     0.0000      0.000             0
+         Bulgaria_EIA England_N_Megalithic     0.000     0.0000      0.000             1
+         Bulgaria_EIA Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc     0.000     0.0000      0.000             0
+         Bulgaria_EIA Greece_Delphi_BA_Mycenaean     0.000     0.0000      0.000             1
+         Bulgaria_EIA     Iran_GanjDareh_N     0.000     0.0000      0.000             0
+         Bulgaria_EIA            Iraq_PPNA     1.000     0.0000  9999999999.000             4
+         Bulgaria_EIA     Iraq_PPNA_contam     0.000     0.0000      0.000             4
+         Bulgaria_EIA Israel_MLBA_o_brother.I2200     0.000     0.0000      0.000             2
+         Bulgaria_EIA    Israel_Natufian_d     0.000     0.0000      0.000             0
+         Bulgaria_EIA      Israel_Natufian     0.000     0.0000      0.000             0
+         Bulgaria_EIA Israel_Natufian_contam     1.000     0.0000  9999999999.000             3
+         Bulgaria_EIA          Jordan_PPNB     1.000     0.0000  9999999999.000             2
+         Bulgaria_EIA   Jordan_PPNB_contam     0.000     0.0000      0.000             1
+         Bulgaria_EIA       Jordan_PPNB_lc     0.000     0.0000      0.000             0
+         Bulgaria_EIA          Jordan_PPNC     1.000     0.0000  9999999999.000             3
+         Bulgaria_EIA Jordan_PPNC_1d.rel.I1699     0.000     0.0000      0.000             1
+         Bulgaria_EIA Malawi_Fingira_LSA_6000BP     0.000     0.0000      0.000             1
+         Bulgaria_EIA Malawi_Fingira_LSA_6000BP_noUDG     1.000     0.0000  9999999999.000             2
+         Bulgaria_EIA      Montenegro_MLBA     1.000     0.0000  9999999999.500             4
+         Bulgaria_EIA Russia_Samara_EBA_Yamnaya     1.000     0.0000  9999999999.000             4
+         Bulgaria_EIA Russia_Uelen_OldBeringSea     1.000     0.0000  9999999999.667             4
+         Bulgaria_EIA             Turkey_N     1.000     0.0000  9999999999.000             1
+      Bulgaria_LIA_lc Cuba_CanimarAbajo_Archaic     0.000     0.0000      0.000             0
+      Bulgaria_LIA_lc   Czech_IA_Hallstatt     0.000     0.0000      0.000             0
+      Bulgaria_LIA_lc Dominican_ElSoco_Ceramic     0.000     0.0000      0.000             0
+      Bulgaria_LIA_lc England_BellBeaker_highEEF     0.000     0.0000      0.000             0
+      Bulgaria_LIA_lc England_BellBeaker_highWHG     0.000     0.0000      0.000             0
+      Bulgaria_LIA_lc England_MIA_LIA_o1_lc     0.000     0.0000      0.000             0
+      Bulgaria_LIA_lc England_N_Megalithic     0.000     0.0000      0.000             0
+      Bulgaria_LIA_lc Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc     0.000     0.0000      0.000             0
+      Bulgaria_LIA_lc Greece_Delphi_BA_Mycenaean     0.000     0.0000      0.000             0
+      Bulgaria_LIA_lc     Iran_GanjDareh_N     0.000     0.0000      0.000             0
+      Bulgaria_LIA_lc            Iraq_PPNA     0.000     0.0000      0.000             0
+      Bulgaria_LIA_lc     Iraq_PPNA_contam     0.000     0.0000      0.000             0
+      Bulgaria_LIA_lc Israel_MLBA_o_brother.I2200     0.000     0.0000      0.000             0
+      Bulgaria_LIA_lc    Israel_Natufian_d     0.000     0.0000      0.000             0
+      Bulgaria_LIA_lc      Israel_Natufian     0.000     0.0000      0.000             0
+      Bulgaria_LIA_lc Israel_Natufian_contam     0.000     0.0000      0.000             0
+      Bulgaria_LIA_lc          Jordan_PPNB     0.000     0.0000      0.000             0
+      Bulgaria_LIA_lc   Jordan_PPNB_contam     0.000     0.0000      0.000             0
+      Bulgaria_LIA_lc       Jordan_PPNB_lc     0.000     0.0000      0.000             0
+      Bulgaria_LIA_lc          Jordan_PPNC     0.000     0.0000      0.000             0
+      Bulgaria_LIA_lc Jordan_PPNC_1d.rel.I1699     0.000     0.0000      0.000             0
+      Bulgaria_LIA_lc Malawi_Fingira_LSA_6000BP     0.000     0.0000      0.000             0
+      Bulgaria_LIA_lc Malawi_Fingira_LSA_6000BP_noUDG     0.000     0.0000      0.000             0
+      Bulgaria_LIA_lc      Montenegro_MLBA     0.000     0.0000      0.000             0
+      Bulgaria_LIA_lc Russia_Samara_EBA_Yamnaya     0.000     0.0000      0.000             0
+      Bulgaria_LIA_lc Russia_Uelen_OldBeringSea     0.000     0.0000      0.000             0
+      Bulgaria_LIA_lc             Turkey_N     0.000     0.0000      0.000             0
+ Cuba_CanimarAbajo_Archaic   Czech_IA_Hallstatt     1.000     0.0000  9999999999.833            24
+ Cuba_CanimarAbajo_Archaic Dominican_ElSoco_Ceramic     1.000     0.0000  9999999999.800             8
+ Cuba_CanimarAbajo_Archaic England_BellBeaker_highEEF     1.000     0.0000  9999999999.667             5
+ Cuba_CanimarAbajo_Archaic England_BellBeaker_highWHG     1.000     0.0000  9999999999.875            15
+ Cuba_CanimarAbajo_Archaic England_MIA_LIA_o1_lc     0.000     0.0000      0.000             1
+ Cuba_CanimarAbajo_Archaic England_N_Megalithic     0.000     0.0000      0.000             3
+ Cuba_CanimarAbajo_Archaic Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc     0.000     0.0000      0.000             1
+ Cuba_CanimarAbajo_Archaic Greece_Delphi_BA_Mycenaean     1.000     0.0000  9999999999.667             8
+ Cuba_CanimarAbajo_Archaic     Iran_GanjDareh_N     1.000     0.0000  9999999999.500             8
+ Cuba_CanimarAbajo_Archaic            Iraq_PPNA     1.000     0.0000  9999999999.800            14
+ Cuba_CanimarAbajo_Archaic     Iraq_PPNA_contam     1.000     0.0000  9999999999.909            26
+ Cuba_CanimarAbajo_Archaic Israel_MLBA_o_brother.I2200     1.000     0.0000  9999999999.750             8
+ Cuba_CanimarAbajo_Archaic    Israel_Natufian_d     1.000     0.0000  9999999999.000             4
+ Cuba_CanimarAbajo_Archaic      Israel_Natufian     0.000     0.0000      0.000             3
+ Cuba_CanimarAbajo_Archaic Israel_Natufian_contam     1.000     0.0000  9999999999.900            18
+ Cuba_CanimarAbajo_Archaic          Jordan_PPNB     0.880     0.0000  8799999999.868            16
+ Cuba_CanimarAbajo_Archaic   Jordan_PPNB_contam     1.000     0.0000  9999999999.667             9
+ Cuba_CanimarAbajo_Archaic       Jordan_PPNB_lc     1.000     0.0000  9999999999.000             1
+ Cuba_CanimarAbajo_Archaic          Jordan_PPNC     1.000     0.0000  9999999999.800            14
+ Cuba_CanimarAbajo_Archaic Jordan_PPNC_1d.rel.I1699     1.000     0.0000  9999999999.000             9
+ Cuba_CanimarAbajo_Archaic Malawi_Fingira_LSA_6000BP     1.000     0.0000  9999999999.000             8
+ Cuba_CanimarAbajo_Archaic Malawi_Fingira_LSA_6000BP_noUDG     1.000     0.0000  9999999999.667            11
+ Cuba_CanimarAbajo_Archaic      Montenegro_MLBA     1.000     0.0000  9999999999.933            26
+ Cuba_CanimarAbajo_Archaic Russia_Samara_EBA_Yamnaya     1.000     0.0000  9999999999.889            32
+ Cuba_CanimarAbajo_Archaic Russia_Uelen_OldBeringSea     1.000     0.0000  9999999999.917            28
+ Cuba_CanimarAbajo_Archaic             Turkey_N     1.000     0.0000  9999999999.000             8
+   Czech_IA_Hallstatt Dominican_ElSoco_Ceramic     1.000     0.0000  9999999999.667             7
+   Czech_IA_Hallstatt England_BellBeaker_highEEF     1.000     0.0000  9999999999.667             5
+   Czech_IA_Hallstatt England_BellBeaker_highWHG     1.000     0.0000  9999999999.857            13
+   Czech_IA_Hallstatt England_MIA_LIA_o1_lc     0.000     0.0000      0.000             0
+   Czech_IA_Hallstatt England_N_Megalithic     1.000     0.0000  9999999999.000             3
+   Czech_IA_Hallstatt Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc     0.000     0.0000      0.000             1
+   Czech_IA_Hallstatt Greece_Delphi_BA_Mycenaean     1.000     0.0000  9999999999.500             6
+   Czech_IA_Hallstatt     Iran_GanjDareh_N     1.000     0.0000  9999999999.000             7
+   Czech_IA_Hallstatt            Iraq_PPNA     1.000     0.0000  9999999999.750            12
+   Czech_IA_Hallstatt     Iraq_PPNA_contam     1.000     0.0000  9999999999.889            24
+   Czech_IA_Hallstatt Israel_MLBA_o_brother.I2200     1.000     0.0000  9999999999.667             8
+   Czech_IA_Hallstatt    Israel_Natufian_d     0.000     0.0000      0.000             3
+   Czech_IA_Hallstatt      Israel_Natufian     0.000     0.0000      0.000             2
+   Czech_IA_Hallstatt Israel_Natufian_contam     1.000     0.0000  9999999999.750            16
+   Czech_IA_Hallstatt          Jordan_PPNB     0.760     0.0000  7599999999.772            18
+   Czech_IA_Hallstatt   Jordan_PPNB_contam     1.000     0.0000  9999999999.500             8
+   Czech_IA_Hallstatt       Jordan_PPNB_lc     0.000     0.0000      0.000             1
+   Czech_IA_Hallstatt          Jordan_PPNC     1.000     0.0000  9999999999.750            13
+   Czech_IA_Hallstatt Jordan_PPNC_1d.rel.I1699     1.000     0.0000  9999999999.000             7
+   Czech_IA_Hallstatt Malawi_Fingira_LSA_6000BP     1.000     0.0000  9999999999.500             7
+   Czech_IA_Hallstatt Malawi_Fingira_LSA_6000BP_noUDG     1.000     0.0000  9999999999.000            11
+   Czech_IA_Hallstatt      Montenegro_MLBA     1.000     0.0000  9999999999.889            25
+   Czech_IA_Hallstatt Russia_Samara_EBA_Yamnaya     1.000     0.0000  9999999999.900            27
+   Czech_IA_Hallstatt Russia_Uelen_OldBeringSea     1.000     0.0000  9999999999.909            24
+   Czech_IA_Hallstatt             Turkey_N     0.000     0.0000      0.000             5
+ Dominican_ElSoco_Ceramic England_BellBeaker_highEEF     0.000     0.0000      0.000             2
+ Dominican_ElSoco_Ceramic England_BellBeaker_highWHG     1.000     0.0000  9999999999.500             6
+ Dominican_ElSoco_Ceramic England_MIA_LIA_o1_lc     0.000     0.0000      0.000             0
+ Dominican_ElSoco_Ceramic England_N_Megalithic     1.000     0.0000  9999999999.000             1
+ Dominican_ElSoco_Ceramic Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc     0.000     0.0000      0.000             1
+ Dominican_ElSoco_Ceramic Greece_Delphi_BA_Mycenaean     1.000     0.0000  9999999999.000             2
+ Dominican_ElSoco_Ceramic     Iran_GanjDareh_N     1.000     0.0000  9999999999.500             4
+ Dominican_ElSoco_Ceramic            Iraq_PPNA     0.000     0.0000      0.000             1
+ Dominican_ElSoco_Ceramic     Iraq_PPNA_contam     1.000     0.0000  9999999999.667             7
+ Dominican_ElSoco_Ceramic Israel_MLBA_o_brother.I2200     1.000     0.0000  9999999999.500             5
+ Dominican_ElSoco_Ceramic    Israel_Natufian_d     0.000     0.0000      0.000             1
+ Dominican_ElSoco_Ceramic      Israel_Natufian     0.000     0.0000      0.000             1
+ Dominican_ElSoco_Ceramic Israel_Natufian_contam     1.000     0.0000  9999999999.000             6
+ Dominican_ElSoco_Ceramic          Jordan_PPNB     0.840     0.0000  8399999999.496             3
+ Dominican_ElSoco_Ceramic   Jordan_PPNB_contam     0.000     0.0000      0.000             2
+ Dominican_ElSoco_Ceramic       Jordan_PPNB_lc     0.000     0.0000      0.000             0
+ Dominican_ElSoco_Ceramic          Jordan_PPNC     1.000     0.0000  9999999999.000             3
+ Dominican_ElSoco_Ceramic Jordan_PPNC_1d.rel.I1699     0.000     0.0000      0.000             2
+ Dominican_ElSoco_Ceramic Malawi_Fingira_LSA_6000BP     1.000     0.0000  9999999999.500             2
+ Dominican_ElSoco_Ceramic Malawi_Fingira_LSA_6000BP_noUDG     1.000     0.0000  9999999999.500             3
+ Dominican_ElSoco_Ceramic      Montenegro_MLBA     1.000     0.0000  9999999999.667             6
+ Dominican_ElSoco_Ceramic Russia_Samara_EBA_Yamnaya     1.000     0.0000  9999999999.750             8
+ Dominican_ElSoco_Ceramic Russia_Uelen_OldBeringSea     1.000     0.0000  9999999999.750             7
+ Dominican_ElSoco_Ceramic             Turkey_N     0.000     0.0000      0.000             1
+ England_BellBeaker_highEEF England_BellBeaker_highWHG     0.000     0.0000      0.000             5
+ England_BellBeaker_highEEF England_MIA_LIA_o1_lc     0.000     0.0000      0.000             0
+ England_BellBeaker_highEEF England_N_Megalithic     1.000     0.0000  9999999999.000             1
+ England_BellBeaker_highEEF Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc     0.000     0.0000      0.000             0
+ England_BellBeaker_highEEF Greece_Delphi_BA_Mycenaean     0.000     0.0000      0.000             1
+ England_BellBeaker_highEEF     Iran_GanjDareh_N     1.000     0.0000  9999999999.000             1
+ England_BellBeaker_highEEF            Iraq_PPNA     0.000     0.0000      0.000             1
+ England_BellBeaker_highEEF     Iraq_PPNA_contam     1.000     0.0000  9999999999.000             4
+ England_BellBeaker_highEEF Israel_MLBA_o_brother.I2200     1.000     0.0000  9999999999.000             2
+ England_BellBeaker_highEEF    Israel_Natufian_d     0.000     0.0000      0.000             1
+ England_BellBeaker_highEEF      Israel_Natufian     0.000     0.0000      0.000             1
+ England_BellBeaker_highEEF Israel_Natufian_contam     0.000     0.0000      0.000             4
+ England_BellBeaker_highEEF          Jordan_PPNB     0.771     0.0000  7714285713.955             5
+ England_BellBeaker_highEEF   Jordan_PPNB_contam     0.000     0.0000      0.000             3
+ England_BellBeaker_highEEF       Jordan_PPNB_lc     0.000     0.0000      0.000             1
+ England_BellBeaker_highEEF          Jordan_PPNC     1.000     0.0000  9999999999.000             2
+ England_BellBeaker_highEEF Jordan_PPNC_1d.rel.I1699     0.000     0.0000      0.000             1
+ England_BellBeaker_highEEF Malawi_Fingira_LSA_6000BP     1.000     0.0000  9999999999.500             2
+ England_BellBeaker_highEEF Malawi_Fingira_LSA_6000BP_noUDG     1.000     0.0000  9999999999.500             2
+ England_BellBeaker_highEEF      Montenegro_MLBA     1.000     0.0000  9999999999.000             4
+ England_BellBeaker_highEEF Russia_Samara_EBA_Yamnaya     1.000     0.0000  9999999999.667             6
+ England_BellBeaker_highEEF Russia_Uelen_OldBeringSea     1.000     0.0000  9999999999.000             5
+ England_BellBeaker_highEEF             Turkey_N     0.000     0.0000      0.000             0
+ England_BellBeaker_highWHG England_MIA_LIA_o1_lc     0.000     0.0000      0.000             1
+ England_BellBeaker_highWHG England_N_Megalithic     1.000     0.0000  9999999999.000             3
+ England_BellBeaker_highWHG Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc     1.000     0.0000  9999999999.000             1
+ England_BellBeaker_highWHG Greece_Delphi_BA_Mycenaean     0.000     0.0000      0.000             0
+ England_BellBeaker_highWHG     Iran_GanjDareh_N     1.000     0.0000  9999999999.500             6
+ England_BellBeaker_highWHG            Iraq_PPNA     0.000     0.0000      0.000             4
+ England_BellBeaker_highWHG     Iraq_PPNA_contam     1.000     0.0000  9999999999.500            12
+ England_BellBeaker_highWHG Israel_MLBA_o_brother.I2200     1.000     0.0000  9999999999.000             5
+ England_BellBeaker_highWHG    Israel_Natufian_d     1.000     0.0000  9999999999.000             2
+ England_BellBeaker_highWHG      Israel_Natufian     1.000     0.0000  9999999999.000             2
+ England_BellBeaker_highWHG Israel_Natufian_contam     1.000     0.0000  9999999999.667            10
+ England_BellBeaker_highWHG          Jordan_PPNB     0.877     0.0000  8769230769.028             9
+ England_BellBeaker_highWHG   Jordan_PPNB_contam     1.000     0.0000  9999999999.500             6
+ England_BellBeaker_highWHG       Jordan_PPNB_lc     0.000     0.0000      0.000             1
+ England_BellBeaker_highWHG          Jordan_PPNC     1.000     0.0000  9999999999.667             6
+ England_BellBeaker_highWHG Jordan_PPNC_1d.rel.I1699     1.000     0.0000  9999999999.500             4
+ England_BellBeaker_highWHG Malawi_Fingira_LSA_6000BP     1.000     0.0000  9999999999.500             3
+ England_BellBeaker_highWHG Malawi_Fingira_LSA_6000BP_noUDG     1.000     0.0000  9999999999.750             6
+ England_BellBeaker_highWHG      Montenegro_MLBA     1.000     0.0000  9999999999.833            13
+ England_BellBeaker_highWHG Russia_Samara_EBA_Yamnaya     1.000     0.0000  9999999999.857            16
+ England_BellBeaker_highWHG Russia_Uelen_OldBeringSea     1.000     0.0000  9999999999.833            15
+ England_BellBeaker_highWHG             Turkey_N     0.000     0.0000      0.000             2
+ England_MIA_LIA_o1_lc England_N_Megalithic     0.000     0.0000      0.000             0
+ England_MIA_LIA_o1_lc Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc     0.000     0.0000      0.000             0
+ England_MIA_LIA_o1_lc Greece_Delphi_BA_Mycenaean     0.000     0.0000      0.000             0
+ England_MIA_LIA_o1_lc     Iran_GanjDareh_N     0.000     0.0000      0.000             1
+ England_MIA_LIA_o1_lc            Iraq_PPNA     0.000     0.0000      0.000             0
+ England_MIA_LIA_o1_lc     Iraq_PPNA_contam     0.000     0.0000      0.000             0
+ England_MIA_LIA_o1_lc Israel_MLBA_o_brother.I2200     0.000     0.0000      0.000             0
+ England_MIA_LIA_o1_lc    Israel_Natufian_d     0.000     0.0000      0.000             0
+ England_MIA_LIA_o1_lc      Israel_Natufian     0.000     0.0000      0.000             0
+ England_MIA_LIA_o1_lc Israel_Natufian_contam     0.000     0.0000      0.000             0
+ England_MIA_LIA_o1_lc          Jordan_PPNB     0.000     0.0000      0.000             0
+ England_MIA_LIA_o1_lc   Jordan_PPNB_contam     0.000     0.0000      0.000             1
+ England_MIA_LIA_o1_lc       Jordan_PPNB_lc     0.000     0.0000      0.000             0
+ England_MIA_LIA_o1_lc          Jordan_PPNC     0.000     0.0000      0.000             0
+ England_MIA_LIA_o1_lc Jordan_PPNC_1d.rel.I1699     0.000     0.0000      0.000             0
+ England_MIA_LIA_o1_lc Malawi_Fingira_LSA_6000BP     0.000     0.0000      0.000             0
+ England_MIA_LIA_o1_lc Malawi_Fingira_LSA_6000BP_noUDG     0.000     0.0000      0.000             0
+ England_MIA_LIA_o1_lc      Montenegro_MLBA     1.000     0.0000  9999999999.000             1
+ England_MIA_LIA_o1_lc Russia_Samara_EBA_Yamnaya     0.000     0.0000      0.000             1
+ England_MIA_LIA_o1_lc Russia_Uelen_OldBeringSea     0.000     0.0000      0.000             1
+ England_MIA_LIA_o1_lc             Turkey_N     0.000     0.0000      0.000             1
+ England_N_Megalithic Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc     0.000     0.0000      0.000             0
+ England_N_Megalithic Greece_Delphi_BA_Mycenaean     0.000     0.0000      0.000             0
+ England_N_Megalithic     Iran_GanjDareh_N     0.000     0.0000      0.000             2
+ England_N_Megalithic            Iraq_PPNA     0.000     0.0000      0.000             1
+ England_N_Megalithic     Iraq_PPNA_contam     0.000     0.0000      0.000             3
+ England_N_Megalithic Israel_MLBA_o_brother.I2200     0.000     0.0000      0.000             2
+ England_N_Megalithic    Israel_Natufian_d     0.000     0.0000      0.000             0
+ England_N_Megalithic      Israel_Natufian     0.000     0.0000      0.000             0
+ England_N_Megalithic Israel_Natufian_contam     1.000     0.0000  9999999999.500             2
+ England_N_Megalithic          Jordan_PPNB     1.000     0.0000  9999999999.000             3
+ England_N_Megalithic   Jordan_PPNB_contam     1.000     0.0000  9999999999.000             1
+ England_N_Megalithic       Jordan_PPNB_lc     0.000     0.0000      0.000             0
+ England_N_Megalithic          Jordan_PPNC     1.000     0.0000  9999999999.000             2
+ England_N_Megalithic Jordan_PPNC_1d.rel.I1699     0.000     0.0000      0.000             1
+ England_N_Megalithic Malawi_Fingira_LSA_6000BP     0.000     0.0000      0.000             1
+ England_N_Megalithic Malawi_Fingira_LSA_6000BP_noUDG     1.000     0.0000  9999999999.000             2
+ England_N_Megalithic      Montenegro_MLBA     1.000     0.0000  9999999999.500             2
+ England_N_Megalithic Russia_Samara_EBA_Yamnaya     0.000     0.0000      0.000             3
+ England_N_Megalithic Russia_Uelen_OldBeringSea     1.000     0.0000  9999999999.000             2
+ England_N_Megalithic             Turkey_N     0.000     0.0000      0.000             0
+ Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc Greece_Delphi_BA_Mycenaean     0.000     0.0000      0.000             0
+ Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc     Iran_GanjDareh_N     1.000     0.0000  9999999999.000             1
+ Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc            Iraq_PPNA     0.000     0.0000      0.000             0
+ Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc     Iraq_PPNA_contam     1.000     0.0000  9999999999.000             1
+ Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc Israel_MLBA_o_brother.I2200     0.000     0.0000      0.000             0
+ Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc    Israel_Natufian_d     0.000     0.0000      0.000             0
+ Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc      Israel_Natufian     0.000     0.0000      0.000             0
+ Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc Israel_Natufian_contam     0.000     0.0000      0.000             0
+ Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc          Jordan_PPNB     0.000     0.0000      0.000             0
+ Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc   Jordan_PPNB_contam     0.000     0.0000      0.000             1
+ Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc       Jordan_PPNB_lc     0.000     0.0000      0.000             0
+ Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc          Jordan_PPNC     0.000     0.0000      0.000             1
+ Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc Jordan_PPNC_1d.rel.I1699     0.000     0.0000      0.000             1
+ Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc Malawi_Fingira_LSA_6000BP     0.000     0.0000      0.000             0
+ Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc Malawi_Fingira_LSA_6000BP_noUDG     0.000     0.0000      0.000             0
+ Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc      Montenegro_MLBA     1.000     0.0000  9999999999.000             1
+ Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc Russia_Samara_EBA_Yamnaya     0.000     0.0000      0.000             1
+ Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc Russia_Uelen_OldBeringSea     0.000     0.0000      0.000             1
+ Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc             Turkey_N     0.000     0.0000      0.000             0
+ Greece_Delphi_BA_Mycenaean     Iran_GanjDareh_N     0.000     0.0000      0.000             1
+ Greece_Delphi_BA_Mycenaean            Iraq_PPNA     1.000     0.0000  9999999999.000             3
+ Greece_Delphi_BA_Mycenaean     Iraq_PPNA_contam     1.000     0.0000  9999999999.750             6
+ Greece_Delphi_BA_Mycenaean Israel_MLBA_o_brother.I2200     1.000     0.0000  9999999999.000             2
+ Greece_Delphi_BA_Mycenaean    Israel_Natufian_d     0.000     0.0000      0.000             0
+ Greece_Delphi_BA_Mycenaean      Israel_Natufian     0.000     0.0000      0.000             0
+ Greece_Delphi_BA_Mycenaean Israel_Natufian_contam     0.000     0.0000      0.000             4
+ Greece_Delphi_BA_Mycenaean          Jordan_PPNB     1.000     0.0000  9999999999.500             5
+ Greece_Delphi_BA_Mycenaean   Jordan_PPNB_contam     0.000     0.0000      0.000             1
+ Greece_Delphi_BA_Mycenaean       Jordan_PPNB_lc     0.000     0.0000      0.000             0
+ Greece_Delphi_BA_Mycenaean          Jordan_PPNC     1.000     0.0000  9999999999.667             5
+ Greece_Delphi_BA_Mycenaean Jordan_PPNC_1d.rel.I1699     1.000     0.0000  9999999999.000             3
+ Greece_Delphi_BA_Mycenaean Malawi_Fingira_LSA_6000BP     1.000     0.0000  9999999999.000             3
+ Greece_Delphi_BA_Mycenaean Malawi_Fingira_LSA_6000BP_noUDG     1.000     0.0000  9999999999.000             4
+ Greece_Delphi_BA_Mycenaean      Montenegro_MLBA     1.000     0.0000  9999999999.667             6
+ Greece_Delphi_BA_Mycenaean Russia_Samara_EBA_Yamnaya     1.000     0.0000  9999999999.667             8
+ Greece_Delphi_BA_Mycenaean Russia_Uelen_OldBeringSea     1.000     0.0000  9999999999.667             7
+ Greece_Delphi_BA_Mycenaean             Turkey_N     1.000     0.0000  9999999999.500             2
+     Iran_GanjDareh_N            Iraq_PPNA     0.000     0.0000      0.000             2
+     Iran_GanjDareh_N     Iraq_PPNA_contam     0.000     0.0000      0.000             6
+     Iran_GanjDareh_N Israel_MLBA_o_brother.I2200     1.000     0.0000  9999999999.000             3
+     Iran_GanjDareh_N    Israel_Natufian_d     0.000     0.0000      0.000             1
+     Iran_GanjDareh_N      Israel_Natufian     0.000     0.0000      0.000             1
+     Iran_GanjDareh_N Israel_Natufian_contam     1.000     0.0000  9999999999.000             3
+     Iran_GanjDareh_N          Jordan_PPNB     1.000     0.0000  9999999999.000             4
+     Iran_GanjDareh_N   Jordan_PPNB_contam     1.000     0.0000  9999999999.500             3
+     Iran_GanjDareh_N       Jordan_PPNB_lc     0.000     0.0000      0.000             0
+     Iran_GanjDareh_N          Jordan_PPNC     1.000     0.0000  9999999999.000             4
+     Iran_GanjDareh_N Jordan_PPNC_1d.rel.I1699     1.000     0.0000  9999999999.000             1
+     Iran_GanjDareh_N Malawi_Fingira_LSA_6000BP     0.000     0.0000      0.000             1
+     Iran_GanjDareh_N Malawi_Fingira_LSA_6000BP_noUDG     0.000     0.0000      0.000             3
+     Iran_GanjDareh_N      Montenegro_MLBA     1.000     0.0000  9999999999.750             7
+     Iran_GanjDareh_N Russia_Samara_EBA_Yamnaya     1.000     0.0000  9999999999.667             8
+     Iran_GanjDareh_N Russia_Uelen_OldBeringSea     1.000     0.0000  9999999999.667             6
+     Iran_GanjDareh_N             Turkey_N     0.000     0.0000      0.000             2
+            Iraq_PPNA     Iraq_PPNA_contam     1.000     0.0000  9999999999.667            12
+            Iraq_PPNA Israel_MLBA_o_brother.I2200     1.000     0.0000  9999999999.000             3
+            Iraq_PPNA    Israel_Natufian_d     0.000     0.0000      0.000             1
+            Iraq_PPNA      Israel_Natufian     0.000     0.0000      0.000             0
+            Iraq_PPNA Israel_Natufian_contam     1.000     0.0000  9999999999.667             8
+            Iraq_PPNA          Jordan_PPNB     0.900     0.0000  8999999999.831             7
+            Iraq_PPNA   Jordan_PPNB_contam     0.000     0.0000      0.000             4
+            Iraq_PPNA       Jordan_PPNB_lc     0.000     0.0000      0.000             0
+            Iraq_PPNA          Jordan_PPNC     1.000     0.0000  9999999999.667             8
+            Iraq_PPNA Jordan_PPNC_1d.rel.I1699     0.000     0.0000      0.000             3
+            Iraq_PPNA Malawi_Fingira_LSA_6000BP     1.000     0.0000  9999999999.500             4
+            Iraq_PPNA Malawi_Fingira_LSA_6000BP_noUDG     1.000     0.0000  9999999999.667             5
+            Iraq_PPNA      Montenegro_MLBA     1.000     0.0000  9999999999.667            13
+            Iraq_PPNA Russia_Samara_EBA_Yamnaya     1.000     0.0000  9999999999.000            14
+            Iraq_PPNA Russia_Uelen_OldBeringSea     1.000     0.0000  9999999999.750            12
+            Iraq_PPNA             Turkey_N     1.000     0.0000  9999999999.000             3
+     Iraq_PPNA_contam Israel_MLBA_o_brother.I2200     1.000     0.0000  9999999999.000             7
+     Iraq_PPNA_contam    Israel_Natufian_d     1.000     0.0000  9999999999.000             4
+     Iraq_PPNA_contam      Israel_Natufian     0.000     0.0000      0.000             3
+     Iraq_PPNA_contam Israel_Natufian_contam     1.000     0.0000  9999999999.857            18
+     Iraq_PPNA_contam          Jordan_PPNB     0.916     0.0000  9157894736.698            16
+     Iraq_PPNA_contam   Jordan_PPNB_contam     1.000     0.0000  9999999999.800             8
+     Iraq_PPNA_contam       Jordan_PPNB_lc     0.000     0.0000      0.000             1
+     Iraq_PPNA_contam          Jordan_PPNC     1.000     0.0000  9999999999.800            14
+     Iraq_PPNA_contam Jordan_PPNC_1d.rel.I1699     1.000     0.0000  9999999999.750             9
+     Iraq_PPNA_contam Malawi_Fingira_LSA_6000BP     1.000     0.0000  9999999999.667             7
+     Iraq_PPNA_contam Malawi_Fingira_LSA_6000BP_noUDG     1.000     0.0000  9999999999.667             9
+     Iraq_PPNA_contam      Montenegro_MLBA     1.000     0.0000  9999999999.900            23
+     Iraq_PPNA_contam Russia_Samara_EBA_Yamnaya     1.000     0.0000  9999999999.900            28
+     Iraq_PPNA_contam Russia_Uelen_OldBeringSea     1.000     0.0000  9999999999.909            25
+     Iraq_PPNA_contam             Turkey_N     1.000     0.0000  9999999999.500             6
+ Israel_MLBA_o_brother.I2200    Israel_Natufian_d     1.000     0.0000  9999999999.000             1
+ Israel_MLBA_o_brother.I2200      Israel_Natufian     1.000     0.0000  9999999999.000             1
+ Israel_MLBA_o_brother.I2200 Israel_Natufian_contam     1.000     0.0000  9999999999.750             7
+ Israel_MLBA_o_brother.I2200          Jordan_PPNB     0.840     0.0000  8399999999.496             6
+ Israel_MLBA_o_brother.I2200   Jordan_PPNB_contam     1.000     0.0000  9999999999.000             1
+ Israel_MLBA_o_brother.I2200       Jordan_PPNB_lc     0.000     0.0000      0.000             0
+ Israel_MLBA_o_brother.I2200          Jordan_PPNC     1.000     0.0000  9999999999.000             4
+ Israel_MLBA_o_brother.I2200 Jordan_PPNC_1d.rel.I1699     0.000     0.0000      0.000             2
+ Israel_MLBA_o_brother.I2200 Malawi_Fingira_LSA_6000BP     1.000     0.0000  9999999999.000             3
+ Israel_MLBA_o_brother.I2200 Malawi_Fingira_LSA_6000BP_noUDG     1.000     0.0000  9999999999.500             5
+ Israel_MLBA_o_brother.I2200      Montenegro_MLBA     1.000     0.0000  9999999999.667             7
+ Israel_MLBA_o_brother.I2200 Russia_Samara_EBA_Yamnaya     1.000     0.0000  9999999999.667             8
+ Israel_MLBA_o_brother.I2200 Russia_Uelen_OldBeringSea     1.000     0.0000  9999999999.800             7
+ Israel_MLBA_o_brother.I2200             Turkey_N     0.000     0.0000      0.000             2
+    Israel_Natufian_d      Israel_Natufian     1.000     0.0000  9999999999.000             3
+    Israel_Natufian_d Israel_Natufian_contam     1.000     0.0000  9999999999.000             3
+    Israel_Natufian_d          Jordan_PPNB     0.840     0.0000  8399999999.496             2
+    Israel_Natufian_d   Jordan_PPNB_contam     0.000     0.0000      0.000             0
+    Israel_Natufian_d       Jordan_PPNB_lc     0.000     0.0000      0.000             0
+    Israel_Natufian_d          Jordan_PPNC     0.000     0.0000      0.000             0
+    Israel_Natufian_d Jordan_PPNC_1d.rel.I1699     1.000     0.0000  9999999999.000             2
+    Israel_Natufian_d Malawi_Fingira_LSA_6000BP     0.000     0.0000      0.000             0
+    Israel_Natufian_d Malawi_Fingira_LSA_6000BP_noUDG     0.000     0.0000      0.000             1
+    Israel_Natufian_d      Montenegro_MLBA     1.000     0.0000  9999999999.500             4
+    Israel_Natufian_d Russia_Samara_EBA_Yamnaya     1.000     0.0000  9999999999.500             4
+    Israel_Natufian_d Russia_Uelen_OldBeringSea     1.000     0.0000  9999999999.500             4
+    Israel_Natufian_d             Turkey_N     0.000     0.0000      0.000             0
+      Israel_Natufian Israel_Natufian_contam     0.000     0.0000      0.000             3
+      Israel_Natufian          Jordan_PPNB     0.000     0.0000      0.000             1
+      Israel_Natufian   Jordan_PPNB_contam     0.000     0.0000      0.000             0
+      Israel_Natufian       Jordan_PPNB_lc     0.000     0.0000      0.000             0
+      Israel_Natufian          Jordan_PPNC     0.000     0.0000      0.000             0
+      Israel_Natufian Jordan_PPNC_1d.rel.I1699     0.000     0.0000      0.000             2
+      Israel_Natufian Malawi_Fingira_LSA_6000BP     0.000     0.0000      0.000             0
+      Israel_Natufian Malawi_Fingira_LSA_6000BP_noUDG     0.000     0.0000      0.000             1
+      Israel_Natufian      Montenegro_MLBA     1.000     0.0000  9999999999.000             3
+      Israel_Natufian Russia_Samara_EBA_Yamnaya     1.000     0.0000  9999999999.000             3
+      Israel_Natufian Russia_Uelen_OldBeringSea     1.000     0.0000  9999999999.000             3
+      Israel_Natufian             Turkey_N     0.000     0.0000      0.000             0
+ Israel_Natufian_contam          Jordan_PPNB     0.927     0.0000  9272727272.474            12
+ Israel_Natufian_contam   Jordan_PPNB_contam     0.000     0.0000      0.000             6
+ Israel_Natufian_contam       Jordan_PPNB_lc     0.000     0.0000      0.000             1
+ Israel_Natufian_contam          Jordan_PPNC     1.000     0.0000  9999999999.500             8
+ Israel_Natufian_contam Jordan_PPNC_1d.rel.I1699     1.000     0.0000  9999999999.500             5
+ Israel_Natufian_contam Malawi_Fingira_LSA_6000BP     1.000     0.0000  9999999999.833             8
+ Israel_Natufian_contam Malawi_Fingira_LSA_6000BP_noUDG     1.000     0.0000  9999999999.800            10
+ Israel_Natufian_contam      Montenegro_MLBA     1.000     0.0000  9999999999.750            17
+ Israel_Natufian_contam Russia_Samara_EBA_Yamnaya     1.000     0.0000  9999999999.889            19
+ Israel_Natufian_contam Russia_Uelen_OldBeringSea     1.000     0.0000  9999999999.833            18
+ Israel_Natufian_contam             Turkey_N     1.000     0.0000  9999999999.000             2
+          Jordan_PPNB   Jordan_PPNB_contam     0.900     0.0000  8999999999.663             5
+          Jordan_PPNB       Jordan_PPNB_lc     0.000     0.0000      0.000             1
+          Jordan_PPNB          Jordan_PPNC     0.927     0.0000  9272727272.474             8
+          Jordan_PPNB Jordan_PPNC_1d.rel.I1699     1.000     0.0000  9999999999.000             4
+          Jordan_PPNB Malawi_Fingira_LSA_6000BP     0.920     0.0000  9199999999.724             6
+          Jordan_PPNB Malawi_Fingira_LSA_6000BP_noUDG     0.886     0.0000  8857142856.763             9
+          Jordan_PPNB      Montenegro_MLBA     0.896     0.0000  8956521739.014            17
+          Jordan_PPNB Russia_Samara_EBA_Yamnaya     0.908     0.0000  9076923076.818            20
+          Jordan_PPNB Russia_Uelen_OldBeringSea     0.908     0.0000  9076923076.818            17
+          Jordan_PPNB             Turkey_N     1.000     0.0000  9999999999.000             3
+   Jordan_PPNB_contam       Jordan_PPNB_lc     0.000     0.0000      0.000             1
+   Jordan_PPNB_contam          Jordan_PPNC     1.000     0.0000  9999999999.000             4
+   Jordan_PPNB_contam Jordan_PPNC_1d.rel.I1699     0.000     0.0000      0.000             3
+   Jordan_PPNB_contam Malawi_Fingira_LSA_6000BP     1.000     0.0000  9999999999.500             3
+   Jordan_PPNB_contam Malawi_Fingira_LSA_6000BP_noUDG     1.000     0.0000  9999999999.500             3
+   Jordan_PPNB_contam      Montenegro_MLBA     1.000     0.0000  9999999999.500             8
+   Jordan_PPNB_contam Russia_Samara_EBA_Yamnaya     1.000     0.0000  9999999999.500             9
+   Jordan_PPNB_contam Russia_Uelen_OldBeringSea     1.000     0.0000  9999999999.500             8
+   Jordan_PPNB_contam             Turkey_N     0.000     0.0000      0.000             2
+       Jordan_PPNB_lc          Jordan_PPNC     1.000     0.0000  9999999999.000             1
+       Jordan_PPNB_lc Jordan_PPNC_1d.rel.I1699     0.000     0.0000      0.000             0
+       Jordan_PPNB_lc Malawi_Fingira_LSA_6000BP     0.000     0.0000      0.000             0
+       Jordan_PPNB_lc Malawi_Fingira_LSA_6000BP_noUDG     0.000     0.0000      0.000             0
+       Jordan_PPNB_lc      Montenegro_MLBA     0.000     0.0000      0.000             1
+       Jordan_PPNB_lc Russia_Samara_EBA_Yamnaya     1.000     0.0000  9999999999.000             1
+       Jordan_PPNB_lc Russia_Uelen_OldBeringSea     0.000     0.0000      0.000             1
+       Jordan_PPNB_lc             Turkey_N     0.000     0.0000      0.000             0
+          Jordan_PPNC Jordan_PPNC_1d.rel.I1699     1.000     0.0000  9999999999.667             4
+          Jordan_PPNC Malawi_Fingira_LSA_6000BP     1.000     0.0000  9999999999.500             5
+          Jordan_PPNC Malawi_Fingira_LSA_6000BP_noUDG     1.000     0.0000  9999999999.000             6
+          Jordan_PPNC      Montenegro_MLBA     1.000     0.0000  9999999999.833            13
+          Jordan_PPNC Russia_Samara_EBA_Yamnaya     1.000     0.0000  9999999999.800            14
+          Jordan_PPNC Russia_Uelen_OldBeringSea     1.000     0.0000  9999999999.750            12
+          Jordan_PPNC             Turkey_N     1.000     0.0000  9999999999.000             4
+ Jordan_PPNC_1d.rel.I1699 Malawi_Fingira_LSA_6000BP     0.000     0.0000      0.000             0
+ Jordan_PPNC_1d.rel.I1699 Malawi_Fingira_LSA_6000BP_noUDG     1.000     0.0000  9999999999.000             1
+ Jordan_PPNC_1d.rel.I1699      Montenegro_MLBA     1.000     0.0000  9999999999.500             8
+ Jordan_PPNC_1d.rel.I1699 Russia_Samara_EBA_Yamnaya     1.000     0.0000  9999999999.000             9
+ Jordan_PPNC_1d.rel.I1699 Russia_Uelen_OldBeringSea     1.000     0.0000  9999999999.667             8
+ Jordan_PPNC_1d.rel.I1699             Turkey_N     1.000     0.0000  9999999999.000             3
+ Malawi_Fingira_LSA_6000BP Malawi_Fingira_LSA_6000BP_noUDG     1.000     0.0000  9999999999.000             9
+ Malawi_Fingira_LSA_6000BP      Montenegro_MLBA     1.000     0.0000  9999999999.833             7
+ Malawi_Fingira_LSA_6000BP Russia_Samara_EBA_Yamnaya     1.000     0.0000  9999999999.800             9
+ Malawi_Fingira_LSA_6000BP Russia_Uelen_OldBeringSea     1.000     0.0000  9999999999.750             8
+ Malawi_Fingira_LSA_6000BP             Turkey_N     1.000     0.0000  9999999999.000             2
+ Malawi_Fingira_LSA_6000BP_noUDG      Montenegro_MLBA     1.000     0.0000  9999999999.857            11
+ Malawi_Fingira_LSA_6000BP_noUDG Russia_Samara_EBA_Yamnaya     1.000     0.0000  9999999999.833            13
+ Malawi_Fingira_LSA_6000BP_noUDG Russia_Uelen_OldBeringSea     1.000     0.0000  9999999999.875            12
+ Malawi_Fingira_LSA_6000BP_noUDG             Turkey_N     0.000     0.0000      0.000             2
+      Montenegro_MLBA Russia_Samara_EBA_Yamnaya     1.000     0.0000  9999999999.900            28
+      Montenegro_MLBA Russia_Uelen_OldBeringSea     1.000     0.0000  9999999999.909            27
+      Montenegro_MLBA             Turkey_N     1.000     0.0000  9999999999.500             6
+ Russia_Samara_EBA_Yamnaya Russia_Uelen_OldBeringSea     1.000     0.0000  9999999999.909            31
+ Russia_Samara_EBA_Yamnaya             Turkey_N     1.000     0.0000  9999999999.500             8
+ Russia_Uelen_OldBeringSea             Turkey_N     1.000     0.0000  9999999999.800             6
+
 ## end of Fst statistics between populations
 
-fst *1000:
-          C     C 
-   C      0   415
-   C    415     0
-
 std. err.  * 1000000:
-          C     C 
-   C      0     0
-   C      0     0
+          C     C     A     A     A     A     B     B     B     B     C     C     D     E     E     E     E     G     G     I     I     I     I     I     I     I     J     J     J     J     J     M     M     M     R     R     T 
+   C      0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+   C      0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+   A      0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+   A      0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+   A      0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+   A      0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+   B      0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+   B      0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+   B      0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+   B      0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+   C      0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+   C      0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+   D      0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+   E      0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+   E      0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+   E      0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+   E      0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+   G      0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+   G      0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+   I      0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+   I      0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+   I      0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+   I      0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+   I      0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+   I      0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+   I      0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+   J      0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+   J      0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+   J      0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+   J      0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+   J      0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+   M      0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+   M      0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+   M      0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+   R      0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+   R      0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+   T      0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
 
 eigenvector 1:means
-                Case     -0.505
-             Control      0.336
+Cuba_CanimarAbajo_Archaic     -0.457
+Malawi_Fingira_LSA_6000BP     -0.172
+Malawi_Fingira_LSA_6000BP_noUDG     -0.139
+China_AmurRiver_EarlyN     -0.122
+  Czech_IA_Hallstatt     -0.103
+Russia_Samara_EBA_Yamnaya     -0.065
+  China_AmurRiver_BA     -0.064
+Bahamas_SouthAndros_Ceramic     -0.053
+England_N_Megalithic     -0.052
+            Turkey_N     -0.038
+Jordan_PPNC_1d.rel.I1699     -0.037
+    Iran_GanjDareh_N     -0.037
+   Israel_Natufian_d     -0.030
+    Iraq_PPNA_contam     -0.028
+        Bulgaria_EIA     -0.018
+     Israel_Natufian     -0.017
+         Jordan_PPNC     -0.017
+         Jordan_PPNB     -0.016
+Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc     -0.014
+England_MIA_LIA_o1_lc     -0.011
+Israel_MLBA_o_brother.I2200     -0.009
+       Belize_4600BP      0.000
+     Bulgaria_LIA_lc      0.000
+    Albania_BA_IA_lc      0.000
+Greece_Delphi_BA_Mycenaean      0.014
+      Jordan_PPNB_lc      0.020
+           Iraq_PPNA      0.022
+  Jordan_PPNB_contam      0.024
+Dominican_ElSoco_Ceramic      0.031
+Albania_EarlyModern_oCaucasus      0.036
+  Armenia_Aknashen_N      0.064
+England_BellBeaker_highEEF      0.066
+England_BellBeaker_highWHG      0.075
+ Armenia_MasisBlur_N      0.172
+Israel_Natufian_contam      0.204
+Russia_Uelen_OldBeringSea      0.223
+     Montenegro_MLBA      0.724
 ## Anova statistics for population differences along each eigenvector:
                                               p-value
-             eigenvector_1_Case_Control_     0.0261881 
+                  eigenvector_1_overall_   5.31171e-07 +++
+ Cuba_CanimarAbajo_Archaic minv:    -0.457      Montenegro_MLBA maxv:     0.724
+eigenvector_1_China_AmurRiver_EarlyN_Greece_Delphi_BA_Mycenaean_     0.0499809 
+eigenvector_1_China_AmurRiver_EarlyN_Iraq_PPNA_     0.0601325 
+eigenvector_1_China_AmurRiver_EarlyN_Jordan_PPNB_    0.00371682 
+eigenvector_1_China_AmurRiver_EarlyN_Jordan_PPNB_contam_     0.0379168 
+eigenvector_1_China_AmurRiver_EarlyN_Jordan_PPNC_     0.0286484 
+eigenvector_1_Greece_Delphi_BA_Mycenaean_Iraq_PPNA_      0.851762 
+eigenvector_1_Greece_Delphi_BA_Mycenaean_Jordan_PPNB_      0.254974 
+eigenvector_1_Greece_Delphi_BA_Mycenaean_Jordan_PPNB_contam_      0.802402 
+eigenvector_1_Greece_Delphi_BA_Mycenaean_Jordan_PPNC_      0.370824 
+    eigenvector_1_Iraq_PPNA_Jordan_PPNB_      0.151914 
+eigenvector_1_Iraq_PPNA_Jordan_PPNB_contam_      0.944655 
+    eigenvector_1_Iraq_PPNA_Jordan_PPNC_      0.184022 
+eigenvector_1_Jordan_PPNB_Jordan_PPNB_contam_      0.107053 
+  eigenvector_1_Jordan_PPNB_Jordan_PPNC_      0.948402 
+eigenvector_1_Jordan_PPNB_contam_Jordan_PPNC_     0.0752061 
 eigenvector 2:means
-                Case     -0.085
-             Control      0.057
-             eigenvector_2_Case_Control_      0.803635 
+Russia_Uelen_OldBeringSea     -0.530
+Russia_Samara_EBA_Yamnaya     -0.414
+Cuba_CanimarAbajo_Archaic     -0.398
+     Montenegro_MLBA     -0.199
+China_AmurRiver_EarlyN     -0.093
+           Iraq_PPNA     -0.056
+Malawi_Fingira_LSA_6000BP     -0.043
+  China_AmurRiver_BA     -0.035
+England_N_Megalithic     -0.021
+Jordan_PPNC_1d.rel.I1699     -0.017
+Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc     -0.013
+Greece_Delphi_BA_Mycenaean     -0.004
+    Albania_BA_IA_lc     -0.000
+       Belize_4600BP      0.000
+     Bulgaria_LIA_lc      0.000
+         Jordan_PPNC      0.001
+England_MIA_LIA_o1_lc      0.002
+  Jordan_PPNB_contam      0.016
+Bahamas_SouthAndros_Ceramic      0.020
+     Israel_Natufian      0.021
+      Jordan_PPNB_lc      0.022
+        Bulgaria_EIA      0.028
+         Jordan_PPNB      0.037
+ Armenia_MasisBlur_N      0.037
+   Israel_Natufian_d      0.039
+  Armenia_Aknashen_N      0.051
+Israel_MLBA_o_brother.I2200      0.054
+    Iran_GanjDareh_N      0.055
+            Turkey_N      0.065
+Malawi_Fingira_LSA_6000BP_noUDG      0.077
+England_BellBeaker_highEEF      0.084
+  Czech_IA_Hallstatt      0.092
+Dominican_ElSoco_Ceramic      0.119
+Israel_Natufian_contam      0.127
+England_BellBeaker_highWHG      0.179
+    Iraq_PPNA_contam      0.261
+Albania_EarlyModern_oCaucasus      0.354
+                  eigenvector_2_overall_   2.24297e-06 ***
+ Russia_Uelen_OldBeringSea minv:    -0.530 Albania_EarlyModern_oCaucasus maxv:     0.354
+eigenvector_2_China_AmurRiver_EarlyN_Greece_Delphi_BA_Mycenaean_       0.07576 
+eigenvector_2_China_AmurRiver_EarlyN_Iraq_PPNA_      0.592399 
+eigenvector_2_China_AmurRiver_EarlyN_Jordan_PPNB_    0.00185808 
+eigenvector_2_China_AmurRiver_EarlyN_Jordan_PPNB_contam_     0.0371406 
+eigenvector_2_China_AmurRiver_EarlyN_Jordan_PPNC_     0.0177147 
+eigenvector_2_Greece_Delphi_BA_Mycenaean_Iraq_PPNA_      0.378435 
+eigenvector_2_Greece_Delphi_BA_Mycenaean_Jordan_PPNB_      0.136639 
+eigenvector_2_Greece_Delphi_BA_Mycenaean_Jordan_PPNB_contam_      0.553906 
+eigenvector_2_Greece_Delphi_BA_Mycenaean_Jordan_PPNC_      0.841702 
+    eigenvector_2_Iraq_PPNA_Jordan_PPNB_     0.0314108 
+eigenvector_2_Iraq_PPNA_Jordan_PPNB_contam_      0.322878 
+    eigenvector_2_Iraq_PPNA_Jordan_PPNC_      0.272499 
+eigenvector_2_Jordan_PPNB_Jordan_PPNB_contam_       0.44001 
+  eigenvector_2_Jordan_PPNB_Jordan_PPNC_      0.133232 
+eigenvector_2_Jordan_PPNB_contam_Jordan_PPNC_      0.338645 
 eigenvector 3:means
-             Control     -0.003
-                Case      0.004
-             eigenvector_3_Case_Control_      0.990691 
+Russia_Uelen_OldBeringSea     -0.627
+Albania_EarlyModern_oCaucasus     -0.314
+Israel_Natufian_contam     -0.264
+England_BellBeaker_highEEF     -0.078
+Dominican_ElSoco_Ceramic     -0.058
+  China_AmurRiver_BA     -0.049
+Greece_Delphi_BA_Mycenaean     -0.046
+  Jordan_PPNB_contam     -0.039
+Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc     -0.019
+         Jordan_PPNC     -0.015
+      Jordan_PPNB_lc     -0.013
+England_MIA_LIA_o1_lc     -0.011
+     Israel_Natufian     -0.007
+   Israel_Natufian_d     -0.003
+     Bulgaria_LIA_lc     -0.000
+       Belize_4600BP      0.000
+    Albania_BA_IA_lc      0.000
+England_BellBeaker_highWHG      0.000
+         Jordan_PPNB      0.001
+China_AmurRiver_EarlyN      0.012
+    Iraq_PPNA_contam      0.018
+  Armenia_Aknashen_N      0.023
+Bahamas_SouthAndros_Ceramic      0.037
+Malawi_Fingira_LSA_6000BP      0.039
+           Iraq_PPNA      0.042
+        Bulgaria_EIA      0.043
+England_N_Megalithic      0.050
+    Iran_GanjDareh_N      0.053
+Jordan_PPNC_1d.rel.I1699      0.059
+            Turkey_N      0.075
+Malawi_Fingira_LSA_6000BP_noUDG      0.089
+ Armenia_MasisBlur_N      0.094
+Israel_MLBA_o_brother.I2200      0.098
+  Czech_IA_Hallstatt      0.116
+Cuba_CanimarAbajo_Archaic      0.126
+Russia_Samara_EBA_Yamnaya      0.211
+     Montenegro_MLBA      0.461
+                  eigenvector_3_overall_    0.00770046 
+ Russia_Uelen_OldBeringSea minv:    -0.627      Montenegro_MLBA maxv:     0.461
+eigenvector_3_China_AmurRiver_EarlyN_Greece_Delphi_BA_Mycenaean_      0.458671 
+eigenvector_3_China_AmurRiver_EarlyN_Iraq_PPNA_      0.386133 
+eigenvector_3_China_AmurRiver_EarlyN_Jordan_PPNB_      0.879176 
+eigenvector_3_China_AmurRiver_EarlyN_Jordan_PPNB_contam_       0.28453 
+eigenvector_3_China_AmurRiver_EarlyN_Jordan_PPNC_      0.356973 
+eigenvector_3_Greece_Delphi_BA_Mycenaean_Iraq_PPNA_      0.277099 
+eigenvector_3_Greece_Delphi_BA_Mycenaean_Jordan_PPNB_      0.508384 
+eigenvector_3_Greece_Delphi_BA_Mycenaean_Jordan_PPNB_contam_      0.928264 
+eigenvector_3_Greece_Delphi_BA_Mycenaean_Jordan_PPNC_      0.587513 
+    eigenvector_3_Iraq_PPNA_Jordan_PPNB_      0.598673 
+eigenvector_3_Iraq_PPNA_Jordan_PPNB_contam_     0.0808338 
+    eigenvector_3_Iraq_PPNA_Jordan_PPNC_     0.0397323 
+eigenvector_3_Jordan_PPNB_Jordan_PPNB_contam_      0.612135 
+  eigenvector_3_Jordan_PPNB_Jordan_PPNC_      0.803127 
+eigenvector_3_Jordan_PPNB_contam_Jordan_PPNC_      0.387498 
 eigenvector 4:means
-             Control     -0.130
-                Case      0.195
-             eigenvector_4_Case_Control_      0.555757 
+Albania_EarlyModern_oCaucasus     -0.286
+  Czech_IA_Hallstatt     -0.274
+Israel_Natufian_contam     -0.211
+Cuba_CanimarAbajo_Archaic     -0.152
+     Montenegro_MLBA     -0.120
+ Armenia_MasisBlur_N     -0.088
+Dominican_ElSoco_Ceramic     -0.087
+Malawi_Fingira_LSA_6000BP_noUDG     -0.073
+            Turkey_N     -0.072
+  Jordan_PPNB_contam     -0.053
+Bahamas_SouthAndros_Ceramic     -0.040
+   Israel_Natufian_d     -0.038
+         Jordan_PPNC     -0.034
+Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc     -0.033
+Jordan_PPNC_1d.rel.I1699     -0.032
+     Israel_Natufian     -0.022
+         Jordan_PPNB     -0.022
+Greece_Delphi_BA_Mycenaean     -0.020
+China_AmurRiver_EarlyN     -0.017
+     Bulgaria_LIA_lc     -0.000
+       Belize_4600BP      0.000
+    Albania_BA_IA_lc      0.000
+England_MIA_LIA_o1_lc      0.003
+      Jordan_PPNB_lc      0.009
+England_BellBeaker_highEEF      0.010
+  China_AmurRiver_BA      0.012
+Malawi_Fingira_LSA_6000BP      0.024
+           Iraq_PPNA      0.061
+        Bulgaria_EIA      0.073
+England_N_Megalithic      0.075
+    Iran_GanjDareh_N      0.077
+Russia_Samara_EBA_Yamnaya      0.109
+Israel_MLBA_o_brother.I2200      0.113
+  Armenia_Aknashen_N      0.156
+Russia_Uelen_OldBeringSea      0.215
+England_BellBeaker_highWHG      0.330
+    Iraq_PPNA_contam      0.661
+                  eigenvector_4_overall_   0.000647539 ***
+ Albania_EarlyModern_oCaucasus minv:    -0.286     Iraq_PPNA_contam maxv:     0.661
+eigenvector_4_China_AmurRiver_EarlyN_Greece_Delphi_BA_Mycenaean_      0.825795 
+eigenvector_4_China_AmurRiver_EarlyN_Iraq_PPNA_     0.0825698 
+eigenvector_4_China_AmurRiver_EarlyN_Jordan_PPNB_      0.930899 
+eigenvector_4_China_AmurRiver_EarlyN_Jordan_PPNB_contam_      0.442502 
+eigenvector_4_China_AmurRiver_EarlyN_Jordan_PPNC_      0.772881 
+eigenvector_4_Greece_Delphi_BA_Mycenaean_Iraq_PPNA_     0.0140242 
+eigenvector_4_Greece_Delphi_BA_Mycenaean_Jordan_PPNB_      0.954972 
+eigenvector_4_Greece_Delphi_BA_Mycenaean_Jordan_PPNB_contam_      0.300419 
+eigenvector_4_Greece_Delphi_BA_Mycenaean_Jordan_PPNC_      0.740935 
+    eigenvector_4_Iraq_PPNA_Jordan_PPNB_      0.187771 
+eigenvector_4_Iraq_PPNA_Jordan_PPNB_contam_      0.109713 
+    eigenvector_4_Iraq_PPNA_Jordan_PPNC_      0.186155 
+eigenvector_4_Jordan_PPNB_Jordan_PPNB_contam_      0.609342 
+  eigenvector_4_Jordan_PPNB_Jordan_PPNC_      0.820339 
+eigenvector_4_Jordan_PPNB_contam_Jordan_PPNC_      0.771372 
 eigenvector 5:means
-                Case     -0.000
-             Control      0.000
-             eigenvector_5_Case_Control_      0.386544 
+  Czech_IA_Hallstatt     -0.368
+Russia_Uelen_OldBeringSea     -0.252
+Malawi_Fingira_LSA_6000BP     -0.243
+Malawi_Fingira_LSA_6000BP_noUDG     -0.234
+     Montenegro_MLBA     -0.163
+Bahamas_SouthAndros_Ceramic     -0.110
+    Iraq_PPNA_contam     -0.108
+  China_AmurRiver_BA     -0.097
+    Iran_GanjDareh_N     -0.082
+China_AmurRiver_EarlyN     -0.066
+         Jordan_PPNB     -0.056
+   Israel_Natufian_d     -0.039
+      Jordan_PPNB_lc     -0.019
+     Israel_Natufian     -0.017
+Greece_Delphi_BA_Mycenaean     -0.001
+       Belize_4600BP      0.000
+     Bulgaria_LIA_lc      0.000
+    Albania_BA_IA_lc      0.000
+England_MIA_LIA_o1_lc      0.008
+England_N_Megalithic      0.010
+Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc      0.012
+Israel_Natufian_contam      0.015
+         Jordan_PPNC      0.018
+        Bulgaria_EIA      0.047
+            Turkey_N      0.047
+Jordan_PPNC_1d.rel.I1699      0.057
+Israel_MLBA_o_brother.I2200      0.071
+  Jordan_PPNB_contam      0.079
+           Iraq_PPNA      0.081
+Cuba_CanimarAbajo_Archaic      0.089
+  Armenia_Aknashen_N      0.133
+Dominican_ElSoco_Ceramic      0.137
+England_BellBeaker_highEEF      0.141
+ Armenia_MasisBlur_N      0.145
+England_BellBeaker_highWHG      0.187
+Albania_EarlyModern_oCaucasus      0.284
+Russia_Samara_EBA_Yamnaya      0.505
+                  eigenvector_5_overall_     0.0151868 
+   Czech_IA_Hallstatt minv:    -0.368 Russia_Samara_EBA_Yamnaya maxv:     0.505
+eigenvector_5_China_AmurRiver_EarlyN_Greece_Delphi_BA_Mycenaean_     0.0264192 
+eigenvector_5_China_AmurRiver_EarlyN_Iraq_PPNA_     0.0353713 
+eigenvector_5_China_AmurRiver_EarlyN_Jordan_PPNB_       0.89076 
+eigenvector_5_China_AmurRiver_EarlyN_Jordan_PPNB_contam_      0.280112 
+eigenvector_5_China_AmurRiver_EarlyN_Jordan_PPNC_      0.307941 
+eigenvector_5_Greece_Delphi_BA_Mycenaean_Iraq_PPNA_     0.0458143 
+eigenvector_5_Greece_Delphi_BA_Mycenaean_Jordan_PPNB_      0.354669 
+eigenvector_5_Greece_Delphi_BA_Mycenaean_Jordan_PPNB_contam_      0.364292 
+eigenvector_5_Greece_Delphi_BA_Mycenaean_Jordan_PPNC_      0.741879 
+    eigenvector_5_Iraq_PPNA_Jordan_PPNB_     0.0921145 
+eigenvector_5_Iraq_PPNA_Jordan_PPNB_contam_      0.985252 
+    eigenvector_5_Iraq_PPNA_Jordan_PPNC_      0.444141 
+eigenvector_5_Jordan_PPNB_Jordan_PPNB_contam_      0.140194 
+  eigenvector_5_Jordan_PPNB_Jordan_PPNC_      0.280013 
+eigenvector_5_Jordan_PPNB_contam_Jordan_PPNC_      0.588419 
+eigenvector 6:means
+Russia_Samara_EBA_Yamnaya     -0.439
+Bahamas_SouthAndros_Ceramic     -0.124
+Malawi_Fingira_LSA_6000BP_noUDG     -0.108
+  Czech_IA_Hallstatt     -0.105
+China_AmurRiver_EarlyN     -0.083
+           Iraq_PPNA     -0.079
+Israel_Natufian_contam     -0.062
+         Jordan_PPNC     -0.056
+Israel_MLBA_o_brother.I2200     -0.047
+  China_AmurRiver_BA     -0.047
+         Jordan_PPNB     -0.045
+Dominican_ElSoco_Ceramic     -0.038
+        Bulgaria_EIA     -0.031
+Greece_Delphi_BA_Mycenaean     -0.026
+Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc     -0.023
+Malawi_Fingira_LSA_6000BP     -0.017
+England_N_Megalithic     -0.013
+Jordan_PPNC_1d.rel.I1699     -0.009
+England_MIA_LIA_o1_lc     -0.005
+   Israel_Natufian_d     -0.000
+     Bulgaria_LIA_lc     -0.000
+       Belize_4600BP      0.000
+    Albania_BA_IA_lc      0.000
+    Iran_GanjDareh_N      0.014
+  Jordan_PPNB_contam      0.018
+      Jordan_PPNB_lc      0.022
+     Israel_Natufian      0.024
+Russia_Uelen_OldBeringSea      0.035
+  Armenia_Aknashen_N      0.072
+            Turkey_N      0.076
+England_BellBeaker_highEEF      0.105
+England_BellBeaker_highWHG      0.127
+Albania_EarlyModern_oCaucasus      0.169
+    Iraq_PPNA_contam      0.172
+     Montenegro_MLBA      0.202
+ Armenia_MasisBlur_N      0.247
+Cuba_CanimarAbajo_Archaic      0.651
+                  eigenvector_6_overall_    0.00860337 
+ Russia_Samara_EBA_Yamnaya minv:    -0.439 Cuba_CanimarAbajo_Archaic maxv:     0.651
+eigenvector_6_China_AmurRiver_EarlyN_Greece_Delphi_BA_Mycenaean_      0.277662 
+eigenvector_6_China_AmurRiver_EarlyN_Iraq_PPNA_      0.930158 
+eigenvector_6_China_AmurRiver_EarlyN_Jordan_PPNB_      0.495384 
+eigenvector_6_China_AmurRiver_EarlyN_Jordan_PPNB_contam_     0.0564402 
+eigenvector_6_China_AmurRiver_EarlyN_Jordan_PPNC_      0.821702 
+eigenvector_6_Greece_Delphi_BA_Mycenaean_Iraq_PPNA_      0.338704 
+eigenvector_6_Greece_Delphi_BA_Mycenaean_Jordan_PPNB_      0.682817 
+eigenvector_6_Greece_Delphi_BA_Mycenaean_Jordan_PPNB_contam_      0.350479 
+eigenvector_6_Greece_Delphi_BA_Mycenaean_Jordan_PPNC_      0.749307 
+    eigenvector_6_Iraq_PPNA_Jordan_PPNB_      0.549685 
+eigenvector_6_Iraq_PPNA_Jordan_PPNB_contam_      0.107358 
+    eigenvector_6_Iraq_PPNA_Jordan_PPNC_      0.850804 
+eigenvector_6_Jordan_PPNB_Jordan_PPNB_contam_      0.266366 
+  eigenvector_6_Jordan_PPNB_Jordan_PPNC_      0.868229 
+eigenvector_6_Jordan_PPNB_contam_Jordan_PPNC_      0.543223 
+eigenvector 7:means
+  China_AmurRiver_BA     -0.355
+China_AmurRiver_EarlyN     -0.241
+Malawi_Fingira_LSA_6000BP     -0.201
+England_BellBeaker_highWHG     -0.181
+Jordan_PPNC_1d.rel.I1699     -0.176
+  Armenia_Aknashen_N     -0.139
+Dominican_ElSoco_Ceramic     -0.124
+Albania_EarlyModern_oCaucasus     -0.099
+Bahamas_SouthAndros_Ceramic     -0.092
+Israel_MLBA_o_brother.I2200     -0.076
+England_BellBeaker_highEEF     -0.066
+           Iraq_PPNA     -0.029
+     Montenegro_MLBA     -0.021
+  Jordan_PPNB_contam     -0.019
+        Bulgaria_EIA     -0.016
+         Jordan_PPNB     -0.004
+      Jordan_PPNB_lc     -0.002
+     Bulgaria_LIA_lc     -0.000
+       Belize_4600BP      0.000
+    Albania_BA_IA_lc      0.000
+England_MIA_LIA_o1_lc      0.001
+Russia_Uelen_OldBeringSea      0.001
+England_N_Megalithic      0.004
+Greece_Delphi_BA_Mycenaean      0.005
+Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc      0.007
+   Israel_Natufian_d      0.050
+     Israel_Natufian      0.054
+ Armenia_MasisBlur_N      0.064
+            Turkey_N      0.066
+    Iran_GanjDareh_N      0.095
+Malawi_Fingira_LSA_6000BP_noUDG      0.143
+         Jordan_PPNC      0.158
+Russia_Samara_EBA_Yamnaya      0.159
+Cuba_CanimarAbajo_Archaic      0.171
+  Czech_IA_Hallstatt      0.204
+Israel_Natufian_contam      0.264
+    Iraq_PPNA_contam      0.378
+                  eigenvector_7_overall_      0.149256 
+   China_AmurRiver_BA minv:    -0.355     Iraq_PPNA_contam maxv:     0.378
+eigenvector_7_China_AmurRiver_EarlyN_Greece_Delphi_BA_Mycenaean_     0.0387895 
+eigenvector_7_China_AmurRiver_EarlyN_Iraq_PPNA_   0.000912756 ***
+eigenvector_7_China_AmurRiver_EarlyN_Jordan_PPNB_   0.000610359 ***
+eigenvector_7_China_AmurRiver_EarlyN_Jordan_PPNB_contam_    0.00350275 
+eigenvector_7_China_AmurRiver_EarlyN_Jordan_PPNC_      0.120926 
+eigenvector_7_Greece_Delphi_BA_Mycenaean_Iraq_PPNA_      0.654281 
+eigenvector_7_Greece_Delphi_BA_Mycenaean_Jordan_PPNB_      0.847695 
+eigenvector_7_Greece_Delphi_BA_Mycenaean_Jordan_PPNB_contam_      0.752673 
+eigenvector_7_Greece_Delphi_BA_Mycenaean_Jordan_PPNC_      0.375573 
+    eigenvector_7_Iraq_PPNA_Jordan_PPNB_      0.546461 
+eigenvector_7_Iraq_PPNA_Jordan_PPNB_contam_      0.547108 
+    eigenvector_7_Iraq_PPNA_Jordan_PPNC_      0.386734 
+eigenvector_7_Jordan_PPNB_Jordan_PPNB_contam_      0.718736 
+  eigenvector_7_Jordan_PPNB_Jordan_PPNC_      0.115592 
+eigenvector_7_Jordan_PPNB_contam_Jordan_PPNC_       0.41054 
+eigenvector 8:means
+China_AmurRiver_EarlyN     -0.293
+  China_AmurRiver_BA     -0.277
+         Jordan_PPNC     -0.202
+    Iraq_PPNA_contam     -0.156
+ Armenia_MasisBlur_N     -0.156
+     Montenegro_MLBA     -0.127
+Albania_EarlyModern_oCaucasus     -0.110
+Dominican_ElSoco_Ceramic     -0.082
+   Israel_Natufian_d     -0.062
+Malawi_Fingira_LSA_6000BP     -0.060
+        Bulgaria_EIA     -0.015
+Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc     -0.006
+     Israel_Natufian     -0.003
+       Belize_4600BP      0.000
+     Bulgaria_LIA_lc      0.000
+    Albania_BA_IA_lc      0.000
+England_MIA_LIA_o1_lc      0.009
+    Iran_GanjDareh_N      0.030
+Malawi_Fingira_LSA_6000BP_noUDG      0.032
+  Jordan_PPNB_contam      0.033
+         Jordan_PPNB      0.041
+Bahamas_SouthAndros_Ceramic      0.045
+Russia_Uelen_OldBeringSea      0.045
+Cuba_CanimarAbajo_Archaic      0.048
+           Iraq_PPNA      0.055
+England_N_Megalithic      0.056
+England_BellBeaker_highEEF      0.057
+Israel_MLBA_o_brother.I2200      0.058
+            Turkey_N      0.062
+      Jordan_PPNB_lc      0.069
+Greece_Delphi_BA_Mycenaean      0.092
+England_BellBeaker_highWHG      0.112
+Russia_Samara_EBA_Yamnaya      0.122
+Jordan_PPNC_1d.rel.I1699      0.130
+  Armenia_Aknashen_N      0.159
+Israel_Natufian_contam      0.220
+  Czech_IA_Hallstatt      0.253
+                  eigenvector_8_overall_      0.676418 
+ China_AmurRiver_EarlyN minv:    -0.293   Czech_IA_Hallstatt maxv:     0.253
+eigenvector_8_China_AmurRiver_EarlyN_Greece_Delphi_BA_Mycenaean_     0.0129081 
+eigenvector_8_China_AmurRiver_EarlyN_Iraq_PPNA_     0.0715881 
+eigenvector_8_China_AmurRiver_EarlyN_Jordan_PPNB_   0.000550349 ***
+eigenvector_8_China_AmurRiver_EarlyN_Jordan_PPNB_contam_     0.0531817 
+eigenvector_8_China_AmurRiver_EarlyN_Jordan_PPNC_      0.746399 
+eigenvector_8_Greece_Delphi_BA_Mycenaean_Iraq_PPNA_      0.659726 
+eigenvector_8_Greece_Delphi_BA_Mycenaean_Jordan_PPNB_       0.30008 
+eigenvector_8_Greece_Delphi_BA_Mycenaean_Jordan_PPNB_contam_      0.413852 
+eigenvector_8_Greece_Delphi_BA_Mycenaean_Jordan_PPNC_      0.213444 
+    eigenvector_8_Iraq_PPNA_Jordan_PPNB_      0.817022 
+eigenvector_8_Iraq_PPNA_Jordan_PPNB_contam_      0.823823 
+    eigenvector_8_Iraq_PPNA_Jordan_PPNC_      0.391188 
+eigenvector_8_Jordan_PPNB_Jordan_PPNB_contam_      0.886375 
+  eigenvector_8_Jordan_PPNB_Jordan_PPNC_     0.0825822 
+eigenvector_8_Jordan_PPNB_contam_Jordan_PPNC_      0.420923 
+eigenvector 9:means
+England_BellBeaker_highWHG     -0.266
+ Armenia_MasisBlur_N     -0.148
+         Jordan_PPNC     -0.145
+Israel_Natufian_contam     -0.134
+England_BellBeaker_highEEF     -0.111
+  Armenia_Aknashen_N     -0.097
+Israel_MLBA_o_brother.I2200     -0.083
+Greece_Delphi_BA_Mycenaean     -0.059
+Dominican_ElSoco_Ceramic     -0.049
+        Bulgaria_EIA     -0.046
+Malawi_Fingira_LSA_6000BP     -0.038
+   Israel_Natufian_d     -0.036
+    Iran_GanjDareh_N     -0.034
+  Jordan_PPNB_contam     -0.029
+Cuba_CanimarAbajo_Archaic     -0.022
+Russia_Uelen_OldBeringSea     -0.014
+Jordan_PPNC_1d.rel.I1699     -0.008
+England_MIA_LIA_o1_lc     -0.007
+           Iraq_PPNA     -0.002
+    Albania_BA_IA_lc     -0.000
+     Bulgaria_LIA_lc     -0.000
+       Belize_4600BP      0.000
+            Turkey_N      0.004
+Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc      0.005
+      Jordan_PPNB_lc      0.007
+England_N_Megalithic      0.008
+Bahamas_SouthAndros_Ceramic      0.018
+Malawi_Fingira_LSA_6000BP_noUDG      0.020
+  China_AmurRiver_BA      0.026
+         Jordan_PPNB      0.027
+     Israel_Natufian      0.028
+  Czech_IA_Hallstatt      0.057
+China_AmurRiver_EarlyN      0.062
+     Montenegro_MLBA      0.160
+    Iraq_PPNA_contam      0.306
+Russia_Samara_EBA_Yamnaya      0.332
+Albania_EarlyModern_oCaucasus      0.488
+                  eigenvector_9_overall_      0.695179 
+ England_BellBeaker_highWHG minv:    -0.266 Albania_EarlyModern_oCaucasus maxv:     0.488
+eigenvector_9_China_AmurRiver_EarlyN_Greece_Delphi_BA_Mycenaean_     0.0431809 
+eigenvector_9_China_AmurRiver_EarlyN_Iraq_PPNA_      0.249337 
+eigenvector_9_China_AmurRiver_EarlyN_Jordan_PPNB_      0.798949 
+eigenvector_9_China_AmurRiver_EarlyN_Jordan_PPNB_contam_      0.260329 
+eigenvector_9_China_AmurRiver_EarlyN_Jordan_PPNC_      0.288591 
+eigenvector_9_Greece_Delphi_BA_Mycenaean_Iraq_PPNA_     0.0753339 
+eigenvector_9_Greece_Delphi_BA_Mycenaean_Jordan_PPNB_      0.443528 
+eigenvector_9_Greece_Delphi_BA_Mycenaean_Jordan_PPNB_contam_      0.488435 
+eigenvector_9_Greece_Delphi_BA_Mycenaean_Jordan_PPNC_      0.526551 
+    eigenvector_9_Iraq_PPNA_Jordan_PPNB_      0.833176 
+eigenvector_9_Iraq_PPNA_Jordan_PPNB_contam_      0.602533 
+    eigenvector_9_Iraq_PPNA_Jordan_PPNC_      0.433373 
+eigenvector_9_Jordan_PPNB_Jordan_PPNB_contam_       0.68829 
+  eigenvector_9_Jordan_PPNB_Jordan_PPNC_       0.22031 
+eigenvector_9_Jordan_PPNB_contam_Jordan_PPNC_       0.52472 
+eigenvector 10:means
+Israel_Natufian_contam     -0.252
+   Israel_Natufian_d     -0.198
+China_AmurRiver_EarlyN     -0.127
+England_BellBeaker_highWHG     -0.107
+Dominican_ElSoco_Ceramic     -0.097
+ Armenia_MasisBlur_N     -0.083
+Greece_Delphi_BA_Mycenaean     -0.083
+  China_AmurRiver_BA     -0.071
+           Iraq_PPNA     -0.067
+Cuba_CanimarAbajo_Archaic     -0.063
+  Czech_IA_Hallstatt     -0.058
+        Bulgaria_EIA     -0.056
+    Iran_GanjDareh_N     -0.045
+England_BellBeaker_highEEF     -0.043
+Bahamas_SouthAndros_Ceramic     -0.033
+Jordan_PPNC_1d.rel.I1699     -0.032
+England_N_Megalithic     -0.031
+     Israel_Natufian     -0.007
+  Jordan_PPNB_contam     -0.007
+Russia_Samara_EBA_Yamnaya     -0.004
+England_MIA_LIA_o1_lc     -0.003
+Israel_MLBA_o_brother.I2200     -0.003
+    Albania_BA_IA_lc     -0.000
+       Belize_4600BP      0.000
+     Bulgaria_LIA_lc      0.000
+            Turkey_N      0.001
+Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc      0.003
+      Jordan_PPNB_lc      0.009
+    Iraq_PPNA_contam      0.016
+  Armenia_Aknashen_N      0.025
+     Montenegro_MLBA      0.040
+         Jordan_PPNC      0.042
+Russia_Uelen_OldBeringSea      0.047
+Malawi_Fingira_LSA_6000BP      0.052
+Albania_EarlyModern_oCaucasus      0.082
+Malawi_Fingira_LSA_6000BP_noUDG      0.104
+         Jordan_PPNB      0.190
+                 eigenvector_10_overall_      0.994841 
+ Israel_Natufian_contam minv:    -0.252          Jordan_PPNB maxv:     0.190
+eigenvector_10_China_AmurRiver_EarlyN_Greece_Delphi_BA_Mycenaean_      0.649529 
+eigenvector_10_China_AmurRiver_EarlyN_Iraq_PPNA_      0.450067 
+eigenvector_10_China_AmurRiver_EarlyN_Jordan_PPNB_      0.167975 
+eigenvector_10_China_AmurRiver_EarlyN_Jordan_PPNB_contam_      0.060666 
+eigenvector_10_China_AmurRiver_EarlyN_Jordan_PPNC_     0.0239125 
+eigenvector_10_Greece_Delphi_BA_Mycenaean_Iraq_PPNA_      0.879585 
+eigenvector_10_Greece_Delphi_BA_Mycenaean_Jordan_PPNB_      0.147045 
+eigenvector_10_Greece_Delphi_BA_Mycenaean_Jordan_PPNB_contam_      0.441928 
+eigenvector_10_Greece_Delphi_BA_Mycenaean_Jordan_PPNC_      0.154378 
+   eigenvector_10_Iraq_PPNA_Jordan_PPNB_      0.254107 
+eigenvector_10_Iraq_PPNA_Jordan_PPNB_contam_      0.437403 
+   eigenvector_10_Iraq_PPNA_Jordan_PPNC_      0.150395 
+eigenvector_10_Jordan_PPNB_Jordan_PPNB_contam_      0.370064 
+ eigenvector_10_Jordan_PPNB_Jordan_PPNC_      0.398507 
+eigenvector_10_Jordan_PPNB_contam_Jordan_PPNC_      0.297526 
 
 ## Statistical significance of differences beween populations:
                                 pop1                  pop2      chisq          p-value   |pop1|   |pop2|
-popdifference:                  Case               Control        11.713     0.0389417       2       3
+popdifference:  China_AmurRiver_EarlyN    China_AmurRiver_BA         0.000             1       2       1
+popdifference:  China_AmurRiver_EarlyN      Albania_BA_IA_lc         0.000             1       2       1
+popdifference:  China_AmurRiver_EarlyN  Albania_EarlyModern_oCaucasus         0.000             1       2       1
+popdifference:  China_AmurRiver_EarlyN    Armenia_Aknashen_N         0.000             1       2       1
+popdifference:  China_AmurRiver_EarlyN   Armenia_MasisBlur_N         0.000             1       2       1
+popdifference:  China_AmurRiver_EarlyN  Bahamas_SouthAndros_Ceramic         0.000             1       2       1
+popdifference:  China_AmurRiver_EarlyN         Belize_4600BP         0.000             1       2       0
+popdifference:  China_AmurRiver_EarlyN          Bulgaria_EIA         0.000             1       2       1
+popdifference:  China_AmurRiver_EarlyN       Bulgaria_LIA_lc         0.000             1       2       1
+popdifference:  China_AmurRiver_EarlyN  Cuba_CanimarAbajo_Archaic         0.000             1       2       1
+popdifference:  China_AmurRiver_EarlyN    Czech_IA_Hallstatt         0.000             1       2       1
+popdifference:  China_AmurRiver_EarlyN  Dominican_ElSoco_Ceramic         0.000             1       2       1
+popdifference:  China_AmurRiver_EarlyN  England_BellBeaker_highEEF         0.000             1       2       1
+popdifference:  China_AmurRiver_EarlyN  England_BellBeaker_highWHG         0.000             1       2       1
+popdifference:  China_AmurRiver_EarlyN  England_MIA_LIA_o1_lc         0.000             1       2       1
+popdifference:  China_AmurRiver_EarlyN  England_N_Megalithic         0.000             1       2       1
+popdifference:  China_AmurRiver_EarlyN  Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc         0.000             1       2       1
+popdifference:  China_AmurRiver_EarlyN  Greece_Delphi_BA_Mycenaean        54.526   3.87205e-08       2       3
+popdifference:  China_AmurRiver_EarlyN      Iran_GanjDareh_N         0.000             1       2       1
+popdifference:  China_AmurRiver_EarlyN             Iraq_PPNA        67.173   1.55295e-10       2       2
+popdifference:  China_AmurRiver_EarlyN      Iraq_PPNA_contam         0.000             1       2       1
+popdifference:  China_AmurRiver_EarlyN  Israel_MLBA_o_brother.I2200         0.000             1       2       1
+popdifference:  China_AmurRiver_EarlyN     Israel_Natufian_d         0.000             1       2       1
+popdifference:  China_AmurRiver_EarlyN       Israel_Natufian         0.000             1       2       1
+popdifference:  China_AmurRiver_EarlyN  Israel_Natufian_contam         0.000             1       2       1
+popdifference:  China_AmurRiver_EarlyN           Jordan_PPNB        60.539   2.86535e-09       2       7
+popdifference:  China_AmurRiver_EarlyN    Jordan_PPNB_contam        77.638   1.45506e-12       2       2
+popdifference:  China_AmurRiver_EarlyN        Jordan_PPNB_lc         0.000             1       2       1
+popdifference:  China_AmurRiver_EarlyN           Jordan_PPNC        40.614   1.32037e-05       2       3
+popdifference:  China_AmurRiver_EarlyN  Jordan_PPNC_1d.rel.I1699         0.000             1       2       1
+popdifference:  China_AmurRiver_EarlyN  Malawi_Fingira_LSA_6000BP         0.000             1       2       1
+popdifference:  China_AmurRiver_EarlyN  Malawi_Fingira_LSA_6000BP_noUDG         0.000             1       2       1
+popdifference:  China_AmurRiver_EarlyN       Montenegro_MLBA         0.000             1       2       1
+popdifference:  China_AmurRiver_EarlyN  Russia_Samara_EBA_Yamnaya         0.000             1       2       1
+popdifference:  China_AmurRiver_EarlyN  Russia_Uelen_OldBeringSea         0.000             1       2       1
+popdifference:  China_AmurRiver_EarlyN              Turkey_N         0.000             1       2       1
+popdifference:    China_AmurRiver_BA      Albania_BA_IA_lc         0.000             1       1       1
+popdifference:    China_AmurRiver_BA  Albania_EarlyModern_oCaucasus         0.000             1       1       1
+popdifference:    China_AmurRiver_BA    Armenia_Aknashen_N         0.000             1       1       1
+popdifference:    China_AmurRiver_BA   Armenia_MasisBlur_N         0.000             1       1       1
+popdifference:    China_AmurRiver_BA  Bahamas_SouthAndros_Ceramic         0.000             1       1       1
+popdifference:    China_AmurRiver_BA         Belize_4600BP         0.000             1       1       0
+popdifference:    China_AmurRiver_BA          Bulgaria_EIA         0.000             1       1       1
+popdifference:    China_AmurRiver_BA       Bulgaria_LIA_lc         0.000             1       1       1
+popdifference:    China_AmurRiver_BA  Cuba_CanimarAbajo_Archaic         0.000             1       1       1
+popdifference:    China_AmurRiver_BA    Czech_IA_Hallstatt         0.000             1       1       1
+popdifference:    China_AmurRiver_BA  Dominican_ElSoco_Ceramic         0.000             1       1       1
+popdifference:    China_AmurRiver_BA  England_BellBeaker_highEEF         0.000             1       1       1
+popdifference:    China_AmurRiver_BA  England_BellBeaker_highWHG         0.000             1       1       1
+popdifference:    China_AmurRiver_BA  England_MIA_LIA_o1_lc         0.000             1       1       1
+popdifference:    China_AmurRiver_BA  England_N_Megalithic         0.000             1       1       1
+popdifference:    China_AmurRiver_BA  Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc         0.000             1       1       1
+popdifference:    China_AmurRiver_BA  Greece_Delphi_BA_Mycenaean         0.000             1       1       3
+popdifference:    China_AmurRiver_BA      Iran_GanjDareh_N         0.000             1       1       1
+popdifference:    China_AmurRiver_BA             Iraq_PPNA         0.000             1       1       2
+popdifference:    China_AmurRiver_BA      Iraq_PPNA_contam         0.000             1       1       1
+popdifference:    China_AmurRiver_BA  Israel_MLBA_o_brother.I2200         0.000             1       1       1
+popdifference:    China_AmurRiver_BA     Israel_Natufian_d         0.000             1       1       1
+popdifference:    China_AmurRiver_BA       Israel_Natufian         0.000             1       1       1
+popdifference:    China_AmurRiver_BA  Israel_Natufian_contam         0.000             1       1       1
+popdifference:    China_AmurRiver_BA           Jordan_PPNB         0.000             1       1       7
+popdifference:    China_AmurRiver_BA    Jordan_PPNB_contam         0.000             1       1       2
+popdifference:    China_AmurRiver_BA        Jordan_PPNB_lc         0.000             1       1       1
+popdifference:    China_AmurRiver_BA           Jordan_PPNC         0.000             1       1       3
+popdifference:    China_AmurRiver_BA  Jordan_PPNC_1d.rel.I1699         0.000             1       1       1
+popdifference:    China_AmurRiver_BA  Malawi_Fingira_LSA_6000BP         0.000             1       1       1
+popdifference:    China_AmurRiver_BA  Malawi_Fingira_LSA_6000BP_noUDG         0.000             1       1       1
+popdifference:    China_AmurRiver_BA       Montenegro_MLBA         0.000             1       1       1
+popdifference:    China_AmurRiver_BA  Russia_Samara_EBA_Yamnaya         0.000             1       1       1
+popdifference:    China_AmurRiver_BA  Russia_Uelen_OldBeringSea         0.000             1       1       1
+popdifference:    China_AmurRiver_BA              Turkey_N         0.000             1       1       1
+popdifference:      Albania_BA_IA_lc  Albania_EarlyModern_oCaucasus         0.000             1       1       1
+popdifference:      Albania_BA_IA_lc    Armenia_Aknashen_N         0.000             1       1       1
+popdifference:      Albania_BA_IA_lc   Armenia_MasisBlur_N         0.000             1       1       1
+popdifference:      Albania_BA_IA_lc  Bahamas_SouthAndros_Ceramic         0.000             1       1       1
+popdifference:      Albania_BA_IA_lc         Belize_4600BP         0.000             1       1       0
+popdifference:      Albania_BA_IA_lc          Bulgaria_EIA         0.000             1       1       1
+popdifference:      Albania_BA_IA_lc       Bulgaria_LIA_lc         0.000             1       1       1
+popdifference:      Albania_BA_IA_lc  Cuba_CanimarAbajo_Archaic         0.000             1       1       1
+popdifference:      Albania_BA_IA_lc    Czech_IA_Hallstatt         0.000             1       1       1
+popdifference:      Albania_BA_IA_lc  Dominican_ElSoco_Ceramic         0.000             1       1       1
+popdifference:      Albania_BA_IA_lc  England_BellBeaker_highEEF         0.000             1       1       1
+popdifference:      Albania_BA_IA_lc  England_BellBeaker_highWHG         0.000             1       1       1
+popdifference:      Albania_BA_IA_lc  England_MIA_LIA_o1_lc         0.000             1       1       1
+popdifference:      Albania_BA_IA_lc  England_N_Megalithic         0.000             1       1       1
+popdifference:      Albania_BA_IA_lc  Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc         0.000             1       1       1
+popdifference:      Albania_BA_IA_lc  Greece_Delphi_BA_Mycenaean         0.000             1       1       3
+popdifference:      Albania_BA_IA_lc      Iran_GanjDareh_N         0.000             1       1       1
+popdifference:      Albania_BA_IA_lc             Iraq_PPNA         0.000             1       1       2
+popdifference:      Albania_BA_IA_lc      Iraq_PPNA_contam         0.000             1       1       1
+popdifference:      Albania_BA_IA_lc  Israel_MLBA_o_brother.I2200         0.000             1       1       1
+popdifference:      Albania_BA_IA_lc     Israel_Natufian_d         0.000             1       1       1
+popdifference:      Albania_BA_IA_lc       Israel_Natufian         0.000             1       1       1
+popdifference:      Albania_BA_IA_lc  Israel_Natufian_contam         0.000             1       1       1
+popdifference:      Albania_BA_IA_lc           Jordan_PPNB         0.000             1       1       7
+popdifference:      Albania_BA_IA_lc    Jordan_PPNB_contam         0.000             1       1       2
+popdifference:      Albania_BA_IA_lc        Jordan_PPNB_lc         0.000             1       1       1
+popdifference:      Albania_BA_IA_lc           Jordan_PPNC         0.000             1       1       3
+popdifference:      Albania_BA_IA_lc  Jordan_PPNC_1d.rel.I1699         0.000             1       1       1
+popdifference:      Albania_BA_IA_lc  Malawi_Fingira_LSA_6000BP         0.000             1       1       1
+popdifference:      Albania_BA_IA_lc  Malawi_Fingira_LSA_6000BP_noUDG         0.000             1       1       1
+popdifference:      Albania_BA_IA_lc       Montenegro_MLBA         0.000             1       1       1
+popdifference:      Albania_BA_IA_lc  Russia_Samara_EBA_Yamnaya         0.000             1       1       1
+popdifference:      Albania_BA_IA_lc  Russia_Uelen_OldBeringSea         0.000             1       1       1
+popdifference:      Albania_BA_IA_lc              Turkey_N         0.000             1       1       1
+popdifference:  Albania_EarlyModern_oCaucasus    Armenia_Aknashen_N         0.000             1       1       1
+popdifference:  Albania_EarlyModern_oCaucasus   Armenia_MasisBlur_N         0.000             1       1       1
+popdifference:  Albania_EarlyModern_oCaucasus  Bahamas_SouthAndros_Ceramic         0.000             1       1       1
+popdifference:  Albania_EarlyModern_oCaucasus         Belize_4600BP         0.000             1       1       0
+popdifference:  Albania_EarlyModern_oCaucasus          Bulgaria_EIA         0.000             1       1       1
+popdifference:  Albania_EarlyModern_oCaucasus       Bulgaria_LIA_lc         0.000             1       1       1
+popdifference:  Albania_EarlyModern_oCaucasus  Cuba_CanimarAbajo_Archaic         0.000             1       1       1
+popdifference:  Albania_EarlyModern_oCaucasus    Czech_IA_Hallstatt         0.000             1       1       1
+popdifference:  Albania_EarlyModern_oCaucasus  Dominican_ElSoco_Ceramic         0.000             1       1       1
+popdifference:  Albania_EarlyModern_oCaucasus  England_BellBeaker_highEEF         0.000             1       1       1
+popdifference:  Albania_EarlyModern_oCaucasus  England_BellBeaker_highWHG         0.000             1       1       1
+popdifference:  Albania_EarlyModern_oCaucasus  England_MIA_LIA_o1_lc         0.000             1       1       1
+popdifference:  Albania_EarlyModern_oCaucasus  England_N_Megalithic         0.000             1       1       1
+popdifference:  Albania_EarlyModern_oCaucasus  Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc         0.000             1       1       1
+popdifference:  Albania_EarlyModern_oCaucasus  Greece_Delphi_BA_Mycenaean         0.000             1       1       3
+popdifference:  Albania_EarlyModern_oCaucasus      Iran_GanjDareh_N         0.000             1       1       1
+popdifference:  Albania_EarlyModern_oCaucasus             Iraq_PPNA         0.000             1       1       2
+popdifference:  Albania_EarlyModern_oCaucasus      Iraq_PPNA_contam         0.000             1       1       1
+popdifference:  Albania_EarlyModern_oCaucasus  Israel_MLBA_o_brother.I2200         0.000             1       1       1
+popdifference:  Albania_EarlyModern_oCaucasus     Israel_Natufian_d         0.000             1       1       1
+popdifference:  Albania_EarlyModern_oCaucasus       Israel_Natufian         0.000             1       1       1
+popdifference:  Albania_EarlyModern_oCaucasus  Israel_Natufian_contam         0.000             1       1       1
+popdifference:  Albania_EarlyModern_oCaucasus           Jordan_PPNB         0.000             1       1       7
+popdifference:  Albania_EarlyModern_oCaucasus    Jordan_PPNB_contam         0.000             1       1       2
+popdifference:  Albania_EarlyModern_oCaucasus        Jordan_PPNB_lc         0.000             1       1       1
+popdifference:  Albania_EarlyModern_oCaucasus           Jordan_PPNC         0.000             1       1       3
+popdifference:  Albania_EarlyModern_oCaucasus  Jordan_PPNC_1d.rel.I1699         0.000             1       1       1
+popdifference:  Albania_EarlyModern_oCaucasus  Malawi_Fingira_LSA_6000BP         0.000             1       1       1
+popdifference:  Albania_EarlyModern_oCaucasus  Malawi_Fingira_LSA_6000BP_noUDG         0.000             1       1       1
+popdifference:  Albania_EarlyModern_oCaucasus       Montenegro_MLBA         0.000             1       1       1
+popdifference:  Albania_EarlyModern_oCaucasus  Russia_Samara_EBA_Yamnaya         0.000             1       1       1
+popdifference:  Albania_EarlyModern_oCaucasus  Russia_Uelen_OldBeringSea         0.000             1       1       1
+popdifference:  Albania_EarlyModern_oCaucasus              Turkey_N         0.000             1       1       1
+popdifference:    Armenia_Aknashen_N   Armenia_MasisBlur_N         0.000             1       1       1
+popdifference:    Armenia_Aknashen_N  Bahamas_SouthAndros_Ceramic         0.000             1       1       1
+popdifference:    Armenia_Aknashen_N         Belize_4600BP         0.000             1       1       0
+popdifference:    Armenia_Aknashen_N          Bulgaria_EIA         0.000             1       1       1
+popdifference:    Armenia_Aknashen_N       Bulgaria_LIA_lc         0.000             1       1       1
+popdifference:    Armenia_Aknashen_N  Cuba_CanimarAbajo_Archaic         0.000             1       1       1
+popdifference:    Armenia_Aknashen_N    Czech_IA_Hallstatt         0.000             1       1       1
+popdifference:    Armenia_Aknashen_N  Dominican_ElSoco_Ceramic         0.000             1       1       1
+popdifference:    Armenia_Aknashen_N  England_BellBeaker_highEEF         0.000             1       1       1
+popdifference:    Armenia_Aknashen_N  England_BellBeaker_highWHG         0.000             1       1       1
+popdifference:    Armenia_Aknashen_N  England_MIA_LIA_o1_lc         0.000             1       1       1
+popdifference:    Armenia_Aknashen_N  England_N_Megalithic         0.000             1       1       1
+popdifference:    Armenia_Aknashen_N  Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc         0.000             1       1       1
+popdifference:    Armenia_Aknashen_N  Greece_Delphi_BA_Mycenaean         0.000             1       1       3
+popdifference:    Armenia_Aknashen_N      Iran_GanjDareh_N         0.000             1       1       1
+popdifference:    Armenia_Aknashen_N             Iraq_PPNA         0.000             1       1       2
+popdifference:    Armenia_Aknashen_N      Iraq_PPNA_contam         0.000             1       1       1
+popdifference:    Armenia_Aknashen_N  Israel_MLBA_o_brother.I2200         0.000             1       1       1
+popdifference:    Armenia_Aknashen_N     Israel_Natufian_d         0.000             1       1       1
+popdifference:    Armenia_Aknashen_N       Israel_Natufian         0.000             1       1       1
+popdifference:    Armenia_Aknashen_N  Israel_Natufian_contam         0.000             1       1       1
+popdifference:    Armenia_Aknashen_N           Jordan_PPNB         0.000             1       1       7
+popdifference:    Armenia_Aknashen_N    Jordan_PPNB_contam         0.000             1       1       2
+popdifference:    Armenia_Aknashen_N        Jordan_PPNB_lc         0.000             1       1       1
+popdifference:    Armenia_Aknashen_N           Jordan_PPNC         0.000             1       1       3
+popdifference:    Armenia_Aknashen_N  Jordan_PPNC_1d.rel.I1699         0.000             1       1       1
+popdifference:    Armenia_Aknashen_N  Malawi_Fingira_LSA_6000BP         0.000             1       1       1
+popdifference:    Armenia_Aknashen_N  Malawi_Fingira_LSA_6000BP_noUDG         0.000             1       1       1
+popdifference:    Armenia_Aknashen_N       Montenegro_MLBA         0.000             1       1       1
+popdifference:    Armenia_Aknashen_N  Russia_Samara_EBA_Yamnaya         0.000             1       1       1
+popdifference:    Armenia_Aknashen_N  Russia_Uelen_OldBeringSea         0.000             1       1       1
+popdifference:    Armenia_Aknashen_N              Turkey_N         0.000             1       1       1
+popdifference:   Armenia_MasisBlur_N  Bahamas_SouthAndros_Ceramic         0.000             1       1       1
+popdifference:   Armenia_MasisBlur_N         Belize_4600BP         0.000             1       1       0
+popdifference:   Armenia_MasisBlur_N          Bulgaria_EIA         0.000             1       1       1
+popdifference:   Armenia_MasisBlur_N       Bulgaria_LIA_lc         0.000             1       1       1
+popdifference:   Armenia_MasisBlur_N  Cuba_CanimarAbajo_Archaic         0.000             1       1       1
+popdifference:   Armenia_MasisBlur_N    Czech_IA_Hallstatt         0.000             1       1       1
+popdifference:   Armenia_MasisBlur_N  Dominican_ElSoco_Ceramic         0.000             1       1       1
+popdifference:   Armenia_MasisBlur_N  England_BellBeaker_highEEF         0.000             1       1       1
+popdifference:   Armenia_MasisBlur_N  England_BellBeaker_highWHG         0.000             1       1       1
+popdifference:   Armenia_MasisBlur_N  England_MIA_LIA_o1_lc         0.000             1       1       1
+popdifference:   Armenia_MasisBlur_N  England_N_Megalithic         0.000             1       1       1
+popdifference:   Armenia_MasisBlur_N  Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc         0.000             1       1       1
+popdifference:   Armenia_MasisBlur_N  Greece_Delphi_BA_Mycenaean         0.000             1       1       3
+popdifference:   Armenia_MasisBlur_N      Iran_GanjDareh_N         0.000             1       1       1
+popdifference:   Armenia_MasisBlur_N             Iraq_PPNA         0.000             1       1       2
+popdifference:   Armenia_MasisBlur_N      Iraq_PPNA_contam         0.000             1       1       1
+popdifference:   Armenia_MasisBlur_N  Israel_MLBA_o_brother.I2200         0.000             1       1       1
+popdifference:   Armenia_MasisBlur_N     Israel_Natufian_d         0.000             1       1       1
+popdifference:   Armenia_MasisBlur_N       Israel_Natufian         0.000             1       1       1
+popdifference:   Armenia_MasisBlur_N  Israel_Natufian_contam         0.000             1       1       1
+popdifference:   Armenia_MasisBlur_N           Jordan_PPNB         0.000             1       1       7
+popdifference:   Armenia_MasisBlur_N    Jordan_PPNB_contam         0.000             1       1       2
+popdifference:   Armenia_MasisBlur_N        Jordan_PPNB_lc         0.000             1       1       1
+popdifference:   Armenia_MasisBlur_N           Jordan_PPNC         0.000             1       1       3
+popdifference:   Armenia_MasisBlur_N  Jordan_PPNC_1d.rel.I1699         0.000             1       1       1
+popdifference:   Armenia_MasisBlur_N  Malawi_Fingira_LSA_6000BP         0.000             1       1       1
+popdifference:   Armenia_MasisBlur_N  Malawi_Fingira_LSA_6000BP_noUDG         0.000             1       1       1
+popdifference:   Armenia_MasisBlur_N       Montenegro_MLBA         0.000             1       1       1
+popdifference:   Armenia_MasisBlur_N  Russia_Samara_EBA_Yamnaya         0.000             1       1       1
+popdifference:   Armenia_MasisBlur_N  Russia_Uelen_OldBeringSea         0.000             1       1       1
+popdifference:   Armenia_MasisBlur_N              Turkey_N         0.000             1       1       1
+popdifference:  Bahamas_SouthAndros_Ceramic         Belize_4600BP         0.000             1       1       0
+popdifference:  Bahamas_SouthAndros_Ceramic          Bulgaria_EIA         0.000             1       1       1
+popdifference:  Bahamas_SouthAndros_Ceramic       Bulgaria_LIA_lc         0.000             1       1       1
+popdifference:  Bahamas_SouthAndros_Ceramic  Cuba_CanimarAbajo_Archaic         0.000             1       1       1
+popdifference:  Bahamas_SouthAndros_Ceramic    Czech_IA_Hallstatt         0.000             1       1       1
+popdifference:  Bahamas_SouthAndros_Ceramic  Dominican_ElSoco_Ceramic         0.000             1       1       1
+popdifference:  Bahamas_SouthAndros_Ceramic  England_BellBeaker_highEEF         0.000             1       1       1
+popdifference:  Bahamas_SouthAndros_Ceramic  England_BellBeaker_highWHG         0.000             1       1       1
+popdifference:  Bahamas_SouthAndros_Ceramic  England_MIA_LIA_o1_lc         0.000             1       1       1
+popdifference:  Bahamas_SouthAndros_Ceramic  England_N_Megalithic         0.000             1       1       1
+popdifference:  Bahamas_SouthAndros_Ceramic  Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc         0.000             1       1       1
+popdifference:  Bahamas_SouthAndros_Ceramic  Greece_Delphi_BA_Mycenaean         0.000             1       1       3
+popdifference:  Bahamas_SouthAndros_Ceramic      Iran_GanjDareh_N         0.000             1       1       1
+popdifference:  Bahamas_SouthAndros_Ceramic             Iraq_PPNA         0.000             1       1       2
+popdifference:  Bahamas_SouthAndros_Ceramic      Iraq_PPNA_contam         0.000             1       1       1
+popdifference:  Bahamas_SouthAndros_Ceramic  Israel_MLBA_o_brother.I2200         0.000             1       1       1
+popdifference:  Bahamas_SouthAndros_Ceramic     Israel_Natufian_d         0.000             1       1       1
+popdifference:  Bahamas_SouthAndros_Ceramic       Israel_Natufian         0.000             1       1       1
+popdifference:  Bahamas_SouthAndros_Ceramic  Israel_Natufian_contam         0.000             1       1       1
+popdifference:  Bahamas_SouthAndros_Ceramic           Jordan_PPNB         0.000             1       1       7
+popdifference:  Bahamas_SouthAndros_Ceramic    Jordan_PPNB_contam         0.000             1       1       2
+popdifference:  Bahamas_SouthAndros_Ceramic        Jordan_PPNB_lc         0.000             1       1       1
+popdifference:  Bahamas_SouthAndros_Ceramic           Jordan_PPNC         0.000             1       1       3
+popdifference:  Bahamas_SouthAndros_Ceramic  Jordan_PPNC_1d.rel.I1699         0.000             1       1       1
+popdifference:  Bahamas_SouthAndros_Ceramic  Malawi_Fingira_LSA_6000BP         0.000             1       1       1
+popdifference:  Bahamas_SouthAndros_Ceramic  Malawi_Fingira_LSA_6000BP_noUDG         0.000             1       1       1
+popdifference:  Bahamas_SouthAndros_Ceramic       Montenegro_MLBA         0.000             1       1       1
+popdifference:  Bahamas_SouthAndros_Ceramic  Russia_Samara_EBA_Yamnaya         0.000             1       1       1
+popdifference:  Bahamas_SouthAndros_Ceramic  Russia_Uelen_OldBeringSea         0.000             1       1       1
+popdifference:  Bahamas_SouthAndros_Ceramic              Turkey_N         0.000             1       1       1
+popdifference:         Belize_4600BP          Bulgaria_EIA         0.000             1       0       1
+popdifference:         Belize_4600BP       Bulgaria_LIA_lc         0.000             1       0       1
+popdifference:         Belize_4600BP  Cuba_CanimarAbajo_Archaic         0.000             1       0       1
+popdifference:         Belize_4600BP    Czech_IA_Hallstatt         0.000             1       0       1
+popdifference:         Belize_4600BP  Dominican_ElSoco_Ceramic         0.000             1       0       1
+popdifference:         Belize_4600BP  England_BellBeaker_highEEF         0.000             1       0       1
+popdifference:         Belize_4600BP  England_BellBeaker_highWHG         0.000             1       0       1
+popdifference:         Belize_4600BP  England_MIA_LIA_o1_lc         0.000             1       0       1
+popdifference:         Belize_4600BP  England_N_Megalithic         0.000             1       0       1
+popdifference:         Belize_4600BP  Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc         0.000             1       0       1
+popdifference:         Belize_4600BP  Greece_Delphi_BA_Mycenaean         0.000             1       0       3
+popdifference:         Belize_4600BP      Iran_GanjDareh_N         0.000             1       0       1
+popdifference:         Belize_4600BP             Iraq_PPNA         0.000             1       0       2
+popdifference:         Belize_4600BP      Iraq_PPNA_contam         0.000             1       0       1
+popdifference:         Belize_4600BP  Israel_MLBA_o_brother.I2200         0.000             1       0       1
+popdifference:         Belize_4600BP     Israel_Natufian_d         0.000             1       0       1
+popdifference:         Belize_4600BP       Israel_Natufian         0.000             1       0       1
+popdifference:         Belize_4600BP  Israel_Natufian_contam         0.000             1       0       1
+popdifference:         Belize_4600BP           Jordan_PPNB         0.000             1       0       7
+popdifference:         Belize_4600BP    Jordan_PPNB_contam         0.000             1       0       2
+popdifference:         Belize_4600BP        Jordan_PPNB_lc         0.000             1       0       1
+popdifference:         Belize_4600BP           Jordan_PPNC         0.000             1       0       3
+popdifference:         Belize_4600BP  Jordan_PPNC_1d.rel.I1699         0.000             1       0       1
+popdifference:         Belize_4600BP  Malawi_Fingira_LSA_6000BP         0.000             1       0       1
+popdifference:         Belize_4600BP  Malawi_Fingira_LSA_6000BP_noUDG         0.000             1       0       1
+popdifference:         Belize_4600BP       Montenegro_MLBA         0.000             1       0       1
+popdifference:         Belize_4600BP  Russia_Samara_EBA_Yamnaya         0.000             1       0       1
+popdifference:         Belize_4600BP  Russia_Uelen_OldBeringSea         0.000             1       0       1
+popdifference:         Belize_4600BP              Turkey_N         0.000             1       0       1
+popdifference:          Bulgaria_EIA       Bulgaria_LIA_lc         0.000             1       1       1
+popdifference:          Bulgaria_EIA  Cuba_CanimarAbajo_Archaic         0.000             1       1       1
+popdifference:          Bulgaria_EIA    Czech_IA_Hallstatt         0.000             1       1       1
+popdifference:          Bulgaria_EIA  Dominican_ElSoco_Ceramic         0.000             1       1       1
+popdifference:          Bulgaria_EIA  England_BellBeaker_highEEF         0.000             1       1       1
+popdifference:          Bulgaria_EIA  England_BellBeaker_highWHG         0.000             1       1       1
+popdifference:          Bulgaria_EIA  England_MIA_LIA_o1_lc         0.000             1       1       1
+popdifference:          Bulgaria_EIA  England_N_Megalithic         0.000             1       1       1
+popdifference:          Bulgaria_EIA  Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc         0.000             1       1       1
+popdifference:          Bulgaria_EIA  Greece_Delphi_BA_Mycenaean         0.000             1       1       3
+popdifference:          Bulgaria_EIA      Iran_GanjDareh_N         0.000             1       1       1
+popdifference:          Bulgaria_EIA             Iraq_PPNA         0.000             1       1       2
+popdifference:          Bulgaria_EIA      Iraq_PPNA_contam         0.000             1       1       1
+popdifference:          Bulgaria_EIA  Israel_MLBA_o_brother.I2200         0.000             1       1       1
+popdifference:          Bulgaria_EIA     Israel_Natufian_d         0.000             1       1       1
+popdifference:          Bulgaria_EIA       Israel_Natufian         0.000             1       1       1
+popdifference:          Bulgaria_EIA  Israel_Natufian_contam         0.000             1       1       1
+popdifference:          Bulgaria_EIA           Jordan_PPNB         0.000             1       1       7
+popdifference:          Bulgaria_EIA    Jordan_PPNB_contam         0.000             1       1       2
+popdifference:          Bulgaria_EIA        Jordan_PPNB_lc         0.000             1       1       1
+popdifference:          Bulgaria_EIA           Jordan_PPNC         0.000             1       1       3
+popdifference:          Bulgaria_EIA  Jordan_PPNC_1d.rel.I1699         0.000             1       1       1
+popdifference:          Bulgaria_EIA  Malawi_Fingira_LSA_6000BP         0.000             1       1       1
+popdifference:          Bulgaria_EIA  Malawi_Fingira_LSA_6000BP_noUDG         0.000             1       1       1
+popdifference:          Bulgaria_EIA       Montenegro_MLBA         0.000             1       1       1
+popdifference:          Bulgaria_EIA  Russia_Samara_EBA_Yamnaya         0.000             1       1       1
+popdifference:          Bulgaria_EIA  Russia_Uelen_OldBeringSea         0.000             1       1       1
+popdifference:          Bulgaria_EIA              Turkey_N         0.000             1       1       1
+popdifference:       Bulgaria_LIA_lc  Cuba_CanimarAbajo_Archaic         0.000             1       1       1
+popdifference:       Bulgaria_LIA_lc    Czech_IA_Hallstatt         0.000             1       1       1
+popdifference:       Bulgaria_LIA_lc  Dominican_ElSoco_Ceramic         0.000             1       1       1
+popdifference:       Bulgaria_LIA_lc  England_BellBeaker_highEEF         0.000             1       1       1
+popdifference:       Bulgaria_LIA_lc  England_BellBeaker_highWHG         0.000             1       1       1
+popdifference:       Bulgaria_LIA_lc  England_MIA_LIA_o1_lc         0.000             1       1       1
+popdifference:       Bulgaria_LIA_lc  England_N_Megalithic         0.000             1       1       1
+popdifference:       Bulgaria_LIA_lc  Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc         0.000             1       1       1
+popdifference:       Bulgaria_LIA_lc  Greece_Delphi_BA_Mycenaean         0.000             1       1       3
+popdifference:       Bulgaria_LIA_lc      Iran_GanjDareh_N         0.000             1       1       1
+popdifference:       Bulgaria_LIA_lc             Iraq_PPNA         0.000             1       1       2
+popdifference:       Bulgaria_LIA_lc      Iraq_PPNA_contam         0.000             1       1       1
+popdifference:       Bulgaria_LIA_lc  Israel_MLBA_o_brother.I2200         0.000             1       1       1
+popdifference:       Bulgaria_LIA_lc     Israel_Natufian_d         0.000             1       1       1
+popdifference:       Bulgaria_LIA_lc       Israel_Natufian         0.000             1       1       1
+popdifference:       Bulgaria_LIA_lc  Israel_Natufian_contam         0.000             1       1       1
+popdifference:       Bulgaria_LIA_lc           Jordan_PPNB         0.000             1       1       7
+popdifference:       Bulgaria_LIA_lc    Jordan_PPNB_contam         0.000             1       1       2
+popdifference:       Bulgaria_LIA_lc        Jordan_PPNB_lc         0.000             1       1       1
+popdifference:       Bulgaria_LIA_lc           Jordan_PPNC         0.000             1       1       3
+popdifference:       Bulgaria_LIA_lc  Jordan_PPNC_1d.rel.I1699         0.000             1       1       1
+popdifference:       Bulgaria_LIA_lc  Malawi_Fingira_LSA_6000BP         0.000             1       1       1
+popdifference:       Bulgaria_LIA_lc  Malawi_Fingira_LSA_6000BP_noUDG         0.000             1       1       1
+popdifference:       Bulgaria_LIA_lc       Montenegro_MLBA         0.000             1       1       1
+popdifference:       Bulgaria_LIA_lc  Russia_Samara_EBA_Yamnaya         0.000             1       1       1
+popdifference:       Bulgaria_LIA_lc  Russia_Uelen_OldBeringSea         0.000             1       1       1
+popdifference:       Bulgaria_LIA_lc              Turkey_N         0.000             1       1       1
+popdifference:  Cuba_CanimarAbajo_Archaic    Czech_IA_Hallstatt         0.000             1       1       1
+popdifference:  Cuba_CanimarAbajo_Archaic  Dominican_ElSoco_Ceramic         0.000             1       1       1
+popdifference:  Cuba_CanimarAbajo_Archaic  England_BellBeaker_highEEF         0.000             1       1       1
+popdifference:  Cuba_CanimarAbajo_Archaic  England_BellBeaker_highWHG         0.000             1       1       1
+popdifference:  Cuba_CanimarAbajo_Archaic  England_MIA_LIA_o1_lc         0.000             1       1       1
+popdifference:  Cuba_CanimarAbajo_Archaic  England_N_Megalithic         0.000             1       1       1
+popdifference:  Cuba_CanimarAbajo_Archaic  Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc         0.000             1       1       1
+popdifference:  Cuba_CanimarAbajo_Archaic  Greece_Delphi_BA_Mycenaean         0.000             1       1       3
+popdifference:  Cuba_CanimarAbajo_Archaic      Iran_GanjDareh_N         0.000             1       1       1
+popdifference:  Cuba_CanimarAbajo_Archaic             Iraq_PPNA         0.000             1       1       2
+popdifference:  Cuba_CanimarAbajo_Archaic      Iraq_PPNA_contam         0.000             1       1       1
+popdifference:  Cuba_CanimarAbajo_Archaic  Israel_MLBA_o_brother.I2200         0.000             1       1       1
+popdifference:  Cuba_CanimarAbajo_Archaic     Israel_Natufian_d         0.000             1       1       1
+popdifference:  Cuba_CanimarAbajo_Archaic       Israel_Natufian         0.000             1       1       1
+popdifference:  Cuba_CanimarAbajo_Archaic  Israel_Natufian_contam         0.000             1       1       1
+popdifference:  Cuba_CanimarAbajo_Archaic           Jordan_PPNB         0.000             1       1       7
+popdifference:  Cuba_CanimarAbajo_Archaic    Jordan_PPNB_contam         0.000             1       1       2
+popdifference:  Cuba_CanimarAbajo_Archaic        Jordan_PPNB_lc         0.000             1       1       1
+popdifference:  Cuba_CanimarAbajo_Archaic           Jordan_PPNC         0.000             1       1       3
+popdifference:  Cuba_CanimarAbajo_Archaic  Jordan_PPNC_1d.rel.I1699         0.000             1       1       1
+popdifference:  Cuba_CanimarAbajo_Archaic  Malawi_Fingira_LSA_6000BP         0.000             1       1       1
+popdifference:  Cuba_CanimarAbajo_Archaic  Malawi_Fingira_LSA_6000BP_noUDG         0.000             1       1       1
+popdifference:  Cuba_CanimarAbajo_Archaic       Montenegro_MLBA         0.000             1       1       1
+popdifference:  Cuba_CanimarAbajo_Archaic  Russia_Samara_EBA_Yamnaya         0.000             1       1       1
+popdifference:  Cuba_CanimarAbajo_Archaic  Russia_Uelen_OldBeringSea         0.000             1       1       1
+popdifference:  Cuba_CanimarAbajo_Archaic              Turkey_N         0.000             1       1       1
+popdifference:    Czech_IA_Hallstatt  Dominican_ElSoco_Ceramic         0.000             1       1       1
+popdifference:    Czech_IA_Hallstatt  England_BellBeaker_highEEF         0.000             1       1       1
+popdifference:    Czech_IA_Hallstatt  England_BellBeaker_highWHG         0.000             1       1       1
+popdifference:    Czech_IA_Hallstatt  England_MIA_LIA_o1_lc         0.000             1       1       1
+popdifference:    Czech_IA_Hallstatt  England_N_Megalithic         0.000             1       1       1
+popdifference:    Czech_IA_Hallstatt  Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc         0.000             1       1       1
+popdifference:    Czech_IA_Hallstatt  Greece_Delphi_BA_Mycenaean         0.000             1       1       3
+popdifference:    Czech_IA_Hallstatt      Iran_GanjDareh_N         0.000             1       1       1
+popdifference:    Czech_IA_Hallstatt             Iraq_PPNA         0.000             1       1       2
+popdifference:    Czech_IA_Hallstatt      Iraq_PPNA_contam         0.000             1       1       1
+popdifference:    Czech_IA_Hallstatt  Israel_MLBA_o_brother.I2200         0.000             1       1       1
+popdifference:    Czech_IA_Hallstatt     Israel_Natufian_d         0.000             1       1       1
+popdifference:    Czech_IA_Hallstatt       Israel_Natufian         0.000             1       1       1
+popdifference:    Czech_IA_Hallstatt  Israel_Natufian_contam         0.000             1       1       1
+popdifference:    Czech_IA_Hallstatt           Jordan_PPNB         0.000             1       1       7
+popdifference:    Czech_IA_Hallstatt    Jordan_PPNB_contam         0.000             1       1       2
+popdifference:    Czech_IA_Hallstatt        Jordan_PPNB_lc         0.000             1       1       1
+popdifference:    Czech_IA_Hallstatt           Jordan_PPNC         0.000             1       1       3
+popdifference:    Czech_IA_Hallstatt  Jordan_PPNC_1d.rel.I1699         0.000             1       1       1
+popdifference:    Czech_IA_Hallstatt  Malawi_Fingira_LSA_6000BP         0.000             1       1       1
+popdifference:    Czech_IA_Hallstatt  Malawi_Fingira_LSA_6000BP_noUDG         0.000             1       1       1
+popdifference:    Czech_IA_Hallstatt       Montenegro_MLBA         0.000             1       1       1
+popdifference:    Czech_IA_Hallstatt  Russia_Samara_EBA_Yamnaya         0.000             1       1       1
+popdifference:    Czech_IA_Hallstatt  Russia_Uelen_OldBeringSea         0.000             1       1       1
+popdifference:    Czech_IA_Hallstatt              Turkey_N         0.000             1       1       1
+popdifference:  Dominican_ElSoco_Ceramic  England_BellBeaker_highEEF         0.000             1       1       1
+popdifference:  Dominican_ElSoco_Ceramic  England_BellBeaker_highWHG         0.000             1       1       1
+popdifference:  Dominican_ElSoco_Ceramic  England_MIA_LIA_o1_lc         0.000             1       1       1
+popdifference:  Dominican_ElSoco_Ceramic  England_N_Megalithic         0.000             1       1       1
+popdifference:  Dominican_ElSoco_Ceramic  Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc         0.000             1       1       1
+popdifference:  Dominican_ElSoco_Ceramic  Greece_Delphi_BA_Mycenaean         0.000             1       1       3
+popdifference:  Dominican_ElSoco_Ceramic      Iran_GanjDareh_N         0.000             1       1       1
+popdifference:  Dominican_ElSoco_Ceramic             Iraq_PPNA         0.000             1       1       2
+popdifference:  Dominican_ElSoco_Ceramic      Iraq_PPNA_contam         0.000             1       1       1
+popdifference:  Dominican_ElSoco_Ceramic  Israel_MLBA_o_brother.I2200         0.000             1       1       1
+popdifference:  Dominican_ElSoco_Ceramic     Israel_Natufian_d         0.000             1       1       1
+popdifference:  Dominican_ElSoco_Ceramic       Israel_Natufian         0.000             1       1       1
+popdifference:  Dominican_ElSoco_Ceramic  Israel_Natufian_contam         0.000             1       1       1
+popdifference:  Dominican_ElSoco_Ceramic           Jordan_PPNB         0.000             1       1       7
+popdifference:  Dominican_ElSoco_Ceramic    Jordan_PPNB_contam         0.000             1       1       2
+popdifference:  Dominican_ElSoco_Ceramic        Jordan_PPNB_lc         0.000             1       1       1
+popdifference:  Dominican_ElSoco_Ceramic           Jordan_PPNC         0.000             1       1       3
+popdifference:  Dominican_ElSoco_Ceramic  Jordan_PPNC_1d.rel.I1699         0.000             1       1       1
+popdifference:  Dominican_ElSoco_Ceramic  Malawi_Fingira_LSA_6000BP         0.000             1       1       1
+popdifference:  Dominican_ElSoco_Ceramic  Malawi_Fingira_LSA_6000BP_noUDG         0.000             1       1       1
+popdifference:  Dominican_ElSoco_Ceramic       Montenegro_MLBA         0.000             1       1       1
+popdifference:  Dominican_ElSoco_Ceramic  Russia_Samara_EBA_Yamnaya         0.000             1       1       1
+popdifference:  Dominican_ElSoco_Ceramic  Russia_Uelen_OldBeringSea         0.000             1       1       1
+popdifference:  Dominican_ElSoco_Ceramic              Turkey_N         0.000             1       1       1
+popdifference:  England_BellBeaker_highEEF  England_BellBeaker_highWHG         0.000             1       1       1
+popdifference:  England_BellBeaker_highEEF  England_MIA_LIA_o1_lc         0.000             1       1       1
+popdifference:  England_BellBeaker_highEEF  England_N_Megalithic         0.000             1       1       1
+popdifference:  England_BellBeaker_highEEF  Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc         0.000             1       1       1
+popdifference:  England_BellBeaker_highEEF  Greece_Delphi_BA_Mycenaean         0.000             1       1       3
+popdifference:  England_BellBeaker_highEEF      Iran_GanjDareh_N         0.000             1       1       1
+popdifference:  England_BellBeaker_highEEF             Iraq_PPNA         0.000             1       1       2
+popdifference:  England_BellBeaker_highEEF      Iraq_PPNA_contam         0.000             1       1       1
+popdifference:  England_BellBeaker_highEEF  Israel_MLBA_o_brother.I2200         0.000             1       1       1
+popdifference:  England_BellBeaker_highEEF     Israel_Natufian_d         0.000             1       1       1
+popdifference:  England_BellBeaker_highEEF       Israel_Natufian         0.000             1       1       1
+popdifference:  England_BellBeaker_highEEF  Israel_Natufian_contam         0.000             1       1       1
+popdifference:  England_BellBeaker_highEEF           Jordan_PPNB         0.000             1       1       7
+popdifference:  England_BellBeaker_highEEF    Jordan_PPNB_contam         0.000             1       1       2
+popdifference:  England_BellBeaker_highEEF        Jordan_PPNB_lc         0.000             1       1       1
+popdifference:  England_BellBeaker_highEEF           Jordan_PPNC         0.000             1       1       3
+popdifference:  England_BellBeaker_highEEF  Jordan_PPNC_1d.rel.I1699         0.000             1       1       1
+popdifference:  England_BellBeaker_highEEF  Malawi_Fingira_LSA_6000BP         0.000             1       1       1
+popdifference:  England_BellBeaker_highEEF  Malawi_Fingira_LSA_6000BP_noUDG         0.000             1       1       1
+popdifference:  England_BellBeaker_highEEF       Montenegro_MLBA         0.000             1       1       1
+popdifference:  England_BellBeaker_highEEF  Russia_Samara_EBA_Yamnaya         0.000             1       1       1
+popdifference:  England_BellBeaker_highEEF  Russia_Uelen_OldBeringSea         0.000             1       1       1
+popdifference:  England_BellBeaker_highEEF              Turkey_N         0.000             1       1       1
+popdifference:  England_BellBeaker_highWHG  England_MIA_LIA_o1_lc         0.000             1       1       1
+popdifference:  England_BellBeaker_highWHG  England_N_Megalithic         0.000             1       1       1
+popdifference:  England_BellBeaker_highWHG  Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc         0.000             1       1       1
+popdifference:  England_BellBeaker_highWHG  Greece_Delphi_BA_Mycenaean         0.000             1       1       3
+popdifference:  England_BellBeaker_highWHG      Iran_GanjDareh_N         0.000             1       1       1
+popdifference:  England_BellBeaker_highWHG             Iraq_PPNA         0.000             1       1       2
+popdifference:  England_BellBeaker_highWHG      Iraq_PPNA_contam         0.000             1       1       1
+popdifference:  England_BellBeaker_highWHG  Israel_MLBA_o_brother.I2200         0.000             1       1       1
+popdifference:  England_BellBeaker_highWHG     Israel_Natufian_d         0.000             1       1       1
+popdifference:  England_BellBeaker_highWHG       Israel_Natufian         0.000             1       1       1
+popdifference:  England_BellBeaker_highWHG  Israel_Natufian_contam         0.000             1       1       1
+popdifference:  England_BellBeaker_highWHG           Jordan_PPNB         0.000             1       1       7
+popdifference:  England_BellBeaker_highWHG    Jordan_PPNB_contam         0.000             1       1       2
+popdifference:  England_BellBeaker_highWHG        Jordan_PPNB_lc         0.000             1       1       1
+popdifference:  England_BellBeaker_highWHG           Jordan_PPNC         0.000             1       1       3
+popdifference:  England_BellBeaker_highWHG  Jordan_PPNC_1d.rel.I1699         0.000             1       1       1
+popdifference:  England_BellBeaker_highWHG  Malawi_Fingira_LSA_6000BP         0.000             1       1       1
+popdifference:  England_BellBeaker_highWHG  Malawi_Fingira_LSA_6000BP_noUDG         0.000             1       1       1
+popdifference:  England_BellBeaker_highWHG       Montenegro_MLBA         0.000             1       1       1
+popdifference:  England_BellBeaker_highWHG  Russia_Samara_EBA_Yamnaya         0.000             1       1       1
+popdifference:  England_BellBeaker_highWHG  Russia_Uelen_OldBeringSea         0.000             1       1       1
+popdifference:  England_BellBeaker_highWHG              Turkey_N         0.000             1       1       1
+popdifference:  England_MIA_LIA_o1_lc  England_N_Megalithic         0.000             1       1       1
+popdifference:  England_MIA_LIA_o1_lc  Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc         0.000             1       1       1
+popdifference:  England_MIA_LIA_o1_lc  Greece_Delphi_BA_Mycenaean         0.000             1       1       3
+popdifference:  England_MIA_LIA_o1_lc      Iran_GanjDareh_N         0.000             1       1       1
+popdifference:  England_MIA_LIA_o1_lc             Iraq_PPNA         0.000             1       1       2
+popdifference:  England_MIA_LIA_o1_lc      Iraq_PPNA_contam         0.000             1       1       1
+popdifference:  England_MIA_LIA_o1_lc  Israel_MLBA_o_brother.I2200         0.000             1       1       1
+popdifference:  England_MIA_LIA_o1_lc     Israel_Natufian_d         0.000             1       1       1
+popdifference:  England_MIA_LIA_o1_lc       Israel_Natufian         0.000             1       1       1
+popdifference:  England_MIA_LIA_o1_lc  Israel_Natufian_contam         0.000             1       1       1
+popdifference:  England_MIA_LIA_o1_lc           Jordan_PPNB         0.000             1       1       7
+popdifference:  England_MIA_LIA_o1_lc    Jordan_PPNB_contam         0.000             1       1       2
+popdifference:  England_MIA_LIA_o1_lc        Jordan_PPNB_lc         0.000             1       1       1
+popdifference:  England_MIA_LIA_o1_lc           Jordan_PPNC         0.000             1       1       3
+popdifference:  England_MIA_LIA_o1_lc  Jordan_PPNC_1d.rel.I1699         0.000             1       1       1
+popdifference:  England_MIA_LIA_o1_lc  Malawi_Fingira_LSA_6000BP         0.000             1       1       1
+popdifference:  England_MIA_LIA_o1_lc  Malawi_Fingira_LSA_6000BP_noUDG         0.000             1       1       1
+popdifference:  England_MIA_LIA_o1_lc       Montenegro_MLBA         0.000             1       1       1
+popdifference:  England_MIA_LIA_o1_lc  Russia_Samara_EBA_Yamnaya         0.000             1       1       1
+popdifference:  England_MIA_LIA_o1_lc  Russia_Uelen_OldBeringSea         0.000             1       1       1
+popdifference:  England_MIA_LIA_o1_lc              Turkey_N         0.000             1       1       1
+popdifference:  England_N_Megalithic  Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc         0.000             1       1       1
+popdifference:  England_N_Megalithic  Greece_Delphi_BA_Mycenaean         0.000             1       1       3
+popdifference:  England_N_Megalithic      Iran_GanjDareh_N         0.000             1       1       1
+popdifference:  England_N_Megalithic             Iraq_PPNA         0.000             1       1       2
+popdifference:  England_N_Megalithic      Iraq_PPNA_contam         0.000             1       1       1
+popdifference:  England_N_Megalithic  Israel_MLBA_o_brother.I2200         0.000             1       1       1
+popdifference:  England_N_Megalithic     Israel_Natufian_d         0.000             1       1       1
+popdifference:  England_N_Megalithic       Israel_Natufian         0.000             1       1       1
+popdifference:  England_N_Megalithic  Israel_Natufian_contam         0.000             1       1       1
+popdifference:  England_N_Megalithic           Jordan_PPNB         0.000             1       1       7
+popdifference:  England_N_Megalithic    Jordan_PPNB_contam         0.000             1       1       2
+popdifference:  England_N_Megalithic        Jordan_PPNB_lc         0.000             1       1       1
+popdifference:  England_N_Megalithic           Jordan_PPNC         0.000             1       1       3
+popdifference:  England_N_Megalithic  Jordan_PPNC_1d.rel.I1699         0.000             1       1       1
+popdifference:  England_N_Megalithic  Malawi_Fingira_LSA_6000BP         0.000             1       1       1
+popdifference:  England_N_Megalithic  Malawi_Fingira_LSA_6000BP_noUDG         0.000             1       1       1
+popdifference:  England_N_Megalithic       Montenegro_MLBA         0.000             1       1       1
+popdifference:  England_N_Megalithic  Russia_Samara_EBA_Yamnaya         0.000             1       1       1
+popdifference:  England_N_Megalithic  Russia_Uelen_OldBeringSea         0.000             1       1       1
+popdifference:  England_N_Megalithic              Turkey_N         0.000             1       1       1
+popdifference:  Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc  Greece_Delphi_BA_Mycenaean         0.000             1       1       3
+popdifference:  Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc      Iran_GanjDareh_N         0.000             1       1       1
+popdifference:  Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc             Iraq_PPNA         0.000             1       1       2
+popdifference:  Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc      Iraq_PPNA_contam         0.000             1       1       1
+popdifference:  Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc  Israel_MLBA_o_brother.I2200         0.000             1       1       1
+popdifference:  Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc     Israel_Natufian_d         0.000             1       1       1
+popdifference:  Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc       Israel_Natufian         0.000             1       1       1
+popdifference:  Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc  Israel_Natufian_contam         0.000             1       1       1
+popdifference:  Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc           Jordan_PPNB         0.000             1       1       7
+popdifference:  Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc    Jordan_PPNB_contam         0.000             1       1       2
+popdifference:  Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc        Jordan_PPNB_lc         0.000             1       1       1
+popdifference:  Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc           Jordan_PPNC         0.000             1       1       3
+popdifference:  Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc  Jordan_PPNC_1d.rel.I1699         0.000             1       1       1
+popdifference:  Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc  Malawi_Fingira_LSA_6000BP         0.000             1       1       1
+popdifference:  Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc  Malawi_Fingira_LSA_6000BP_noUDG         0.000             1       1       1
+popdifference:  Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc       Montenegro_MLBA         0.000             1       1       1
+popdifference:  Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc  Russia_Samara_EBA_Yamnaya         0.000             1       1       1
+popdifference:  Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc  Russia_Uelen_OldBeringSea         0.000             1       1       1
+popdifference:  Germany_BellBeaker_1.or.2d.rel.of_I3588_and_I3599_contam_lc              Turkey_N         0.000             1       1       1
+popdifference:  Greece_Delphi_BA_Mycenaean      Iran_GanjDareh_N         0.000             1       3       1
+popdifference:  Greece_Delphi_BA_Mycenaean             Iraq_PPNA        31.721   0.000445642       3       2
+popdifference:  Greece_Delphi_BA_Mycenaean      Iraq_PPNA_contam         0.000             1       3       1
+popdifference:  Greece_Delphi_BA_Mycenaean  Israel_MLBA_o_brother.I2200         0.000             1       3       1
+popdifference:  Greece_Delphi_BA_Mycenaean     Israel_Natufian_d         0.000             1       3       1
+popdifference:  Greece_Delphi_BA_Mycenaean       Israel_Natufian         0.000             1       3       1
+popdifference:  Greece_Delphi_BA_Mycenaean  Israel_Natufian_contam         0.000             1       3       1
+popdifference:  Greece_Delphi_BA_Mycenaean           Jordan_PPNB        11.663      0.308273       3       7
+popdifference:  Greece_Delphi_BA_Mycenaean    Jordan_PPNB_contam         9.825      0.455949       3       2
+popdifference:  Greece_Delphi_BA_Mycenaean        Jordan_PPNB_lc         0.000             1       3       1
+popdifference:  Greece_Delphi_BA_Mycenaean           Jordan_PPNC        10.512      0.396801       3       3
+popdifference:  Greece_Delphi_BA_Mycenaean  Jordan_PPNC_1d.rel.I1699         0.000             1       3       1
+popdifference:  Greece_Delphi_BA_Mycenaean  Malawi_Fingira_LSA_6000BP         0.000             1       3       1
+popdifference:  Greece_Delphi_BA_Mycenaean  Malawi_Fingira_LSA_6000BP_noUDG         0.000             1       3       1
+popdifference:  Greece_Delphi_BA_Mycenaean       Montenegro_MLBA         0.000             1       3       1
+popdifference:  Greece_Delphi_BA_Mycenaean  Russia_Samara_EBA_Yamnaya         0.000             1       3       1
+popdifference:  Greece_Delphi_BA_Mycenaean  Russia_Uelen_OldBeringSea         0.000             1       3       1
+popdifference:  Greece_Delphi_BA_Mycenaean              Turkey_N         0.000             1       3       1
+popdifference:      Iran_GanjDareh_N             Iraq_PPNA         0.000             1       1       2
+popdifference:      Iran_GanjDareh_N      Iraq_PPNA_contam         0.000             1       1       1
+popdifference:      Iran_GanjDareh_N  Israel_MLBA_o_brother.I2200         0.000             1       1       1
+popdifference:      Iran_GanjDareh_N     Israel_Natufian_d         0.000             1       1       1
+popdifference:      Iran_GanjDareh_N       Israel_Natufian         0.000             1       1       1
+popdifference:      Iran_GanjDareh_N  Israel_Natufian_contam         0.000             1       1       1
+popdifference:      Iran_GanjDareh_N           Jordan_PPNB         0.000             1       1       7
+popdifference:      Iran_GanjDareh_N    Jordan_PPNB_contam         0.000             1       1       2
+popdifference:      Iran_GanjDareh_N        Jordan_PPNB_lc         0.000             1       1       1
+popdifference:      Iran_GanjDareh_N           Jordan_PPNC         0.000             1       1       3
+popdifference:      Iran_GanjDareh_N  Jordan_PPNC_1d.rel.I1699         0.000             1       1       1
+popdifference:      Iran_GanjDareh_N  Malawi_Fingira_LSA_6000BP         0.000             1       1       1
+popdifference:      Iran_GanjDareh_N  Malawi_Fingira_LSA_6000BP_noUDG         0.000             1       1       1
+popdifference:      Iran_GanjDareh_N       Montenegro_MLBA         0.000             1       1       1
+popdifference:      Iran_GanjDareh_N  Russia_Samara_EBA_Yamnaya         0.000             1       1       1
+popdifference:      Iran_GanjDareh_N  Russia_Uelen_OldBeringSea         0.000             1       1       1
+popdifference:      Iran_GanjDareh_N              Turkey_N         0.000             1       1       1
+popdifference:             Iraq_PPNA      Iraq_PPNA_contam         0.000             1       2       1
+popdifference:             Iraq_PPNA  Israel_MLBA_o_brother.I2200         0.000             1       2       1
+popdifference:             Iraq_PPNA     Israel_Natufian_d         0.000             1       2       1
+popdifference:             Iraq_PPNA       Israel_Natufian         0.000             1       2       1
+popdifference:             Iraq_PPNA  Israel_Natufian_contam         0.000             1       2       1
+popdifference:             Iraq_PPNA           Jordan_PPNB        18.797     0.0429172       2       7
+popdifference:             Iraq_PPNA    Jordan_PPNB_contam        25.842    0.00395855       2       2
+popdifference:             Iraq_PPNA        Jordan_PPNB_lc         0.000             1       2       1
+popdifference:             Iraq_PPNA           Jordan_PPNC        26.613    0.00299811       2       3
+popdifference:             Iraq_PPNA  Jordan_PPNC_1d.rel.I1699         0.000             1       2       1
+popdifference:             Iraq_PPNA  Malawi_Fingira_LSA_6000BP         0.000             1       2       1
+popdifference:             Iraq_PPNA  Malawi_Fingira_LSA_6000BP_noUDG         0.000             1       2       1
+popdifference:             Iraq_PPNA       Montenegro_MLBA         0.000             1       2       1
+popdifference:             Iraq_PPNA  Russia_Samara_EBA_Yamnaya         0.000             1       2       1
+popdifference:             Iraq_PPNA  Russia_Uelen_OldBeringSea         0.000             1       2       1
+popdifference:             Iraq_PPNA              Turkey_N         0.000             1       2       1
+popdifference:      Iraq_PPNA_contam  Israel_MLBA_o_brother.I2200         0.000             1       1       1
+popdifference:      Iraq_PPNA_contam     Israel_Natufian_d         0.000             1       1       1
+popdifference:      Iraq_PPNA_contam       Israel_Natufian         0.000             1       1       1
+popdifference:      Iraq_PPNA_contam  Israel_Natufian_contam         0.000             1       1       1
+popdifference:      Iraq_PPNA_contam           Jordan_PPNB         0.000             1       1       7
+popdifference:      Iraq_PPNA_contam    Jordan_PPNB_contam         0.000             1       1       2
+popdifference:      Iraq_PPNA_contam        Jordan_PPNB_lc         0.000             1       1       1
+popdifference:      Iraq_PPNA_contam           Jordan_PPNC         0.000             1       1       3
+popdifference:      Iraq_PPNA_contam  Jordan_PPNC_1d.rel.I1699         0.000             1       1       1
+popdifference:      Iraq_PPNA_contam  Malawi_Fingira_LSA_6000BP         0.000             1       1       1
+popdifference:      Iraq_PPNA_contam  Malawi_Fingira_LSA_6000BP_noUDG         0.000             1       1       1
+popdifference:      Iraq_PPNA_contam       Montenegro_MLBA         0.000             1       1       1
+popdifference:      Iraq_PPNA_contam  Russia_Samara_EBA_Yamnaya         0.000             1       1       1
+popdifference:      Iraq_PPNA_contam  Russia_Uelen_OldBeringSea         0.000             1       1       1
+popdifference:      Iraq_PPNA_contam              Turkey_N         0.000             1       1       1
+popdifference:  Israel_MLBA_o_brother.I2200     Israel_Natufian_d         0.000             1       1       1
+popdifference:  Israel_MLBA_o_brother.I2200       Israel_Natufian         0.000             1       1       1
+popdifference:  Israel_MLBA_o_brother.I2200  Israel_Natufian_contam         0.000             1       1       1
+popdifference:  Israel_MLBA_o_brother.I2200           Jordan_PPNB         0.000             1       1       7
+popdifference:  Israel_MLBA_o_brother.I2200    Jordan_PPNB_contam         0.000             1       1       2
+popdifference:  Israel_MLBA_o_brother.I2200        Jordan_PPNB_lc         0.000             1       1       1
+popdifference:  Israel_MLBA_o_brother.I2200           Jordan_PPNC         0.000             1       1       3
+popdifference:  Israel_MLBA_o_brother.I2200  Jordan_PPNC_1d.rel.I1699         0.000             1       1       1
+popdifference:  Israel_MLBA_o_brother.I2200  Malawi_Fingira_LSA_6000BP         0.000             1       1       1
+popdifference:  Israel_MLBA_o_brother.I2200  Malawi_Fingira_LSA_6000BP_noUDG         0.000             1       1       1
+popdifference:  Israel_MLBA_o_brother.I2200       Montenegro_MLBA         0.000             1       1       1
+popdifference:  Israel_MLBA_o_brother.I2200  Russia_Samara_EBA_Yamnaya         0.000             1       1       1
+popdifference:  Israel_MLBA_o_brother.I2200  Russia_Uelen_OldBeringSea         0.000             1       1       1
+popdifference:  Israel_MLBA_o_brother.I2200              Turkey_N         0.000             1       1       1
+popdifference:     Israel_Natufian_d       Israel_Natufian         0.000             1       1       1
+popdifference:     Israel_Natufian_d  Israel_Natufian_contam         0.000             1       1       1
+popdifference:     Israel_Natufian_d           Jordan_PPNB         0.000             1       1       7
+popdifference:     Israel_Natufian_d    Jordan_PPNB_contam         0.000             1       1       2
+popdifference:     Israel_Natufian_d        Jordan_PPNB_lc         0.000             1       1       1
+popdifference:     Israel_Natufian_d           Jordan_PPNC         0.000             1       1       3
+popdifference:     Israel_Natufian_d  Jordan_PPNC_1d.rel.I1699         0.000             1       1       1
+popdifference:     Israel_Natufian_d  Malawi_Fingira_LSA_6000BP         0.000             1       1       1
+popdifference:     Israel_Natufian_d  Malawi_Fingira_LSA_6000BP_noUDG         0.000             1       1       1
+popdifference:     Israel_Natufian_d       Montenegro_MLBA         0.000             1       1       1
+popdifference:     Israel_Natufian_d  Russia_Samara_EBA_Yamnaya         0.000             1       1       1
+popdifference:     Israel_Natufian_d  Russia_Uelen_OldBeringSea         0.000             1       1       1
+popdifference:     Israel_Natufian_d              Turkey_N         0.000             1       1       1
+popdifference:       Israel_Natufian  Israel_Natufian_contam         0.000             1       1       1
+popdifference:       Israel_Natufian           Jordan_PPNB         0.000             1       1       7
+popdifference:       Israel_Natufian    Jordan_PPNB_contam         0.000             1       1       2
+popdifference:       Israel_Natufian        Jordan_PPNB_lc         0.000             1       1       1
+popdifference:       Israel_Natufian           Jordan_PPNC         0.000             1       1       3
+popdifference:       Israel_Natufian  Jordan_PPNC_1d.rel.I1699         0.000             1       1       1
+popdifference:       Israel_Natufian  Malawi_Fingira_LSA_6000BP         0.000             1       1       1
+popdifference:       Israel_Natufian  Malawi_Fingira_LSA_6000BP_noUDG         0.000             1       1       1
+popdifference:       Israel_Natufian       Montenegro_MLBA         0.000             1       1       1
+popdifference:       Israel_Natufian  Russia_Samara_EBA_Yamnaya         0.000             1       1       1
+popdifference:       Israel_Natufian  Russia_Uelen_OldBeringSea         0.000             1       1       1
+popdifference:       Israel_Natufian              Turkey_N         0.000             1       1       1
+popdifference:  Israel_Natufian_contam           Jordan_PPNB         0.000             1       1       7
+popdifference:  Israel_Natufian_contam    Jordan_PPNB_contam         0.000             1       1       2
+popdifference:  Israel_Natufian_contam        Jordan_PPNB_lc         0.000             1       1       1
+popdifference:  Israel_Natufian_contam           Jordan_PPNC         0.000             1       1       3
+popdifference:  Israel_Natufian_contam  Jordan_PPNC_1d.rel.I1699         0.000             1       1       1
+popdifference:  Israel_Natufian_contam  Malawi_Fingira_LSA_6000BP         0.000             1       1       1
+popdifference:  Israel_Natufian_contam  Malawi_Fingira_LSA_6000BP_noUDG         0.000             1       1       1
+popdifference:  Israel_Natufian_contam       Montenegro_MLBA         0.000             1       1       1
+popdifference:  Israel_Natufian_contam  Russia_Samara_EBA_Yamnaya         0.000             1       1       1
+popdifference:  Israel_Natufian_contam  Russia_Uelen_OldBeringSea         0.000             1       1       1
+popdifference:  Israel_Natufian_contam              Turkey_N         0.000             1       1       1
+popdifference:           Jordan_PPNB    Jordan_PPNB_contam        11.354      0.330646       7       2
+popdifference:           Jordan_PPNB        Jordan_PPNB_lc         0.000             1       7       1
+popdifference:           Jordan_PPNB           Jordan_PPNC        14.972      0.133086       7       3
+popdifference:           Jordan_PPNB  Jordan_PPNC_1d.rel.I1699         0.000             1       7       1
+popdifference:           Jordan_PPNB  Malawi_Fingira_LSA_6000BP         0.000             1       7       1
+popdifference:           Jordan_PPNB  Malawi_Fingira_LSA_6000BP_noUDG         0.000             1       7       1
+popdifference:           Jordan_PPNB       Montenegro_MLBA         0.000             1       7       1
+popdifference:           Jordan_PPNB  Russia_Samara_EBA_Yamnaya         0.000             1       7       1
+popdifference:           Jordan_PPNB  Russia_Uelen_OldBeringSea         0.000             1       7       1
+popdifference:           Jordan_PPNB              Turkey_N         0.000             1       7       1
+popdifference:    Jordan_PPNB_contam        Jordan_PPNB_lc         0.000             1       2       1
+popdifference:    Jordan_PPNB_contam           Jordan_PPNC        16.316     0.0909389       2       3
+popdifference:    Jordan_PPNB_contam  Jordan_PPNC_1d.rel.I1699         0.000             1       2       1
+popdifference:    Jordan_PPNB_contam  Malawi_Fingira_LSA_6000BP         0.000             1       2       1
+popdifference:    Jordan_PPNB_contam  Malawi_Fingira_LSA_6000BP_noUDG         0.000             1       2       1
+popdifference:    Jordan_PPNB_contam       Montenegro_MLBA         0.000             1       2       1
+popdifference:    Jordan_PPNB_contam  Russia_Samara_EBA_Yamnaya         0.000             1       2       1
+popdifference:    Jordan_PPNB_contam  Russia_Uelen_OldBeringSea         0.000             1       2       1
+popdifference:    Jordan_PPNB_contam              Turkey_N         0.000             1       2       1
+popdifference:        Jordan_PPNB_lc           Jordan_PPNC         0.000             1       1       3
+popdifference:        Jordan_PPNB_lc  Jordan_PPNC_1d.rel.I1699         0.000             1       1       1
+popdifference:        Jordan_PPNB_lc  Malawi_Fingira_LSA_6000BP         0.000             1       1       1
+popdifference:        Jordan_PPNB_lc  Malawi_Fingira_LSA_6000BP_noUDG         0.000             1       1       1
+popdifference:        Jordan_PPNB_lc       Montenegro_MLBA         0.000             1       1       1
+popdifference:        Jordan_PPNB_lc  Russia_Samara_EBA_Yamnaya         0.000             1       1       1
+popdifference:        Jordan_PPNB_lc  Russia_Uelen_OldBeringSea         0.000             1       1       1
+popdifference:        Jordan_PPNB_lc              Turkey_N         0.000             1       1       1
+popdifference:           Jordan_PPNC  Jordan_PPNC_1d.rel.I1699         0.000             1       3       1
+popdifference:           Jordan_PPNC  Malawi_Fingira_LSA_6000BP         0.000             1       3       1
+popdifference:           Jordan_PPNC  Malawi_Fingira_LSA_6000BP_noUDG         0.000             1       3       1
+popdifference:           Jordan_PPNC       Montenegro_MLBA         0.000             1       3       1
+popdifference:           Jordan_PPNC  Russia_Samara_EBA_Yamnaya         0.000             1       3       1
+popdifference:           Jordan_PPNC  Russia_Uelen_OldBeringSea         0.000             1       3       1
+popdifference:           Jordan_PPNC              Turkey_N         0.000             1       3       1
+popdifference:  Jordan_PPNC_1d.rel.I1699  Malawi_Fingira_LSA_6000BP         0.000             1       1       1
+popdifference:  Jordan_PPNC_1d.rel.I1699  Malawi_Fingira_LSA_6000BP_noUDG         0.000             1       1       1
+popdifference:  Jordan_PPNC_1d.rel.I1699       Montenegro_MLBA         0.000             1       1       1
+popdifference:  Jordan_PPNC_1d.rel.I1699  Russia_Samara_EBA_Yamnaya         0.000             1       1       1
+popdifference:  Jordan_PPNC_1d.rel.I1699  Russia_Uelen_OldBeringSea         0.000             1       1       1
+popdifference:  Jordan_PPNC_1d.rel.I1699              Turkey_N         0.000             1       1       1
+popdifference:  Malawi_Fingira_LSA_6000BP  Malawi_Fingira_LSA_6000BP_noUDG         0.000             1       1       1
+popdifference:  Malawi_Fingira_LSA_6000BP       Montenegro_MLBA         0.000             1       1       1
+popdifference:  Malawi_Fingira_LSA_6000BP  Russia_Samara_EBA_Yamnaya         0.000             1       1       1
+popdifference:  Malawi_Fingira_LSA_6000BP  Russia_Uelen_OldBeringSea         0.000             1       1       1
+popdifference:  Malawi_Fingira_LSA_6000BP              Turkey_N         0.000             1       1       1
+popdifference:  Malawi_Fingira_LSA_6000BP_noUDG       Montenegro_MLBA         0.000             1       1       1
+popdifference:  Malawi_Fingira_LSA_6000BP_noUDG  Russia_Samara_EBA_Yamnaya         0.000             1       1       1
+popdifference:  Malawi_Fingira_LSA_6000BP_noUDG  Russia_Uelen_OldBeringSea         0.000             1       1       1
+popdifference:  Malawi_Fingira_LSA_6000BP_noUDG              Turkey_N         0.000             1       1       1
+popdifference:       Montenegro_MLBA  Russia_Samara_EBA_Yamnaya         0.000             1       1       1
+popdifference:       Montenegro_MLBA  Russia_Uelen_OldBeringSea         0.000             1       1       1
+popdifference:       Montenegro_MLBA              Turkey_N         0.000             1       1       1
+popdifference:  Russia_Samara_EBA_Yamnaya  Russia_Uelen_OldBeringSea         0.000             1       1       1
+popdifference:  Russia_Samara_EBA_Yamnaya              Turkey_N         0.000             1       1       1
+popdifference:  Russia_Uelen_OldBeringSea              Turkey_N         0.000             1       1       1
 
-##end of smartpca:        0.144 seconds cpu        0.000 Mbytes in use
+eigbestsnp    1            rs4970421  1      1108637     2.051
+eigbestsnp    1            rs7553429  1      1090557     2.050
+eigbestsnp    1            rs9660710  1      1099342     1.776
+eigbestsnp    1           rs12726255  1      1049950     1.754
+eigbestsnp    1            rs9442373  1      1062638     1.623
+eigbestsnp    1            rs4970420  1      1106473     1.585
+eigbestsnp    1            rs9442372  1      1018704     1.571
+eigbestsnp    1           rs13302957  1       891021     1.393
+eigbestsnp    1            rs3094315  1       752566     1.377
+eigbestsnp    1            rs9729550  1      1135242     1.317
+eigbestsnp    2            rs4970420  1      1106473     2.188
+eigbestsnp    2            rs3737728  1      1021415     1.994
+eigbestsnp    2            rs3094315  1       752566     1.841
+eigbestsnp    2            rs1320565  1      1119858     1.766
+eigbestsnp    2            rs2887286  1      1156131     1.732
+eigbestsnp    2            rs9442372  1      1018704     1.563
+eigbestsnp    2          rs113171913  1       869303     1.559
+eigbestsnp    2           rs11260549  1      1121794     1.492
+eigbestsnp    2            rs9442398  1      1021695     1.423
+eigbestsnp    2           rs12726255  1      1049950     1.275
+eigbestsnp    3            rs4970405  1      1048955     2.712
+eigbestsnp    3            rs6696609  1       903426     1.983
+eigbestsnp    3            rs4970421  1      1108637     1.740
+eigbestsnp    3            rs7553429  1      1090557     1.717
+eigbestsnp    3            rs6687776  1      1030565     1.638
+eigbestsnp    3           rs12145826  1      1066029     1.570
+eigbestsnp    3            rs9660710  1      1099342     1.515
+eigbestsnp    3            rs4970362  1      1094738     1.472
+eigbestsnp    3            rs3934834  1      1005806     1.392
+eigbestsnp    3           rs11260603  1      1079198     1.136
+eigbestsnp    4           rs12124819  1       776546     2.611
+eigbestsnp    4            rs6687776  1      1030565     2.267
+eigbestsnp    4            rs3934834  1      1005806     2.232
+eigbestsnp    4            rs4075116  1      1003629     2.217
+eigbestsnp    4           rs11260603  1      1079198     1.989
+eigbestsnp    4             rs950122  1       846864     1.639
+eigbestsnp    4            rs2298217  1      1064979     1.366
+eigbestsnp    4            rs9442398  1      1021695     1.288
+eigbestsnp    4            rs9729550  1      1135242     1.005
+eigbestsnp    4           rs12145826  1      1066029     0.912
+eigbestsnp    5           rs13302957  1       891021     3.277
+eigbestsnp    5            rs9729550  1      1135242     2.129
+eigbestsnp    5            rs4970362  1      1094738     1.887
+eigbestsnp    5            rs3934834  1      1005806     1.724
+eigbestsnp    5            rs3094315  1       752566     1.574
+eigbestsnp    5            rs6687776  1      1030565     1.275
+eigbestsnp    5            rs3753348  1      1143657     1.221
+eigbestsnp    5            rs2298217  1      1064979     1.212
+eigbestsnp    5            rs3737728  1      1021415     1.153
+eigbestsnp    5            rs2887286  1      1156131     1.105
+eigbestsnp    6            rs7419119  1       842013     2.722
+eigbestsnp    6           rs13302957  1       891021     2.261
+eigbestsnp    6            rs1320565  1      1119858     1.924
+eigbestsnp    6           rs28765502  1       832918     1.749
+eigbestsnp    6             rs950122  1       846864     1.649
+eigbestsnp    6            rs4970421  1      1108637     1.624
+eigbestsnp    6           rs11260549  1      1121794     1.552
+eigbestsnp    6            rs4970357  1      1077064     1.182
+eigbestsnp    6            rs9729550  1      1135242     1.152
+eigbestsnp    6            rs2887286  1      1156131     1.084
+eigbestsnp    7            rs2887286  1      1156131     3.194
+eigbestsnp    7            rs4970357  1      1077064     1.889
+eigbestsnp    7            rs3737728  1      1021415     1.794
+eigbestsnp    7            rs9442398  1      1021695     1.671
+eigbestsnp    7           rs13302957  1       891021     1.661
+eigbestsnp    7            rs9651273  1      1031540     1.516
+eigbestsnp    7            rs4970405  1      1048955     1.466
+eigbestsnp    7            rs1320571  1      1120431     1.404
+eigbestsnp    7            rs4970362  1      1094738     1.315
+eigbestsnp    7            rs6687776  1      1030565     1.224
+eigbestsnp    8            rs4970357  1      1077064     3.037
+eigbestsnp    8            rs9442372  1      1018704     2.945
+eigbestsnp    8            rs4970405  1      1048955     1.805
+eigbestsnp    8            rs2887286  1      1156131     1.383
+eigbestsnp    8             rs950122  1       846864     1.270
+eigbestsnp    8            rs6696609  1       903426     1.197
+eigbestsnp    8          rs147606383  1      1045331     1.184
+eigbestsnp    8            rs1320571  1      1120431     1.092
+eigbestsnp    8            rs9651273  1      1031540     1.087
+eigbestsnp    8            rs2298217  1      1064979     1.042
+eigbestsnp    9            rs4970357  1      1077064     2.411
+eigbestsnp    9           rs12145826  1      1066029     2.375
+eigbestsnp    9          rs147606383  1      1045331     2.210
+eigbestsnp    9            rs3753348  1      1143657     1.651
+eigbestsnp    9            rs3737728  1      1021415     1.628
+eigbestsnp    9            rs4970405  1      1048955     1.392
+eigbestsnp    9            rs4075116  1      1003629     1.314
+eigbestsnp    9            rs3094315  1       752566     1.198
+eigbestsnp    9            rs4970362  1      1094738     1.184
+eigbestsnp    9          rs112905931  1       896271     1.087
+eigbestsnp   10          rs147606383  1      1045331     4.943
+eigbestsnp   10            rs4970405  1      1048955     1.907
+eigbestsnp   10           rs12145826  1      1066029     1.513
+eigbestsnp   10            rs3934834  1      1005806     1.369
+eigbestsnp   10            rs2298217  1      1064979     1.267
+eigbestsnp   10            rs3737728  1      1021415     1.105
+eigbestsnp   10            rs9729550  1      1135242     0.928
+eigbestsnp   10            rs3813200  1      1151300     0.887
+eigbestsnp   10               rs8997  1       949654     0.820
+eigbestsnp   10            rs4970362  1      1094738     0.686
+##end of smartpca:        0.896 seconds cpu        0.377 Mbytes in use
